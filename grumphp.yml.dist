@@ -1,0 +1,24 @@
+grumphp:
+    ascii:
+        succeeded: ~
+        failed: ~
+    # For local dev using ddev, uncomment this and run `grumphp git:init`
+    # git_hook_variables:
+    #     EXEC_GRUMPHP_COMMAND: 'ddev exec -d /var/www/html'
+    tasks:
+        git_blacklist:
+            keywords:
+                - '(var_|)dump\(.*\);*'
+                - 'die(;|\(.*\));*'
+                - 'dpm\(.*\);*'
+            regexp_type: P
+            triggered_by: ['php','module','inc']
+
+        phpcs:
+            standard: './vendor/nascom/grumphp-drupal/src/CodingStandards/Drupal'
+            triggered_by: ['php','module','inc']
+
+        phpstan:
+            level: 1
+            triggered_by: ['php','module','inc']
+            memory_limit: '-1'
