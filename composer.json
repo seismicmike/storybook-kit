@@ -95,6 +95,8 @@
         "drush/drush": "^12.5",
         "topfloor/composer-cleanup-vcs-dirs": "^1.1",
         "vmlyr-drupal/bazo": "^8.0",
+        "vmlyr-drupal/biplane": "^10.0",
+        "vmlyr-drupal/blackbird": "^10.0",
         "webflo/drupal-finder": "^1.3"
     },
     "require-dev": {
@@ -204,6 +206,11 @@
                 "homepage",
                 "support"
             ]
+        },
+        "patches": {
+            "vmlyr-drupal/blackbird": {
+                "remove permissions filter": "patches/profiles/blackbird--remove-permissions-filter.patch"
+            }
         }
     }
 }

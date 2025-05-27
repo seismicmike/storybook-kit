@@ -1,8 +1,12 @@
 parameters:
     paths:
-        - '%rootDir%/../../../docroot/modules/custom'
+        - 'docroot/modules/custom'
+        - 'docroot/themes/custom'
     excludePaths:
-        - 'docroot/sites/default'
+        - 'docroot/sites/'
+        - 'vendor/'
+        - 'docroot/core/'
+        - 'scripts/'
     fileExtensions:
         - php
         - module

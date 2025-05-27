@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3431a889d59203bc4c01f372c9ef9181",
+    "content-hash": "af03ce054d3bea1f9ae0fabe51bf1751",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12042,6 +12042,72 @@
                 "source": "https://github.com/VMLYR/Drupal-Theme-Bazo/tree/8.0.6"
             },
             "time": "2023-04-20T19:34:12+00:00"
+        },
+        {
+            "name": "vmlyr-drupal/biplane",
+            "version": "10.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VMLYR/Drupal-Profile-Biplane.git",
+                "reference": "9f93d1c5bb95a3f9c02231e9a411e7f99773e162"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VMLYR/Drupal-Profile-Biplane/zipball/9f93d1c5bb95a3f9c02231e9a411e7f99773e162",
+                "reference": "9f93d1c5bb95a3f9c02231e9a411e7f99773e162",
+                "shasum": ""
+            },
+            "type": "drupal-profile",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Garrett Rathbone",
+                    "email": "garrett.rathbone@vml.com"
+                }
+            ],
+            "description": "Common configuration to fast-track site setup and development.",
+            "homepage": "https://github.com/VML/Drupal-Profile-Biplane",
+            "support": {
+                "issues": "https://github.com/VMLYR/Drupal-Profile-Biplane/issues",
+                "source": "https://github.com/VMLYR/Drupal-Profile-Biplane/tree/10.0.1"
+            },
+            "time": "2023-03-16T03:36:47+00:00"
+        },
+        {
+            "name": "vmlyr-drupal/blackbird",
+            "version": "10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VMLYR/Drupal-Profile-Blackbird.git",
+                "reference": "0a5d48321ef3a76ee79e4296996e1bb34bc0e818"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VMLYR/Drupal-Profile-Blackbird/zipball/0a5d48321ef3a76ee79e4296996e1bb34bc0e818",
+                "reference": "0a5d48321ef3a76ee79e4296996e1bb34bc0e818",
+                "shasum": ""
+            },
+            "type": "drupal-profile",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Garrett Rathbone",
+                    "email": "garrett.rathbone@vml.com"
+                }
+            ],
+            "description": "An opinionated Drupal profile with helpful components to take care of repeated tasks for new websites.",
+            "homepage": "https://github.com/VML/Drupal-Profile-Blackbird",
+            "support": {
+                "issues": "https://github.com/VMLYR/Drupal-Profile-Blackbird/issues",
+                "source": "https://github.com/VMLYR/Drupal-Profile-Blackbird/tree/10.0.0"
+            },
+            "time": "2023-03-16T03:55:26+00:00"
         },
         {
             "name": "webflo/drupal-finder",

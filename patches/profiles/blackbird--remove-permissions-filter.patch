@@ -1,0 +1,39 @@
+diff --git a/blackbird.info.yml b/blackbird.info.yml
+index 9a15df6..3c7f777 100644
+--- a/blackbird.info.yml
++++ b/blackbird.info.yml
+@@ -61,7 +61,7 @@ dependencies:
+   - mailsystem
+   - media
+   - media_library
+-  - media_responsive_thumbnail  
++  - media_responsive_thumbnail
+   - menu_link_attributes
+   - menu_link_content
+   - menu_ui
+@@ -69,7 +69,7 @@ dependencies:
+   - metatag_facebook
+   - metatag_favicons
+   - metatag_hreflang
+-  - metatag_mobile  
++  - metatag_mobile
+   - metatag_open_graph
+   - metatag_twitter_cards
+   - metatag_verification
+@@ -80,7 +80,6 @@ dependencies:
+   - pathauto
+   - paragraphs
+   - paragraphs_component_field
+-  - permissions_filter
+   - rdf
+   - redirect
+   - redirect_404
+@@ -98,7 +97,7 @@ dependencies:
+   - toolbar
+   - user
+   - video_embed_field
+-  - video_embed_media  
++  - video_embed_media
+   - views
+   - viewsreference
+ themes:
