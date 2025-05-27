@@ -1,0 +1,18 @@
+uuid: 6e12b2f0-89f2-46e2-89dc-5b271b6d04c5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: q_V88QE8sV6zXXaackr_FjvLh6fdBylrW-m6IITDrm8
+name: tiny
+label: 'Tiny - scaled (180x180)'
+effects:
+  6255508a-c45d-4986-bd45-b76a8f546d6d:
+    uuid: 6255508a-c45d-4986-bd45-b76a8f546d6d
+    id: image_scale
+    weight: 1
+    data:
+      width: 180
+      height: 180
+      upscale: false
+pipeline: smushit

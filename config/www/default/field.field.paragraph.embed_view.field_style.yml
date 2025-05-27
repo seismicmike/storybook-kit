@@ -1,0 +1,29 @@
+uuid: 869d612a-2b4a-4312-868d-5da95e7c740b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.embed_view
+_core:
+  default_config_hash: JNm5WgG5D-SYr8C_vrlkXqcBwtloW1r82ENtEZ1jpv0
+id: paragraph.embed_view.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: embed_view
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: embed_view__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

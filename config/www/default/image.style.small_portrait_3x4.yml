@@ -1,0 +1,20 @@
+uuid: 775c436b-d7f8-44ab-b292-4670070a9975
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: ZIRBUqAzNDbDhOn4lDwOYwnH45ZNPZ7JjX-WZwhVWMs
+name: small_portrait_3x4
+label: 'Small - portrait 3:4 (360x480)'
+effects:
+  17157249-d11a-49e8-8b6e-893ace0459f8:
+    uuid: 17157249-d11a-49e8-8b6e-893ace0459f8
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 480
+      crop_type: focal_point
+pipeline: smushit

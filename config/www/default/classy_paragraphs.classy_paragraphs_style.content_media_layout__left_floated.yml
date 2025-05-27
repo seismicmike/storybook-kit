@@ -1,0 +1,9 @@
+uuid: 7bda3ae5-243f-4717-b61d-3f678a63bbe8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: _-GC5WHfsNQgry5aJA7XjAqcZWGxgBvlJ4mymC68r50
+id: content_media_layout__left_floated
+label: 'Floated left'
+classes: component-content--media-layout-left-floated

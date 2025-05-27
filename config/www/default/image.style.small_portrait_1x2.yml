@@ -1,0 +1,20 @@
+uuid: 1df99e2b-a9f8-4f5c-9e5e-bce1cf36d52b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: pQyF3bg4sWwK9iaLhJO4DX1ICJ8RsriGdRvE0B00Jio
+name: small_portrait_1x2
+label: 'Small - portrait 1:2 (360x640)'
+effects:
+  1c774fba-2c1a-436b-a2ba-be4ae3c53552:
+    uuid: 1c774fba-2c1a-436b-a2ba-be4ae3c53552
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 640
+      crop_type: focal_point
+pipeline: smushit

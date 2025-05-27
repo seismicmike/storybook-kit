@@ -1,0 +1,9 @@
+uuid: 1e5a12a7-c8c9-4e4f-8b41-2ce099c5400b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IAYsmM_qPbaSPg5f887i8tF8nKsUkFiKmCvNj67bjag
+id: featured_links__example
+label: Example
+classes: component-list-links--example

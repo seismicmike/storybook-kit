@@ -1,0 +1,79 @@
+uuid: a33e5ebc-1706-4296-89a0-4b3cc720a81a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_class_custom
+    - field.field.paragraph.hero.field_components
+    - field.field.paragraph.hero.field_html_anchor
+    - field.field.paragraph.hero.field_style
+    - paragraphs.paragraphs_type.hero
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
+_core:
+  default_config_hash: tVa0r5kJOK0Znbe0eYYKbclZpngUGztdndjUcbXJG0Y
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_class_custom:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_components:
+    weight: 1
+    settings:
+      title: Slide
+      title_plural: Slides
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: all
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: hero_slide
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+      closed_mode_threshold: 0
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_html_anchor:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: 'Example: find-out-more'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_style:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

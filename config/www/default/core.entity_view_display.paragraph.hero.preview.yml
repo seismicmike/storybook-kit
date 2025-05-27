@@ -1,0 +1,80 @@
+uuid: 4b90b041-ed87-4422-9ed8-972b6fba0c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.hero.field_class_custom
+    - field.field.paragraph.hero.field_components
+    - field.field.paragraph.hero.field_html_anchor
+    - field.field.paragraph.hero.field_style
+    - paragraphs.paragraphs_type.hero
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_component:
+      children:
+        - field_components
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Component
+    group_settings:
+      children:
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Settings
+_core:
+  default_config_hash: tXWEcJz5JGsoVK4JIClrEgVG3utJfcfVF16hhpaY11M
+id: paragraph.hero.preview
+targetEntityType: paragraph
+bundle: hero
+mode: preview
+content:
+  field_class_custom:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_components:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: paragraph_summary
+    region: content
+  field_html_anchor:
+    type: string
+    weight: 5
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_style:
+    weight: 3
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

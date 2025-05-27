@@ -1,0 +1,13 @@
+uuid: e1ea92ca-5d0d-4869-a1c7-2176dde56888
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q6Xs8oOH2TX-AQy--J3b_s3FempzxtrMtpn-qPxj-G0
+machine: remote_stage
+description: null
+name: Stage
+weight: null
+url: 'https://none.docksal'
+fg_color: '#e6e6e6'
+bg_color: '#008040'

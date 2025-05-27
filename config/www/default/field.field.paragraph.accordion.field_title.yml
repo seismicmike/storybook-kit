@@ -1,0 +1,21 @@
+uuid: fb7d6402-c074-45fe-a44f-7ae924bb579f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.accordion
+_core:
+  default_config_hash: n3ejd-3mu-0fdSyJchSNAyJCRtNJ6vjjfH_7D0qxwdk
+id: paragraph.accordion.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: accordion
+label: Label
+description: 'This will not be shown. It will be used to explain the accordions to screen-readers.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -24,14 +24,6 @@ if (PHP_SAPI !== 'cli') {
   }
 }
 
-// Setup redis support.
-if (\Drupal::hasService('cache.backend.redis')) {
-  $settings['redis.connection']['host'] = 'redis';
-  $settings['redis.connection']['port'] = NULL;
-  $settings['cache']['default'] = 'cache.backend.redis';
-  $settings['redis.connection']['base'] = 8;
-}
-
 /**
  * Docksal Database configuration.
  */

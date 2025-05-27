@@ -1,0 +1,25 @@
+uuid: dbb56f65-ed1f-43ec-989c-53eb3d86a6dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enabled
+    - paragraphs.paragraphs_type.accordion_item
+_core:
+  default_config_hash: ItCVJVC-d1zEfEBjDQ5YwGZ-agmkh2w5f_tT4GhoGv4
+id: paragraph.accordion_item.field_enabled
+field_name: field_enabled
+entity_type: paragraph
+bundle: accordion_item
+label: 'Open by default'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Open
+  off_label: Closed
+field_type: boolean

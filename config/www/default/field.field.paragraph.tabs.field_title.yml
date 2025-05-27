@@ -1,0 +1,21 @@
+uuid: 2bf72ebc-839f-431b-a5d2-a21676616184
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.tabs
+_core:
+  default_config_hash: Hbfd3lpNep7x6-wewF0z2Cbrg81s3iJV0Wq_CFj0kqY
+id: paragraph.tabs.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: tabs
+label: Label
+description: 'This will not be shown. It will be used to explain the tabs to screen-readers.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

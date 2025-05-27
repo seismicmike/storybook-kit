@@ -1,0 +1,53 @@
+uuid: cebc8f62-752e-482c-9817-84c9d409c9e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embed_view.field_class_custom
+    - field.field.paragraph.embed_view.field_embed_view
+    - field.field.paragraph.embed_view.field_html_anchor
+    - field.field.paragraph.embed_view.field_style
+    - paragraphs.paragraphs_type.embed_view
+  module:
+    - viewsreference
+_core:
+  default_config_hash: d0RZ_RCe4fiYKzJB-ZJ58agbAJMZKL9S2vd9ThYh_3Y
+id: paragraph.embed_view.default
+targetEntityType: paragraph
+bundle: embed_view
+mode: default
+content:
+  field_class_custom:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_embed_view:
+    weight: 3
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+  field_html_anchor:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_style:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

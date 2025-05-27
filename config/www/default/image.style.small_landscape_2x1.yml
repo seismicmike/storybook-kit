@@ -1,0 +1,20 @@
+uuid: 7ba9477a-b687-4a2c-94ed-0d76963d326b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: WmCl4LErLS5UAf8usHkQeNGKwnTGADtJgTC9NWhm7e4
+name: small_landscape_2x1
+label: 'Small - landscape 2:1 (360x180)'
+effects:
+  896038f4-1c23-4d35-a934-fdb177fed191:
+    uuid: 896038f4-1c23-4d35-a934-fdb177fed191
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 180
+      crop_type: focal_point
+pipeline: smushit

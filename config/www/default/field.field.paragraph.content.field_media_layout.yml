@@ -1,0 +1,29 @@
+uuid: ca77ce82-2abf-4102-ad2f-cedd1b6e5b65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_layout
+    - paragraphs.paragraphs_type.content
+_core:
+  default_config_hash: 7cgwJDbJG7nCkc3uwnbWVOakcX9-bpUVxq7Pky9QlIw
+id: paragraph.content.field_media_layout
+field_name: field_media_layout
+entity_type: paragraph
+bundle: content
+label: 'Media Layout'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: content_media_layout__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

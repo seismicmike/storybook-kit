@@ -1,0 +1,21 @@
+uuid: 59242806-5ac5-49a0-84c7-5a7ad5ce625f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class_custom
+    - paragraphs.paragraphs_type.embed_iframe
+_core:
+  default_config_hash: DDH9rth65mtWI4DiAk0sfahrtGSlazQ7mwXsItyg92g
+id: paragraph.embed_iframe.field_class_custom
+field_name: field_class_custom
+entity_type: paragraph
+bundle: embed_iframe
+label: 'Custom Classes'
+description: 'A list of space-separated HTML classes to use on the component. <strong>Allowed characters: a-z 0-9 _ -</strong>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,24 @@
+uuid: c0c577e8-d728-47c6-bcc3-fb0aa318ba37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_video_embed_field
+    - media.type.remote_video
+  module:
+    - video_embed_field
+_core:
+  default_config_hash: ruuxdnNQ8iG_T3by4-0I36t0WPVjeUaecWifeRh6tWI
+id: media.remote_video.field_media_video_embed_field
+field_name: field_media_video_embed_field
+entity_type: media
+bundle: remote_video
+label: 'Video Url'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers: {  }
+field_type: video_embed_field

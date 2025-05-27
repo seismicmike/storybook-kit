@@ -1,0 +1,29 @@
+uuid: 3f82867b-0ec1-4877-af06-23428288134a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.content
+_core:
+  default_config_hash: wytmN3GSm0yNQqlDrAqrq06j6O1hLJQDm5AakUVpBc0
+id: paragraph.content.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: content
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: content__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

@@ -1,6 +1,9 @@
 <?php
 
-use Drupal\Core\Site\Settings;
+/**
+ * @file
+ * Environment config.
+ */
 
 // Set hash_salt from file.
 $settings['hash_salt'] = file_get_contents($app_root . '/../config/salt.txt');
@@ -29,11 +32,14 @@ $config['environment_indicator.indicator']['name'] = 'Local';
 $site_environment = '';
 if (isset($_ENV['AH_SITE_ENVIRONMENT'])) {
   $site_environment = $_ENV['AH_SITE_ENVIRONMENT'];
-} elseif (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
-    $site_environment = $_ENV['PANTHEON_ENVIRONMENT'];
-} elseif (isset($_ENV['SITE_ENVIRONMENT'])) {
+}
+elseif (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $site_environment = $_ENV['PANTHEON_ENVIRONMENT'];
+}
+elseif (isset($_ENV['SITE_ENVIRONMENT'])) {
   $site_environment = $_ENV['SITE_ENVIRONMENT'];
-} elseif (isset($_SERVER['SITE_ENVIRONMENT'])) {
+}
+elseif (isset($_SERVER['SITE_ENVIRONMENT'])) {
   $site_environment = $_SERVER['SITE_ENVIRONMENT'];
 }
 

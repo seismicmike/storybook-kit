@@ -1,0 +1,21 @@
+uuid: b4c1845a-47cf-4168-a9d8-66fd0d3ff966
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_height
+    - paragraphs.paragraphs_type.embed_iframe
+_core:
+  default_config_hash: peSy1f-wPZ_V-M3h6G7C_ZmvQyy9ztdl6elohTodKJI
+id: paragraph.embed_iframe.field_style_height
+field_name: field_style_height
+entity_type: paragraph
+bundle: embed_iframe
+label: Height
+description: "The width of the iframe. Defaults to 600px if empty.\r\nSelected <em>Style</em> can potentially override this value."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

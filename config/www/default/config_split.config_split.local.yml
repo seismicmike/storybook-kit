@@ -1,0 +1,21 @@
+uuid: ede82897-f3ec-4fde-8f4a-845446ac5505
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fVC6Jg79_YD_O-UrT1B0QWRoz3UGkOWQMfeEFpKCN_g
+id: local
+label: Local
+description: ''
+weight: -5
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/www/local
+module:
+  dblog: 0
+  devel: 0
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

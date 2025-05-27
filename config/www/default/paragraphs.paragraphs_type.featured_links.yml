@@ -1,0 +1,12 @@
+uuid: ccf2d876-d264-44b4-8468-e81b24ef7274
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: n-Wu_7dywqJcQlbi4uQ-GLtlMov-u7lXe9NubSA4jZQ
+id: featured_links
+label: 'Featured: Links'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

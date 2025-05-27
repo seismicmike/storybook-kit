@@ -1,0 +1,21 @@
+uuid: 1bd8cfd3-d23e-47fe-ab8d-4d5c3d74b1f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_html_anchor
+    - paragraphs.paragraphs_type.embed_iframe
+_core:
+  default_config_hash: PdEPyzdCkDnmu1EQ9kg3XtPPn5hlIrcVne4JDn1G3iw
+id: paragraph.embed_iframe.field_html_anchor
+field_name: field_html_anchor
+entity_type: paragraph
+bundle: embed_iframe
+label: Anchor
+description: '<strong>Allowed characters: a-z 0-9 -</strong>. All disallowed characters will be converted to hyphens.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

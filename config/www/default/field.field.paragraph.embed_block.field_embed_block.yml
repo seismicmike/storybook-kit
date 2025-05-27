@@ -1,0 +1,25 @@
+uuid: 7651fa98-6a79-4379-8b12-994436c3eb3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embed_block
+    - paragraphs.paragraphs_type.embed_block
+  module:
+    - block_field
+_core:
+  default_config_hash: n3vD8OG_ZuRGhsouzRFc2ebhCG5n7Nm5FlVeI0E3uV8
+id: paragraph.embed_block.field_embed_block
+field_name: field_embed_block
+entity_type: paragraph
+bundle: embed_block
+label: Block
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings: {  }
+field_type: block_field

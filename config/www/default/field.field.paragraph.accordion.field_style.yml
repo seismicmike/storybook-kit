@@ -1,0 +1,29 @@
+uuid: a78ee24c-d2c5-4b76-8ede-67dd12edc121
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.accordion
+_core:
+  default_config_hash: E1M-QmS--r0DYPZLX53BvlAr-SY3mtadzVOc_UFknoU
+id: paragraph.accordion.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: accordion
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: accordion__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

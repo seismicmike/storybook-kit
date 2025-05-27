@@ -1,0 +1,20 @@
+uuid: 6adf2881-6067-4c19-bab8-0b12e9a39067
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: FN6maPoCxTjC0c8kjhiBFo-J1MoAdi0UFYyRPrKFjYI
+name: medium_portrait_2x3
+label: 'Medium - portrait 2:3 (720x1080)'
+effects:
+  5b44f617-2dfa-4c74-af24-ee824ee3223a:
+    uuid: 5b44f617-2dfa-4c74-af24-ee824ee3223a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 1080
+      crop_type: focal_point
+pipeline: smushit

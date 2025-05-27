@@ -1,0 +1,20 @@
+uuid: 2b569299-5371-49ac-80ef-29ff7e851aba
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: J6JlCVS2ZITBqygy0miaD-0q82RJYlgsyzQ9QXPRjgk
+name: medium_portrait_4x5
+label: 'Medium - portrait 4:5 (720x900)'
+effects:
+  38a24bb3-42fd-499c-a43e-421332e24d91:
+    uuid: 38a24bb3-42fd-499c-a43e-421332e24d91
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 900
+      crop_type: focal_point
+pipeline: smushit

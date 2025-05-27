@@ -1,0 +1,8 @@
+name: Storybook Theme (Bazo based)
+description: A theme built with Storybook/Single Directory Components using VMLY&R's Bazo as a base theme.
+type: theme
+base theme: bazo
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - sdc

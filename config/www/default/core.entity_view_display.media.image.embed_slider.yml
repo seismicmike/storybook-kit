@@ -1,0 +1,78 @@
+uuid: be030f84-77eb-4c80-a989-2d1566a2d0ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embed_slider
+    - field.field.media.image.field_media_image
+    - image.style.medium
+    - media.type.image
+  module:
+    - blazy
+_core:
+  default_config_hash: PEgvXOl_OE36W9bwtbJdPCluQ7_Jb3CUQ9g9rkDJ8pM
+id: media.image.embed_slider
+targetEntityType: media
+bundle: image
+mode: embed_slider
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: medium
+      thumbnail_style: ''
+      responsive_image_style: ''
+      media_switch: ''
+      ratio: ''
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        sm:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        md:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        lg:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        xl:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+      current_view_mode: embed_slider
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      iframe_lazy: true
+      icon: ''
+      layout: ''
+      view_mode: ''
+      cache: 0
+      optionset: default
+      skin: ''
+      style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_style: ''
+      box_media_style: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+    third_party_settings: {  }
+    type: blazy
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

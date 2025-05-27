@@ -1,0 +1,20 @@
+uuid: e8a1710d-3557-47be-8d5f-1c444fae0f06
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: KdHc97uv-35LJanZi2G6_repWcRHn71xKQJVHpeyDUU
+name: 'Landing Page'
+type: landing_page
+description: 'A <em>Landing Page</em> is a central place for all content around one topic to live. Landing Pages have suite of components available to help build complex pages.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

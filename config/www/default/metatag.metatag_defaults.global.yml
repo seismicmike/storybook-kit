@@ -1,0 +1,46 @@
+uuid: 73b48399-c3e1-42de-a2e0-f57aeae6df7d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UB_e8UMz_cVG8MjQu1dbdAO9Opc06RofQAbAbevVcL0
+id: global
+label: Global
+tags:
+  title: '[current-page:title] | [site:name]'
+  canonical_url: '[current-page:url]'
+  apple_touch_icon: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-60x60.png'
+  apple_touch_icon_76x76: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-76x76.png'
+  apple_touch_icon_precomposed_180x180: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-180x180-precomposed.png'
+  apple_touch_icon_precomposed_72x72: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-72x72-precomposed.png'
+  icon_192x192: '[theme-filter:path-to-theme]/favicons/icon-192x192.png'
+  apple_touch_icon_precomposed_152x152: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-152x152-precomposed.png'
+  apple_touch_icon_120x120: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-120x120.png'
+  shortcut_icon: '[theme-filter:path-to-theme]/favicons/favicon.ico'
+  icon_96x96: '[theme-filter:path-to-theme]/favicons/icon-96x96.png'
+  apple_touch_icon_precomposed_76x76: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-76x76-precomposed.png'
+  apple_touch_icon_152x152: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-152x152.png'
+  apple_touch_icon_precomposed_120x120: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-120x120-precomposed.png'
+  mask-icon: '[theme-filter:path-to-theme]/favicons/icon.svg'
+  apple_touch_icon_72x72: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-72x72.png'
+  apple_touch_icon_180x180: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-180x180.png'
+  icon_32x32: '[theme-filter:path-to-theme]/favicons/icon-32x32.png'
+  apple_touch_icon_precomposed_144x144: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-144x144-precomposed.png'
+  apple_touch_icon_114x114: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-114x114.png'
+  icon_16x16: '[theme-filter:path-to-theme]/favicons/icon-16x16.png'
+  apple_touch_icon_precomposed: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-57x57-precomposed.png'
+  apple_touch_icon_precomposed_114x114: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-114x114-precomposed.png'
+  apple_touch_icon_144x144: '[theme-filter:path-to-theme]/favicons/apple-touch-icon-144x144.png'
+  msapplication_wide310x150logo: '[theme-filter:path-to-theme]/favicons/mstile-310x150.png'
+  msapplication_square310x310logo: '[theme-filter:path-to-theme]/favicons/mstile-310x310.png'
+  msapplication_config: '[theme-filter:path-to-theme]/favicons/browserconfig.xml'
+  android_manifest: '[theme-filter:path-to-theme]/favicons/manifest.json'
+  msapplication_square70x70logo: '[theme-filter:path-to-theme]/favicons/mstile-70x70.png'
+  msapplication_tilecolor: '#d71d24'
+  msapplication_square150x150logo: '[theme-filter:path-to-theme]/favicons/mstile-150x150.png'
+  og_url: '[current-page:url]'
+  og_site_name: '[site:name]'
+  og_title: '[node:title] | [site:name]'
+  twitter_cards_page_url: '[current-page:url]'
+  twitter_cards_type: summary
+  twitter_cards_title: '[node:title]'

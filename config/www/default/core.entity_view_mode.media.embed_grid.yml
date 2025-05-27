@@ -1,0 +1,13 @@
+uuid: ad626a4a-e2a4-4904-96de-bcb7982f530e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: QxZFxHfIBCE2bgH95MQp6DTRuj5H_bH72dH-8oEbwZQ
+id: media.embed_grid
+label: 'Embed Grid'
+description: ''
+targetEntityType: media
+cache: true

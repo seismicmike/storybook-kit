@@ -1,14 +1,14 @@
 name: Drupal-Kit
 recipe: drupal10
 excludes:
-  - drush
-  - node_modules
-  - themesrc/node_modules
-  - docroot/core
-  - docroot/vendor
-  - docroot/modules/contrib
+  # - drush
+  # - node_modules
+  # - themesrc/node_modules
+  # - docroot/core
+  # - docroot/vendor
+  # - docroot/modules/contrib
 config:
-  php: '8.1'
+  php: "8.1"
   webroot: docroot
   composer_version: 2
 services:
@@ -36,16 +36,13 @@ services:
     type: node
     build:
       - npm install
-      - npm install -G gulp
-      - cd /app/source && npm install
-      - cd /app/source && npm run gulp
+      # - npm install -G gulp
+      # - cd /app/source && npm install
+      # - cd /app/source && npm run gulp
 tooling:
   node:
     service: node
   npm:
-    service: node
-    dir: /app/source
-  gulp:
     service: node
     dir: /app/source
   xdebug-on:
@@ -58,35 +55,35 @@ tooling:
     description: Disable xdebug for Apache.
     cmd: rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload && echo "Disabling xdebug"
     user: root
-  kit/check-url:
-    service: appserver
-    description: Check response status on a list of URLs
-    cmd: drush kit:check-url
-  kit/conf:
-    service: appserver
-    description: Import/exprot environment specific configuration for a site
-    cmd: drush kit:conf
-  kit/gulp:
-    service: node
-    description: Run gulp tasks in the theme source directory.
-    dir: /app/source
-    cmd: npm run gulp
-  kit/init:
-    cmd:
-      - appserver: composer install
-      - node: npm install
-      - node: npm install -G gulp
-      - node: cd /app/source && npm install
-      - node: cd /app/source && npm run gulp
-  kit/sync:
-    service: appserver
-    description: Sync the local environemnt with most recent code, database and configuration.
-    cmd: drush kit:sync
-  kit/theme:
-    description: Create a new theme
-    cmd:
-      - appserver: drush kit:theme
-      - node: cd /app/source && npm install && npm run gulp
+  # kit/check-url:
+  #   service: appserver
+  #   description: Check response status on a list of URLs
+  #   cmd: drush kit:check-url
+  # kit/conf:
+  #   service: appserver
+  #   description: Import/exprot environment specific configuration for a site
+  #   cmd: drush kit:conf
+  # kit/gulp:
+  #   service: node
+  #   description: Run gulp tasks in the theme source directory.
+  #   dir: /app/source
+  #   cmd: npm run gulp
+  # kit/init:
+  #   cmd:
+  #     - appserver: composer install
+  #     - node: npm install
+  #     - node: npm install -G gulp
+  #     - node: cd /app/source && npm install
+  #     - node: cd /app/source && npm run gulp
+  # kit/sync:
+  #   service: appserver
+  #   description: Sync the local environemnt with most recent code, database and configuration.
+  #   cmd: drush kit:sync
+  # kit/theme:
+  #   description: Create a new theme
+  #   cmd:
+  #     - appserver: drush kit:theme
+  #     - node: cd /app/source && npm install && npm run gulp
   grumphp:
     service: appserver
     cmd: php /app/vendor/bin/grumphp run

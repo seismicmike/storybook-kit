@@ -1,0 +1,31 @@
+uuid: 7168d8a0-064d-44a3-8ab2-391416b16c1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.embed_block.field_class_custom
+    - field.field.paragraph.embed_block.field_embed_block
+    - field.field.paragraph.embed_block.field_html_anchor
+    - field.field.paragraph.embed_block.field_style
+    - paragraphs.paragraphs_type.embed_block
+  module:
+    - block_field
+_core:
+  default_config_hash: qIy5lbJt2Qlh2czDczHdQFX1Mzl6y_C4_WDc_3DQjNU
+id: paragraph.embed_block.full
+targetEntityType: paragraph
+bundle: embed_block
+mode: full
+content:
+  field_embed_block:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_style: true

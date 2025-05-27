@@ -1,0 +1,20 @@
+uuid: 8b25e186-6db6-4f05-b14c-cbc68eacb7d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: _OWJrzD8Dn0PB_igCfode0PeCnGEpgmx6xPFXhCstww
+name: large_landscape_2x1
+label: 'Large - landscape 2:1 (1080x540)'
+effects:
+  542f0469-0b3f-46d8-ad4e-2fd023691320:
+    uuid: 542f0469-0b3f-46d8-ad4e-2fd023691320
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 540
+      crop_type: focal_point
+pipeline: smushit

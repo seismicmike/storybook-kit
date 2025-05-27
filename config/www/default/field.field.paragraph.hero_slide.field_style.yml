@@ -1,0 +1,29 @@
+uuid: dfe44076-62a2-4406-ad2a-f050f581bc01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.hero_slide
+_core:
+  default_config_hash: RHUSJU4oq41gvbpwkoDO-gCo98YfpaWqTDHpJKjQXN0
+id: paragraph.hero_slide.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: hero_slide
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: hero_slide__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

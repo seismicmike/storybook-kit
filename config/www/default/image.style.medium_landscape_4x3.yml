@@ -1,0 +1,20 @@
+uuid: 725daa6a-18cd-4ca6-b3a1-bca0fefff4e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: auCU7yttLvVKwko2Pxc2tqEqLzeUYCoAaKxpU01s9ro
+name: medium_landscape_4x3
+label: 'Medium - landscape 4:3 (720x540)'
+effects:
+  b50c34c6-b573-4a2e-b30f-8c136a1b40f9:
+    uuid: b50c34c6-b573-4a2e-b30f-8c136a1b40f9
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 540
+      crop_type: focal_point
+pipeline: smushit

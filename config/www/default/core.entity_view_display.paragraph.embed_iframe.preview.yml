@@ -1,0 +1,107 @@
+uuid: 13cd9d01-d08c-4a0e-8fa0-5ef886066732
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.embed_iframe.field_class_custom
+    - field.field.paragraph.embed_iframe.field_html_anchor
+    - field.field.paragraph.embed_iframe.field_link
+    - field.field.paragraph.embed_iframe.field_style
+    - field.field.paragraph.embed_iframe.field_style_height
+    - field.field.paragraph.embed_iframe.field_style_width
+    - paragraphs.paragraphs_type.embed_iframe
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+        - field_style_height
+        - field_style_width
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Settings
+      region: content
+    group_component:
+      children:
+        - field_link
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Component
+      region: content
+_core:
+  default_config_hash: fLA-h43UQzboqGSQV-BNmtrMJfe9BZJ6tqpKp2BI3Lc
+id: paragraph.embed_iframe.preview
+targetEntityType: paragraph
+bundle: embed_iframe
+mode: preview
+content:
+  field_class_custom:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_html_anchor:
+    type: string
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_link:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_style:
+    weight: 2
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_style_height:
+    type: string
+    weight: 5
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_style_width:
+    type: string
+    weight: 6
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

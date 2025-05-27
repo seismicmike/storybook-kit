@@ -1,17 +1,16 @@
 <?php
 
-/**
- * @file
- * Contains \DrupalProject\composer\KitScriptHandler.
- */
-
 namespace DrupalProject\composer;
 
+use Composer\Script\Event;
 use Drupal\Component\Utility\Crypt;
 use Drupal\Composer\Plugin\Scaffold\Handler;
 use DrupalFinder\DrupalFinder;
 use Symfony\Component\Filesystem\Filesystem;
 
+/**
+ * Kit Script Handler.
+ */
 class KitScriptHandler {
 
   /**
@@ -24,7 +23,7 @@ class KitScriptHandler {
     /** @var \Composer\Script\Event $event */
 
     // Exit early if this isn't ran as a script.
-    if (!is_a($event, \Composer\Script\Event::class)) {
+    if (!is_a($event, Event::class)) {
       return;
     }
 
@@ -36,10 +35,11 @@ class KitScriptHandler {
     $drupalFinder->locateRoot(getcwd());
     $drupalRoot = $drupalFinder->getDrupalRoot();
 
-    // Clear scripts so that we don't re-run the scaffold pre- and post-commands twice.
+    // Clear scripts so that we don't re-run the scaffold
+    // pre- and post-commands twice.
     $composer->getPackage()->setScripts([]);
 
-    // Get drush aliases
+    // Get drush aliases.
     exec('drush sa --format=json --root=' . $drupalRoot, $output);
     $drush_aliases = (is_array($output)) ? json_decode(implode('', $output), TRUE) : [];
     $drush_aliases = (is_array($drush_aliases)) ? array_diff_key($drush_aliases, ['self' => [], 'none' => []]) : [];
@@ -53,12 +53,11 @@ class KitScriptHandler {
 
     // Get extra config to modify it.
     $extra = $event->getComposer()->getPackage()->getExtra();
-    $web_root = isset($extra['drupal-scaffold']['locations']['web-root']) ? $extra['drupal-scaffold']['locations']['web-root']: '';
-    $config_root = isset($extra['drupal-scaffold']['locations']['config-root']) ? $extra['drupal-scaffold']['locations']['config-root'] : 'config/';
+    $web_root = $extra['drupal-scaffold']['locations']['web-root'] ?? '';
+    $config_root = $extra['drupal-scaffold']['locations']['config-root'] ?? 'config/';
 
     // Reset file mapping.
     $extra['drupal-scaffold']['file-mapping'] = [];
-
 
     // Removing core from packages and resetting allowed-packages to nothing so
     // that way no packages are ran other than our current scaffold script.
@@ -121,13 +120,13 @@ class KitScriptHandler {
    *
    * @param \Composer\Script\Event $event
    *   The composer event.
-   * @param $message
+   * @param string $message
    *   The message to print.
-   * @param $status
+   * @param string $status
    *   The message status.
    */
   protected static function write(Event $event, $message, $status = NULL) {
-    switch($status) {
+    switch ($status) {
       case 'success':
         $message = "\033[0;32m{$message}\e[0m";
         break;
@@ -153,9 +152,9 @@ class KitScriptHandler {
    *
    * @param \Composer\Script\Event $event
    *   The composer event.
-   * @param $message
+   * @param string $message
    *   The message to print.
-   * @param $status
+   * @param string $status
    *   The message status.
    */
   protected static function writeSub(Event $event, $message, $status = NULL) {

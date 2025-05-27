@@ -1,0 +1,42 @@
+uuid: 1a8aa612-7743-4690-9906-a7ea2026b905
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.tabs.field_class_custom
+    - field.field.paragraph.tabs.field_components
+    - field.field.paragraph.tabs.field_html_anchor
+    - field.field.paragraph.tabs.field_style
+    - field.field.paragraph.tabs.field_title
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: bHQauBjj13NiHFWl46Ms1HgyO7bnrbNG4E5L_zGYrnA
+id: paragraph.tabs.full
+targetEntityType: paragraph
+bundle: tabs
+mode: full
+content:
+  field_components:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_style: true

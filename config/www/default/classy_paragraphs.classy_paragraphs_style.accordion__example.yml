@@ -1,0 +1,9 @@
+uuid: ef156a4c-493c-4d51-8eaa-16b95c1989ae
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: J68FSfYT0WmfbHGry0pYzcWegmw1-6Si_53vJ5wqLOo
+id: accordion__example
+label: Example
+classes: component-accordion--example

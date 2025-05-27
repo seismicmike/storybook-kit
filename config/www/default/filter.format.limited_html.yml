@@ -1,0 +1,28 @@
+uuid: a790e05c-be18-46c5-a372-9bdad66c07eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - linkit
+_core:
+  default_config_hash: _4ikD80sOiqK9B1m3iWZGCxvI1W__vyeqeSRLIbl4B8
+name: 'Limited HTML'
+format: limited_html
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <a href hreflang data-entity-substitution data-entity-type data-entity-uuid title>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true

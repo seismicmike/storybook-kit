@@ -1,0 +1,81 @@
+uuid: 722110a3-db9f-409b-9ce5-eadb7b2edc1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_components
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.hero_slide
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: gn38XS6KTX4kG4Lp62TR-tkDDPwfbDX0sfc1AHcUEeo
+id: paragraph.hero.field_components
+field_name: field_components
+entity_type: paragraph
+bundle: hero
+label: Slides
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero_slide: hero_slide
+    target_bundles_drag_drop:
+      hero_slide:
+        enabled: true
+        weight: 18
+      accordion:
+        weight: 19
+        enabled: false
+      accordion_item:
+        weight: 20
+        enabled: false
+      content:
+        weight: 21
+        enabled: false
+      embed_block:
+        weight: 22
+        enabled: false
+      embed_iframe:
+        weight: 23
+        enabled: false
+      embed_view:
+        weight: 24
+        enabled: false
+      hero:
+        weight: 25
+        enabled: false
+      media:
+        weight: 26
+        enabled: false
+      pod:
+        weight: 27
+        enabled: false
+      pod_pea_content:
+        weight: 28
+        enabled: false
+      section:
+        weight: 29
+        enabled: false
+      slider:
+        weight: 30
+        enabled: false
+      slider_slide_photo:
+        weight: 31
+        enabled: false
+      slider_slide_video:
+        weight: 32
+        enabled: false
+      tabs:
+        weight: 33
+        enabled: false
+      tabs_tab:
+        weight: 34
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,13 @@
+uuid: cd04ba2d-cdb8-4379-9f5b-b4e31588e148
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DtE7gTbVAnEdgkOSnaaVME61esohTttPfdC_46RRQh0
+machine: remote_prod
+description: null
+name: Prod
+weight: null
+url: 'https://none.docksal'
+fg_color: '#d0d0d0'
+bg_color: '#0d0d0d'

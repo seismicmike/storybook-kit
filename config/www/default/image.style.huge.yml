@@ -1,0 +1,18 @@
+uuid: 98f36dc4-bc1b-40f7-944d-a943611191b5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 7ZeXg8Sc2tZ8GPf5d-lqtJ239q0trKSFmdIHnzTF8zs
+name: huge
+label: 'Huge - scaled (1260x1260)'
+effects:
+  b7e9c2bb-9caf-4e9e-87aa-90427ea1ebb9:
+    uuid: b7e9c2bb-9caf-4e9e-87aa-90427ea1ebb9
+    id: image_scale
+    weight: 1
+    data:
+      width: 1260
+      height: 1260
+      upscale: false
+pipeline: smushit

@@ -1,0 +1,13 @@
+uuid: a788c620-7fe5-4229-be67-71488a49c9ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: y9GMAnPL7XGWIY3IrxkRQrFAZX3_bAsnXxsDkNzC73Y
+id: node.block_title
+label: 'Block Title'
+description: ''
+targetEntityType: node
+cache: true

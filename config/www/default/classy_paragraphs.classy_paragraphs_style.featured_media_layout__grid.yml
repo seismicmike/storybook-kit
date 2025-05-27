@@ -1,0 +1,9 @@
+uuid: 783217de-662f-4f9b-be83-2f01b0f3a588
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yzULbtEo5WrCDVKsMddDaECgCK0_bT0_tUsNziX_vpI
+id: featured_media_layout__grid
+label: Grid
+classes: component-featured-media--layout-grid

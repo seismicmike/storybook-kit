@@ -1,0 +1,101 @@
+uuid: aff151e4-f1ce-4a51-a551-7bf9f3893e84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_class_custom
+    - field.field.paragraph.section.field_components
+    - field.field.paragraph.section.field_html_anchor
+    - field.field.paragraph.section.field_image_background
+    - field.field.paragraph.section.field_style
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.section
+  module:
+    - field_group
+    - focal_point
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - status
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+        - field_image_background
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
+      region: content
+_core:
+  default_config_hash: _r6lF02VOJ1rP65oPsmcO-A7BnAoVCaDnDTAboLieY0
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_class_custom:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_components:
+    weight: 4
+    settings:
+      title: Component
+      title_plural: Components
+      edit_mode: closed
+      closed_mode: preview
+      autocollapse: all
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+      closed_mode_threshold: 0
+    third_party_settings: {  }
+    type: paragraphs
+    region: content
+  field_html_anchor:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: 'Example: find-out-more'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image_background:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+  field_style:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

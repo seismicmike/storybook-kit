@@ -1,0 +1,20 @@
+uuid: 38d75cf5-3add-433e-9e47-dd00bb111693
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: IY-bXW7DtmaDrQwj3DiPGmPfK0i5sNUF5hkxsXi67Bw
+id: remote_dev
+label: 'Remote - Dev'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/www/remote_dev
+module:
+  dblog: 0
+  shield: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

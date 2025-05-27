@@ -1,0 +1,8 @@
+name: Storybook Theme (Olivero based)
+description: A theme built with Storybook/Single Directory Components using Drupal Core's Olivero as a base theme.
+type: theme
+base theme: olivero
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - sdc

@@ -1,0 +1,20 @@
+uuid: f95d63b0-1a60-43d6-b71c-29027d93c2b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: iED_WQ9OFccWeUh-mKRjOD04XNjKJhDF8_qyJUf2R6U
+name: huge_1x1
+label: 'Huge - square (1260x1260)'
+effects:
+  fe6d2ee6-e4b7-4d30-8a96-de633cae7668:
+    uuid: fe6d2ee6-e4b7-4d30-8a96-de633cae7668
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1260
+      height: 1260
+      crop_type: focal_point
+pipeline: smushit

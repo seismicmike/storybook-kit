@@ -1,0 +1,102 @@
+uuid: d3a35616-c1f1-4681-9641-854acef548df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.pullquote.field_attribution
+    - field.field.paragraph.pullquote.field_class_custom
+    - field.field.paragraph.pullquote.field_content
+    - field.field.paragraph.pullquote.field_html_anchor
+    - field.field.paragraph.pullquote.field_style
+    - paragraphs.paragraphs_type.pullquote
+  module:
+    - field_group
+    - smart_trim
+third_party_settings:
+  field_group:
+    group_component:
+      children:
+        - field_content
+        - field_attribution
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Component
+    group_settings:
+      children:
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Settings
+_core:
+  default_config_hash: ZIGdtQA2s5v9L-QQ1AkomzMVM5h2PW8HzlkGWOyEcpw
+id: paragraph.pullquote.preview
+targetEntityType: paragraph
+bundle: pullquote
+mode: preview
+content:
+  field_attribution:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_class_custom:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_content:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ...
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      trim_options:
+        text: true
+        trim_zero: false
+      wrap_output: false
+      more_link: false
+      summary_handler: full
+    third_party_settings: {  }
+    type: smart_trim
+    region: content
+  field_html_anchor:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_style:
+    weight: 0
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

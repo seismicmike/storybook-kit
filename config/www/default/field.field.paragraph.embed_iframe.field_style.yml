@@ -1,0 +1,29 @@
+uuid: 44bb40a4-f3e0-4f1f-9b73-7f5e626b7860
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.embed_iframe
+_core:
+  default_config_hash: dFGPB_xmxbfeghzz-97tCyyLii7-vZJfMhNbKbp-DFM
+id: paragraph.embed_iframe.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: embed_iframe
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: embed_iframe__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

@@ -1,0 +1,74 @@
+uuid: d1b13df8-bbe0-43b0-999b-ae7ca6887b2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embed_view.field_class_custom
+    - field.field.paragraph.embed_view.field_embed_view
+    - field.field.paragraph.embed_view.field_html_anchor
+    - field.field.paragraph.embed_view.field_style
+    - paragraphs.paragraphs_type.embed_view
+  module:
+    - field_group
+    - viewsreference
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - status
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
+      region: content
+_core:
+  default_config_hash: oa5U-1xTJGP6RcqT0iVGxv6hWf28D3A28E3SyQ3YSrk
+id: paragraph.embed_view.default
+targetEntityType: paragraph
+bundle: embed_view
+mode: default
+content:
+  field_class_custom:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_embed_view:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewsreference_select
+    region: content
+  field_html_anchor:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: 'Example: find-out-more'
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_style:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

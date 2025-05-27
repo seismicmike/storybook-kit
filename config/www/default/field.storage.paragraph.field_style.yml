@@ -1,0 +1,22 @@
+uuid: 6a9ef8d8-85cb-4cf7-abba-6bfbc1a80910
+langcode: en
+status: true
+dependencies:
+  module:
+    - classy_paragraphs
+    - paragraphs
+_core:
+  default_config_hash: u1hJznBw0Sl98AbzIYtVaQv9MwbABnN3BvkfANpv540
+id: paragraph.field_style
+field_name: field_style
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: classy_paragraphs_style
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

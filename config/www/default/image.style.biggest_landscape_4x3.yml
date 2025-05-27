@@ -1,0 +1,20 @@
+uuid: f001fe38-d4d5-4d74-98a6-d17b9a24da3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: GKvkxop74tNMEZtCx73AtCBrf08hWvI5i9JHHJNkVY8
+name: biggest_landscape_4x3
+label: 'Biggest – landscape 4:3 (1620x1215)'
+effects:
+  e3a2d8f6-1d23-487d-b16c-9718706eca52:
+    uuid: e3a2d8f6-1d23-487d-b16c-9718706eca52
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1620
+      height: 1215
+      crop_type: focal_point
+pipeline: smushit

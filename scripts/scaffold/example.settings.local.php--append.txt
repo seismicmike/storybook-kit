@@ -1,13 +1,40 @@
 
-$config['system.logging']['error_level'] = 'verbose';
-$config['system.performance']['css']['preprocess'] = FALSE;
-$config['system.performance']['js']['preprocess'] = FALSE;
+$settings['cache']['bins']['static'] = 'cache.backend.null';
+$settings['cache']['bins']['bootstrap'] = 'cache.backend.null';
+$settings['cache']['bins']['config'] = 'cache.backend.null';
+$settings['cache']['bins']['default'] = 'cache.backend.null';
+$settings['cache']['bins']['entity'] = 'cache.backend.null';
+$settings['cache']['bins']['menu'] = 'cache.backend.null';
 $settings['cache']['bins']['render'] = 'cache.backend.null';
-$settings['cache']['bins']['discovery_migration'] = 'cache.backend.memory';
-# $settings['cache']['bins']['page'] = 'cache.backend.null';
-# $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
-$settings['skip_permissions_hardening'] = TRUE;
+$settings['cache']['bins']['data'] = 'cache.backend.null';
+$settings['cache']['bins']['discovery'] = 'cache.backend.null';
+$settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+$settings['cache']['bins']['jsonapi_resource_types'] = 'cache.backend.null';
+$settings['cache']['bins']['jsonapi_normalizations'] = 'cache.backend.null';
+$settings['cache']['bins']['rest'] = 'cache.backend.null';
+$settings['cache']['bins']['cache'] = 'cache.backend.null';
+$settings['cache']['bins']['toolbar'] = 'cache.backend.null';
+$settings['cache']['bins']['large_response'] = 'cache.backend.null';
+
+
+$config['system.performance']['css']['gzip'] = FALSE;
+$config['system.performance']['js']['gzip'] = FALSE;
+$config['system.performance']['cache']['page']['max_age'] = 0;
 
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);
+
+/**
+ * Docksal Database configuration.
+ */
+$databases['default']['default'] = array (
+  'database' => basename($site_path),
+  'username' => 'user',
+  'password' => 'user',
+  'prefix' => '',
+  'host' => 'database',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);

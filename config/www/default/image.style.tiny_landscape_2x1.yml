@@ -1,0 +1,20 @@
+uuid: ac0981ce-06b5-4758-9775-4f93c60bec6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: nfGyFe0rP2SLZUfFhrVjq2QEO79GUFzk9mB5AlYbv14
+name: tiny_landscape_2x1
+label: 'Tiny - landscape 2:1 (180x90)'
+effects:
+  8dfe8d57-b30b-44c6-985f-97b9ef89ec27:
+    uuid: 8dfe8d57-b30b-44c6-985f-97b9ef89ec27
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 90
+      crop_type: focal_point
+pipeline: smushit

@@ -1,0 +1,20 @@
+uuid: f3eeb40c-d6b7-41bd-929c-44d9a8189c2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: NHLNy66QU29KJtgRXOSEx42D_6VELs--8GrskmAB3II
+name: tiny_landscape_5x4
+label: 'Tiny - landscape 5:4 (180x144)'
+effects:
+  144af95b-35ac-4c57-824f-525bcf8dc40e:
+    uuid: 144af95b-35ac-4c57-824f-525bcf8dc40e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 144
+      crop_type: focal_point
+pipeline: smushit

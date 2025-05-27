@@ -1,0 +1,20 @@
+uuid: 0e837a60-ea87-4175-8273-aad267fd55d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: ZM_O_wVUTW-D_lLzi_Vb_p7D1w4gwipLatDIWFa7leo
+name: huge_portrait_1x2
+label: 'Huge - portrait 1:2 (1260x2520)'
+effects:
+  8737e1b0-5349-4221-a441-0ccfd6dc32d0:
+    uuid: 8737e1b0-5349-4221-a441-0ccfd6dc32d0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1260
+      height: 2520
+      crop_type: focal_point
+pipeline: smushit

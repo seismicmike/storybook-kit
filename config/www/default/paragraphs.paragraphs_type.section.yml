@@ -1,0 +1,12 @@
+uuid: 8f9ada1f-d39b-4b83-b90a-fc551642afa9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: fMiVAE-Z-gHoXdclkzy5lVBn2Z2uP7JG0aOHxqg4PmQ
+id: section
+label: Section
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

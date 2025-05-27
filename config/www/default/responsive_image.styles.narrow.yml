@@ -1,0 +1,26 @@
+uuid: 7ab4e3b1-5153-41c4-b23f-83af14afb6fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.huge_1x1
+    - image.style.large_1x1
+    - image.style.medium_1x1
+    - image.style.small_1x1
+_core:
+  default_config_hash: ZFBJkpk7IBn3npU5jlPEQ2Je2EGkEvuyaHJ_5U6ujWY
+id: narrow
+label: Narrow
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width: 1290px) 325px, (min-width: 851px) 25vw, (min-width: 560px) 50vw, 100vw'
+      sizes_image_styles:
+        - huge_1x1
+        - large_1x1
+        - medium_1x1
+breakpoint_group: responsive_image
+fallback_image_style: small_1x1

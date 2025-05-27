@@ -1,0 +1,95 @@
+uuid: 8de9d67e-833d-43a6-a2cd-99acb8f8b1ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.featured_links.field_class_custom
+    - field.field.paragraph.featured_links.field_html_anchor
+    - field.field.paragraph.featured_links.field_links
+    - field.field.paragraph.featured_links.field_style
+    - field.field.paragraph.featured_links.field_title
+    - paragraphs.paragraphs_type.featured_links
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_component:
+      children:
+        - field_title
+        - field_links
+      parent_name: ''
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Component
+    group_settings:
+      children:
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: false
+      label: Settings
+_core:
+  default_config_hash: eeXU1_tR5kdE609-UEO-R7ETSGBT39al37Ui2CzpTDE
+id: paragraph.featured_links.preview
+targetEntityType: paragraph
+bundle: featured_links
+mode: preview
+content:
+  field_class_custom:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_html_anchor:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_links:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: content
+  field_style:
+    weight: 0
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_title:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

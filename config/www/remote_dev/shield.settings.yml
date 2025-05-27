@@ -1,0 +1,9 @@
+user: username
+pass: password
+print: ''
+allow_cli: true
+credential_provider: shield
+credentials:
+  shield:
+    user: username
+    pass: password

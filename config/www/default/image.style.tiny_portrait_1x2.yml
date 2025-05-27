@@ -1,0 +1,20 @@
+uuid: d13dfe0b-ace6-41c5-aa7b-5f9381af8d92
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: uz8WhLl5yq_feiU6eYAm7YAhjFpx-mK4rHAtINOcCNA
+name: tiny_portrait_1x2
+label: 'Tiny - portrait 1:2 (180x360)'
+effects:
+  24285c97-42c7-45b8-ab79-ee1ae9ac288a:
+    uuid: 24285c97-42c7-45b8-ab79-ee1ae9ac288a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 360
+      crop_type: focal_point
+pipeline: smushit

@@ -1,0 +1,12 @@
+uuid: 2136c07f-318c-456f-9f7c-67fbc5c0a3e8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: v4qjR52F65sHEm5eIf9mCbHLGfadidwyiJ_eEzU8xyk
+id: featured_content
+label: 'Featured: Content'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

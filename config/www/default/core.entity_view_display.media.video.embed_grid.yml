@@ -1,0 +1,36 @@
+uuid: 6a99de8d-52da-4b25-924a-db9e6668a765
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embed_grid
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - file
+_core:
+  default_config_hash: i9bcl79GK-CVuCTrQP96PMscrTYjedYcGyAOPpBRfFc
+id: media.video.embed_grid
+targetEntityType: media
+bundle: video
+mode: embed_grid
+content:
+  field_media_video_file:
+    type: file_video
+    weight: 0
+    label: visually_hidden
+    settings:
+      muted: false
+      width: 640
+      height: 480
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

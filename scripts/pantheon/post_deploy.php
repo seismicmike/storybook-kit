@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Pantheon post-deploy script.
+ */
+
 echo "Enabling maintenance mode.\n";
 passthru('drush sset system.maintenance_mode 1 --strict=0');
 

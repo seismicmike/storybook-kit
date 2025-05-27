@@ -1,8 +1,8 @@
 parameters:
     paths:
-        - '%rootDir%/../../../web/modules/custom'
-    excludes_analyse:
-        - 'web/sites/default'
+        - '%rootDir%/../../../docroot/modules/custom'
+    excludePaths:
+        - 'docroot/sites/default'
     fileExtensions:
         - php
         - module
@@ -18,5 +18,3 @@ parameters:
         - '#Function \S*feature_\S* not found( while trying to analyse it \- autoloading is probably not configured properly)?\.#'
         - '#Function template_\S* not found while trying to analyse it \- autoloading is probably not configured properly\.#'
 
-includes:
-    - vendor/mglaman/phpstan-drupal/extension.neon

@@ -1,0 +1,26 @@
+uuid: 6277fc6f-1fb3-41a2-9436-34aa45488c7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.huge_landscape_2x1
+    - image.style.large_landscape_2x1
+    - image.style.medium_landscape_2x1
+    - image.style.small_landscape_2x1
+_core:
+  default_config_hash: '-d1sO-6egFuPPJp3QqF6i3jwDeO22WofLVW6vLhcZhE'
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - huge_landscape_2x1
+        - large_landscape_2x1
+        - medium_landscape_2x1
+breakpoint_group: denim
+fallback_image_style: small_landscape_2x1

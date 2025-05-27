@@ -1,0 +1,31 @@
+uuid: 31108b38-8198-4038-b5bd-c60ba57050d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_related_nodes
+    - node.type.page
+    - paragraphs.paragraphs_type.featured_content
+_core:
+  default_config_hash: HwENMCLHoMvJYeuWfbGP6m7Qc0VBFEWInc_xMub6A2g
+id: paragraph.featured_content.field_related_nodes
+field_name: field_related_nodes
+entity_type: paragraph
+bundle: featured_content
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
