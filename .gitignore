@@ -82,3 +82,5 @@ logs
 /source/themes/custom/biplane/
 /source/themes/custom/blackbird/
 /source/themes/custom/blackbirdtheme/
+
+/docroot/*/custom/*/components/*/*.css
