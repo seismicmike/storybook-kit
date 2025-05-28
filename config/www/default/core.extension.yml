@@ -22,6 +22,7 @@ module:
   breakpoint: 0
   ckeditor5: 0
   classy_paragraphs: 0
+  coffee: 0
   color: 0
   config: 0
   config_filter: 0
@@ -43,6 +44,7 @@ module:
   file: 0
   filter: 0
   focal_point: 0
+  gin_toolbar: 0
   google_tag: 0
   help: 0
   history: 0
@@ -103,4 +105,5 @@ module:
 theme:
   claro: 0
   olivero: 0
+  gin: 0
 profile: blackbird

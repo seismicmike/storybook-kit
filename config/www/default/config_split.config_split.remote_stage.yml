@@ -1,12 +1,12 @@
 uuid: 5ab5abd7-0792-430a-ae93-a14fda38e0bf
 langcode: en
 status: true
-dependencies: {}
+dependencies: {  }
 _core:
   default_config_hash: F9X868xWfb1WNte9m1zuH30f2lRUG7Ng58JyvW-X1kA
 id: remote_stage
-label: "Remote - Stage"
-description: ""
+label: 'Remote - Stage'
+description: ''
 weight: 0
 stackable: false
 no_patching: false
@@ -15,6 +15,6 @@ folder: ../config/www/remote_stage
 module:
   dblog: 0
   shield: 0
-theme: {}
-complete_list: {}
-partial_list: {}
+theme: {  }
+complete_list: {  }
+partial_list: {  }
