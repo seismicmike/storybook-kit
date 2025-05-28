@@ -1,0 +1,22 @@
+uuid: 4c931769-f077-4525-b9b3-0d6cb23a64f3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sb_bazo
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: sb_bazo_primary_local_tasks
+theme: sb_bazo
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

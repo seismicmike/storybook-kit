@@ -33,6 +33,7 @@
         "drupal/blazy": "^3.0",
         "drupal/block_class": "^4.0",
         "drupal/block_field": "^1.0@RC",
+        "drupal/classy": "^2.0",
         "drupal/classy_paragraphs": "^2.0",
         "drupal/coffee": "^2.0",
         "drupal/color": "^1.0",

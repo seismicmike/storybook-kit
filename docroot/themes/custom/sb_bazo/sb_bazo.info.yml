@@ -6,3 +6,10 @@ package: Custom
 core_version_requirement: ^10
 dependencies:
   - sdc
+regions:
+  header: "Header"
+  main_nav: "Navigation"
+  pre_content: "Pre-content"
+  content: Content
+  post_content: "Post-content"
+  footer: "Footer"

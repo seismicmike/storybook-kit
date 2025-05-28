@@ -82,7 +82,9 @@ module:
   redirect_404: 0
   responsive_image: 0
   robotstxt: 0
+  sdc: 0
   search: 0
+  serialization: 0
   shortcut: 0
   simple_sitemap: 0
   smart_trim: 0
@@ -106,4 +108,8 @@ theme:
   claro: 0
   olivero: 0
   gin: 0
+  stable: 0
+  classy: 0
+  bazo: 0
+  sb_bazo: 0
 profile: blackbird

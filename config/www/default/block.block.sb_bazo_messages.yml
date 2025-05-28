@@ -1,0 +1,22 @@
+uuid: 21580ea8-4142-4bf6-b302-e9a04e2468ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sb_bazo
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: sb_bazo_messages
+theme: sb_bazo
+region: pre_content
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

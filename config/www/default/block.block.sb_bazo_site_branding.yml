@@ -1,0 +1,25 @@
+uuid: 77995355-ceca-4852-9bd1-573d8c5204d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sb_bazo
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: sb_bazo_site_branding
+theme: sb_bazo
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
