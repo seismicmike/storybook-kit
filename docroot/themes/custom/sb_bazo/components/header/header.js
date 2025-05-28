@@ -9,4 +9,4 @@
       // @todo do we need any code here?
     },
   };
-})(jquery, Drupal);
+})(jQuery, Drupal);
