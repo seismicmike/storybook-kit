@@ -1,0 +1,14 @@
+{% set classes = [
+  'site-header'
+] %}
+
+{{dump(content_attributes)}}
+
+  <header{{ attributes.addClass(classes) }}>
+  <h1>AN SDC!</h1>
+    <div{{ content_attributes }}>
+      {% block region_content %}
+        <div>Region content here.</div>
+      {% endblock %}
+    </div>
+  </header>

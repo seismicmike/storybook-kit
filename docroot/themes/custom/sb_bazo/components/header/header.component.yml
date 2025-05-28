@@ -1,0 +1,12 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Site Header
+description: Site header
+props:
+  type: object
+  properties:
+    contentAttributes:
+      type: string
+slots:
+  region_content:
+    title: Region content
+    description: Content to render inside the region.
