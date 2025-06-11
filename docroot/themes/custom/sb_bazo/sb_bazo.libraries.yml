@@ -1,22 +1,8 @@
-# Serif Font
-libre-baskerville:
+# Sans Serif Font
+poppins:
   css:
     base:
-      //fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;600&display=swap:
-        { type: external }
-
-# Sans-Serif Font
-libre-franklin:
-  css:
-    base:
-      //fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500&display=swap:
-        { type: external }
-
-# Mono font
-roboto-mono:
-  css:
-    base:
-      //fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap:
+      //fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap:
         { type: external }
 
 global:
@@ -26,7 +12,3 @@ global:
     theme:
       dist/styles/base.css: {}
       dist/styles/utilities.css: {}
-  dependencies:
-    - sb_bazo/libre-baskerville
-    - sb_bazo/libre-franklin
-    - sb_bazo/libre-roboto-mono

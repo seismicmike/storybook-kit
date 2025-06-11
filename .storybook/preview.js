@@ -27,12 +27,8 @@ addons.getChannel().on("storyRendered", () => {
 });
 
 const fonts = {
-  "libre-baskerville":
-    "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;600&display=swap",
-  "libre-franklin":
-    "https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500&display=swap",
-  "roboto-mono":
-    "https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap",
+  "poppins":
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
 };
 
 for (const fontKey in fonts) {
