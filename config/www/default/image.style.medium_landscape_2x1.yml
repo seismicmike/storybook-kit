@@ -1,0 +1,18 @@
+uuid: ad7ac890-2881-4a21-83b8-d798c2eca39d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: medium_landscape_2x1
+label: 'Medium - landscape 2:1 (720x360)'
+effects:
+  9289aec9-98c3-4194-b6c4-2dbe54f039d6:
+    uuid: 9289aec9-98c3-4194-b6c4-2dbe54f039d6
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 360
+      crop_type: focal_point
+pipeline: smushit

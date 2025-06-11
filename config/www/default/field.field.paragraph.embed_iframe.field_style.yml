@@ -1,0 +1,27 @@
+uuid: 822e0671-95fb-427d-b895-2ca0cbfa1e2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.embed_iframe
+id: paragraph.embed_iframe.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: embed_iframe
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: embed_iframe__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 0c82bded-1c0e-4cc2-97fc-b7b2cb613703
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tiny_landscape_4x3
+label: 'Tiny - landscape 4:3 (180x135)'
+effects:
+  5e2019ae-542d-4b61-9869-3a0a36b21d16:
+    uuid: 5e2019ae-542d-4b61-9869-3a0a36b21d16
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 135
+      crop_type: focal_point
+pipeline: smushit

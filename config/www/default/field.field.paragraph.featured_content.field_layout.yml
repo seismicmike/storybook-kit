@@ -1,0 +1,27 @@
+uuid: c9bb83b2-a616-47af-806c-bf7a2a04e7ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_layout
+    - paragraphs.paragraphs_type.featured_content
+id: paragraph.featured_content.field_layout
+field_name: field_layout
+entity_type: paragraph
+bundle: featured_content
+label: Layout
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: featured_content_layout__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

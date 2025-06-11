@@ -1,0 +1,11 @@
+uuid: 34f3ef8d-f16e-4a47-a5cf-d815e7011f85
+langcode: en
+status: true
+dependencies: {  }
+machine: local
+description: null
+name: Local
+weight: null
+url: 'https://my-first-drupal10-app.lndo.site/'
+fg_color: '#e6e6e6'
+bg_color: '#0080ff'

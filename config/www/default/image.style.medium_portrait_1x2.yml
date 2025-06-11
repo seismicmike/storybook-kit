@@ -1,0 +1,18 @@
+uuid: 72f85a7b-e6b9-44bf-9331-e49bebeff870
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: medium_portrait_1x2
+label: 'Medium - portrait 1:2 (720x1440)'
+effects:
+  6695210e-b395-4cb0-b94b-b3a3a80d2649:
+    uuid: 6695210e-b395-4cb0-b94b-b3a3a80d2649
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 1440
+      crop_type: focal_point
+pipeline: smushit

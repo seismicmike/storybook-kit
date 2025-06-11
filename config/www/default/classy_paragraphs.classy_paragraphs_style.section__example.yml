@@ -1,0 +1,7 @@
+uuid: 04f9d8c6-3820-4d60-b0d7-568f43526bb1
+langcode: en
+status: true
+dependencies: {  }
+id: section__example
+label: Example
+classes: component-section--example-class

@@ -1,0 +1,18 @@
+uuid: ba1c1ed1-02d3-4e26-a55d-bc00a606e53b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: huge_portrait_4x5
+label: 'Huge - portrait 4:5 (1260x1575)'
+effects:
+  5374ffaf-e828-4cf1-9aae-8206c249ca9d:
+    uuid: 5374ffaf-e828-4cf1-9aae-8206c249ca9d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1260
+      height: 1575
+      crop_type: focal_point
+pipeline: smushit

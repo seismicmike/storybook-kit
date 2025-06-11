@@ -1,0 +1,79 @@
+uuid: f8a9af61-b359-48a5-bd3e-2806bffcf4a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_components
+    - field.field.node.page.field_media
+    - field.field.node.page.field_meta_tags
+    - image.style.small_1x1
+    - node.type.page
+  module:
+    - blazy
+    - smart_trim
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      more_text: More
+      more_class: more-link
+      more_link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media:
+    type: blazy_media
+    label: hidden
+    settings:
+      caption:
+        title: '0'
+        alt: '0'
+      optionset: default
+      layout: ''
+      view_mode: ''
+      cache: 0
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: small_1x1
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: '0'
+      grid_medium: '0'
+      grid_small: '0'
+      style: ''
+      current_view_mode: teaser
+      grid_header: ''
+      icon: ''
+      sizes: ''
+      breakpoints: {  }
+      skin: ''
+      iframe_lazy: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_components: true
+  field_meta_tags: true
+  links: true

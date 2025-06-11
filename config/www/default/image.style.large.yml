@@ -2,23 +2,15 @@ uuid: 4c664f39-1ca2-4389-bb20-7aece85d6f5b
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: rDR2BOewa2UFH9yG4tVvrGxEVv8U7LQo-RLkJhFpERs
 name: large
-label: 'Large (480×480)'
+label: 'Large - scaled (1080x1080)'
 effects:
-  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d:
-    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1d
+  13719074-4e1f-49f6-95d6-88d1e3d1c4f0:
+    uuid: 13719074-4e1f-49f6-95d6-88d1e3d1c4f0
     id: image_scale
-    weight: 0
+    weight: 1
     data:
-      width: 480
-      height: 480
+      width: 1080
+      height: 1080
       upscale: false
-  6e8fe467-84c1-4ef0-a73b-7eccf1cc20e8:
-    uuid: 6e8fe467-84c1-4ef0-a73b-7eccf1cc20e8
-    id: image_convert
-    weight: 2
-    data:
-      extension: webp
-pipeline: __default__
+pipeline: smushit

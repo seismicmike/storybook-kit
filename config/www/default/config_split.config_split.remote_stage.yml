@@ -1,0 +1,19 @@
+uuid: ef83c926-4756-48d3-bdb9-d947de73e8f6
+langcode: en
+status: true
+dependencies: {  }
+id: remote_stage
+label: 'Remote - Stage'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/www/remote_stage
+module:
+  dblog: 0
+  shield: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

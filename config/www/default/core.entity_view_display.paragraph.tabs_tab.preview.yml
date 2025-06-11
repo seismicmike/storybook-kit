@@ -1,0 +1,24 @@
+uuid: 292f81a0-cfcb-43dc-990f-708e682d16a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.tabs_tab.field_components
+    - field.field.paragraph.tabs_tab.field_title
+    - paragraphs.paragraphs_type.tabs_tab
+id: paragraph.tabs_tab.preview
+targetEntityType: paragraph
+bundle: tabs_tab
+mode: preview
+content:
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_components: true

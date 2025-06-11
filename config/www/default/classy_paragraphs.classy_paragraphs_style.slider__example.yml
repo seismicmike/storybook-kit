@@ -1,0 +1,7 @@
+uuid: 47565e99-d323-412c-85cb-7c162019bd2c
+langcode: en
+status: true
+dependencies: {  }
+id: slider__example
+label: Example
+classes: component-slider--example-class

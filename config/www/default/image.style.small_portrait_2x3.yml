@@ -1,0 +1,18 @@
+uuid: f3284a95-5f78-4d12-8364-42886a952e8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: small_portrait_2x3
+label: 'Small - portrait 2:3 (360x540)'
+effects:
+  0145e684-75e4-4037-943a-692c8a81da50:
+    uuid: 0145e684-75e4-4037-943a-692c8a81da50
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 540
+      crop_type: focal_point
+pipeline: smushit

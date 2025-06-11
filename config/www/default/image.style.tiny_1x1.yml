@@ -1,0 +1,18 @@
+uuid: 17eb9cc9-8b17-41a6-9eb0-3b7ea5e7d882
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tiny_1x1
+label: 'Tiny - square (180x180)'
+effects:
+  9aaabc62-ab96-4d6c-a7e2-ec279b952359:
+    uuid: 9aaabc62-ab96-4d6c-a7e2-ec279b952359
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 180
+      crop_type: focal_point
+pipeline: smushit

@@ -1,0 +1,31 @@
+uuid: 98f0d458-d4b3-406d-aa5f-1c2aa6af99fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.hero.field_class_custom
+    - field.field.paragraph.hero.field_components
+    - field.field.paragraph.hero.field_html_anchor
+    - field.field.paragraph.hero.field_style
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: paragraph.hero.full
+targetEntityType: paragraph
+bundle: hero
+mode: full
+content:
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_style: true

@@ -1,0 +1,38 @@
+uuid: 4ca28468-070c-45af-9114-7db02942961a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.pullquote.field_attribution
+    - field.field.paragraph.pullquote.field_class_custom
+    - field.field.paragraph.pullquote.field_content
+    - field.field.paragraph.pullquote.field_html_anchor
+    - field.field.paragraph.pullquote.field_style
+    - paragraphs.paragraphs_type.pullquote
+  module:
+    - text
+id: paragraph.pullquote.full
+targetEntityType: paragraph
+bundle: pullquote
+mode: full
+content:
+  field_attribution:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_style: true

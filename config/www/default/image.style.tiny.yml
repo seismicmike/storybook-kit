@@ -1,0 +1,16 @@
+uuid: 02cbb6dd-8e80-427b-a544-cd86e3e5178b
+langcode: en
+status: true
+dependencies: {  }
+name: tiny
+label: 'Tiny - scaled (180x180)'
+effects:
+  6255508a-c45d-4986-bd45-b76a8f546d6d:
+    uuid: 6255508a-c45d-4986-bd45-b76a8f546d6d
+    id: image_scale
+    weight: 1
+    data:
+      width: 180
+      height: 180
+      upscale: false
+pipeline: smushit

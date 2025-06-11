@@ -1,0 +1,10 @@
+uuid: 74fbc679-74ec-463f-9df1-a3f743817ee1
+langcode: en
+status: true
+dependencies: {  }
+id: embed_iframe
+label: 'Embed: Iframe'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,20 @@
+uuid: ac9b3485-e015-469e-8ad3-bf8c8cc416c6
+langcode: en
+status: true
+dependencies: {  }
+id: local
+label: Local
+description: ''
+weight: -5
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/www/local
+module:
+  dblog: 0
+  devel: 0
+  stage_file_proxy: 0
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

@@ -1,0 +1,72 @@
+uuid: ea8c9843-6449-46f1-8f3e-90fc3fcd1407
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embed_iframe.field_class_custom
+    - field.field.paragraph.embed_iframe.field_html_anchor
+    - field.field.paragraph.embed_iframe.field_link
+    - field.field.paragraph.embed_iframe.field_style
+    - field.field.paragraph.embed_iframe.field_style_height
+    - field.field.paragraph.embed_iframe.field_style_width
+    - paragraphs.paragraphs_type.embed_iframe
+  module:
+    - link
+id: paragraph.embed_iframe.default
+targetEntityType: paragraph
+bundle: embed_iframe
+mode: default
+content:
+  field_class_custom:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_html_anchor:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_style:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_style_height:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_style_width:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

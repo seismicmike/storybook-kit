@@ -4,8 +4,6 @@ status: true
 dependencies:
   module:
     - user
-_core:
-  default_config_hash: FFLg74mnzRE10lgg5fspPCZWLnIEcvCnJMlNzj8OEtw
 id: user_admin_people
 label: People
 module: user
@@ -16,7 +14,7 @@ base_field: uid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
@@ -522,7 +520,6 @@ display:
           order: DESC
           expose:
             label: ''
-            field_identifier: created
           exposed: false
           granularity: second
       filters:
@@ -544,8 +541,6 @@ display:
             description: ''
             use_operator: false
             operator: combine_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: user
             required: false
             remember: false
@@ -589,8 +584,6 @@ display:
             description: ''
             use_operator: false
             operator: status_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: status
             required: false
             remember: false
@@ -637,8 +630,6 @@ display:
             description: ''
             use_operator: false
             operator: roles_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: role
             required: false
             remember: false
@@ -679,8 +670,6 @@ display:
             description: ''
             use_operator: false
             operator: permission_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: permission
             required: false
             remember: false
@@ -723,8 +712,6 @@ display:
             description: ''
             use_operator: false
             operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -765,8 +752,6 @@ display:
             description: ''
             use_operator: false
             operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: ''
             required: false
             remember: false

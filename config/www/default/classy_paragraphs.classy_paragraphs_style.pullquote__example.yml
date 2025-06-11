@@ -1,0 +1,7 @@
+uuid: be05b227-736a-4d9b-8f08-833ec88fc98a
+langcode: en
+status: true
+dependencies: {  }
+id: pullquote__example
+label: Example
+classes: component-pullquote--example

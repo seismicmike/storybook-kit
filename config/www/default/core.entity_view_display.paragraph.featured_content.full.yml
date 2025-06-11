@@ -1,0 +1,39 @@
+uuid: 33912608-f7b9-4872-b267-006bb93a52db
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.featured_content.field_class_custom
+    - field.field.paragraph.featured_content.field_html_anchor
+    - field.field.paragraph.featured_content.field_layout
+    - field.field.paragraph.featured_content.field_related_nodes
+    - field.field.paragraph.featured_content.field_style
+    - field.field.paragraph.featured_content.field_title
+    - paragraphs.paragraphs_type.featured_content
+id: paragraph.featured_content.full
+targetEntityType: paragraph
+bundle: featured_content
+mode: full
+content:
+  field_related_nodes:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_layout: true
+  field_style: true

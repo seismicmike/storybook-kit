@@ -1,0 +1,7 @@
+uuid: c9942f67-2670-4e34-8a29-9e1883d0a209
+langcode: en
+status: true
+dependencies: {  }
+id: featured_media_layout__full
+label: Full
+classes: component-featured-media--layout-full

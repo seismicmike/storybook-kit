@@ -1,0 +1,11 @@
+uuid: d69c65e4-6588-4469-a380-c1c555ef2fdd
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.embed_grid
+label: 'Embed Grid'
+description: ''
+targetEntityType: media
+cache: true

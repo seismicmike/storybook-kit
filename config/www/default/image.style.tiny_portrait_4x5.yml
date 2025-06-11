@@ -1,0 +1,18 @@
+uuid: cb8c91df-ab56-4fc0-895f-62314e08b0aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tiny_portrait_4x5
+label: 'Tiny - portrait 4:5 (180x225)'
+effects:
+  74c7f8c7-8f07-4229-9f3e-93b4d380a057:
+    uuid: 74c7f8c7-8f07-4229-9f3e-93b4d380a057
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 225
+      crop_type: focal_point
+pipeline: smushit

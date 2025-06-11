@@ -1,0 +1,34 @@
+uuid: b9df6b20-01ae-49ac-b398-b11a9ce9601f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embed_slider
+    - field.field.media.video.field_media_video_file
+    - media.type.video
+  module:
+    - file
+id: media.video.embed_slider
+targetEntityType: media
+bundle: video
+mode: embed_slider
+content:
+  field_media_video_file:
+    type: file_video
+    label: visually_hidden
+    settings:
+      controls: true
+      autoplay: false
+      loop: false
+      multiple_file_display_type: tags
+      muted: false
+      width: 640
+      height: 480
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

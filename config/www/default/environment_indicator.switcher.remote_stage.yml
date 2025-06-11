@@ -1,0 +1,11 @@
+uuid: 7b4a52b2-a42a-4521-abea-c8dc78079e1c
+langcode: en
+status: true
+dependencies: {  }
+machine: remote_stage
+description: null
+name: Stage
+weight: null
+url: 'https://my-first-drupal10-app.lndo.site/'
+fg_color: '#e6e6e6'
+bg_color: '#008040'

@@ -1,0 +1,7 @@
+uuid: b064190c-ae10-4626-9451-12c505844446
+langcode: en
+status: true
+dependencies: {  }
+id: embed_iframe__example
+label: Example
+classes: component-embed-iframe--example-class

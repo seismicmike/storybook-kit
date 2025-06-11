@@ -1,0 +1,48 @@
+uuid: ca22b446-c74c-45fb-a5da-b86ff73a3071
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_embed_view
+    - paragraphs.paragraphs_type.embed_view
+  module:
+    - viewsreference
+id: paragraph.embed_view.field_embed_view
+field_name: field_embed_view
+entity_type: paragraph
+bundle: embed_view
+label: View
+description: 'Choose a view to embed.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    default: default
+    block: block
+    page: '0'
+    feed: '0'
+  preselect_views:
+    block_content: '0'
+    content: '0'
+    content_recent: '0'
+    files: '0'
+    frontpage: '0'
+    redirect: '0'
+    redirect_404: '0'
+    taxonomy_term: '0'
+    user_admin_people: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  enabled_settings:
+    argument: argument
+    title: title
+    pager: '0'
+    limit: '0'
+    offset: '0'
+field_type: viewsreference

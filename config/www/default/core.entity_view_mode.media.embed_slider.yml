@@ -1,0 +1,11 @@
+uuid: 2416ba87-baef-4207-849d-70d2a388cf7f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.embed_slider
+label: 'Embed Slider'
+description: ''
+targetEntityType: media
+cache: true

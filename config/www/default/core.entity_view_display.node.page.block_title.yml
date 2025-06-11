@@ -1,0 +1,24 @@
+uuid: 36746b92-e59d-4f22-88d4-25047dc9c347
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.block_title
+    - field.field.node.page.body
+    - field.field.node.page.field_components
+    - field.field.node.page.field_media
+    - field.field.node.page.field_meta_tags
+    - node.type.page
+  module:
+    - user
+id: node.page.block_title
+targetEntityType: node
+bundle: page
+mode: block_title
+content: {  }
+hidden:
+  body: true
+  field_components: true
+  field_media: true
+  field_meta_tags: true
+  links: true

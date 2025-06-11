@@ -1,0 +1,7 @@
+uuid: 431312bc-e341-47b2-aeb0-4d628adfaaa2
+langcode: en
+status: true
+dependencies: {  }
+id: embed_view__example
+label: Example
+classes: component-embed-view--example-class

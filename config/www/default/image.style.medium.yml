@@ -2,23 +2,15 @@ uuid: 27af6fa6-d1a1-4c34-a4b5-4de4911c3eda
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: dlar76VBuGj5iMGTruB_uMZX8VbivXt9_QLemaG2q4E
 name: medium
-label: 'Medium (220×220)'
+label: 'Medium - scaled (720x720)'
 effects:
-  bddf0d06-42f9-4c75-a700-a33cafa25ea0:
-    uuid: bddf0d06-42f9-4c75-a700-a33cafa25ea0
+  88412e51-1261-4e26-a79c-e41689635ca0:
+    uuid: 88412e51-1261-4e26-a79c-e41689635ca0
     id: image_scale
-    weight: 0
+    weight: 1
     data:
-      width: 220
-      height: 220
+      width: 720
+      height: 720
       upscale: false
-  c410ed2f-aa30-4d9c-a224-d2865d9188cd:
-    uuid: c410ed2f-aa30-4d9c-a224-d2865d9188cd
-    id: image_convert
-    weight: 2
-    data:
-      extension: webp
-pipeline: __default__
+pipeline: smushit

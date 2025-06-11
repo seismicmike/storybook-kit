@@ -1,0 +1,61 @@
+uuid: 4ead324b-a8fd-4c12-9fcd-331654a18653
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_components
+    - paragraphs.paragraphs_type.tabs
+    - paragraphs.paragraphs_type.tabs_tab
+  module:
+    - entity_reference_revisions
+id: paragraph.tabs.field_components
+field_name: field_components
+entity_type: paragraph
+bundle: tabs
+label: Tabs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tabs_tab: tabs_tab
+    negate: 0
+    target_bundles_drag_drop:
+      content:
+        weight: 13
+        enabled: false
+      embed_block:
+        weight: 14
+        enabled: false
+      embed_iframe:
+        weight: 15
+        enabled: false
+      embed_view:
+        weight: 16
+        enabled: false
+      pod:
+        weight: 17
+        enabled: false
+      pod_pea_content:
+        weight: 18
+        enabled: false
+      slider:
+        weight: 20
+        enabled: false
+      slider_slide_photo:
+        weight: 21
+        enabled: false
+      slider_slide_video:
+        weight: 19
+        enabled: false
+      tabs:
+        weight: 22
+        enabled: false
+      tabs_tab:
+        weight: 12
+        enabled: true
+field_type: entity_reference_revisions

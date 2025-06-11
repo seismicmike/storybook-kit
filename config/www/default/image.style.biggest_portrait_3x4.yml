@@ -1,0 +1,18 @@
+uuid: 631f2d64-f742-40ba-ba2d-a6243b59ab59
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: biggest_portrait_3x4
+label: 'Biggest – portrait 3:4 (1620x2160)'
+effects:
+  a42c9217-1780-46f2-ad65-f990ca16e460:
+    uuid: a42c9217-1780-46f2-ad65-f990ca16e460
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1620
+      height: 2160
+      crop_type: focal_point
+pipeline: smushit

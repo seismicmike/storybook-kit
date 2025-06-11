@@ -1,0 +1,7 @@
+uuid: 24874bf9-fde4-4bcc-a1ca-0e5a3d15894a
+langcode: en
+status: true
+dependencies: {  }
+id: content_media_layout__left_floated
+label: 'Floated left'
+classes: component-content--media-layout-left-floated

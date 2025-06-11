@@ -1,0 +1,18 @@
+uuid: 0a4a5680-d24e-4e84-a281-608cd9ff3cd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tiny_portrait_3x4
+label: 'Tiny - portrait 3:4 (180x240)'
+effects:
+  dfb991b3-65a1-4de2-976c-41a905226598:
+    uuid: dfb991b3-65a1-4de2-976c-41a905226598
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 240
+      crop_type: focal_point
+pipeline: smushit

@@ -5,23 +5,21 @@ dependencies:
   module:
     - block_content
     - user
-_core:
-  default_config_hash: HfvTcWhiVuvxchoh4DjIkXhKkj9ow2TGgHkLHSvRLq8
 id: block_content
-label: 'Content blocks'
+label: 'Custom block library'
 module: views
-description: 'Find and manage content blocks.'
+description: 'Find and manage custom blocks.'
 tag: default
 base_table: block_content_field_data
 base_field: id
 display:
   default:
     id: default
-    display_title: Default
+    display_title: Master
     display_plugin: default
     position: 0
     display_options:
-      title: 'Content blocks'
+      title: 'Custom block library'
       fields:
         info:
           id: info
@@ -210,7 +208,7 @@ display:
             custom_date_format: ''
             timezone: ''
             tooltip:
-              date_format: long
+              date_format: ''
               custom_date_format: ''
             time_diff:
               enabled: false
@@ -292,7 +290,7 @@ display:
         type: basic
         options:
           submit_button: Apply
-          reset_button: true
+          reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -301,7 +299,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access block library'
+          perm: 'administer blocks'
       cache:
         type: tag
         options: {  }
@@ -315,7 +313,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'There are no content blocks available.'
+          content: 'There are no custom blocks available.'
           tokenize: false
         block_content_listing_empty:
           id: block_content_listing_empty
@@ -351,8 +349,6 @@ display:
             description: ''
             use_operator: false
             operator: info_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: info
             required: false
             remember: false
@@ -393,8 +389,6 @@ display:
             description: ''
             use_operator: false
             operator: type_op
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: type
             required: false
             remember: false
@@ -436,14 +430,10 @@ display:
             description: ''
             use_operator: false
             operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
-            remember_roles:
-              authenticated: authenticated
           is_grouped: false
           group_info:
             label: ''
@@ -533,14 +523,14 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: admin/content/block
+      path: admin/structure/block/block-content
       menu:
         type: tab
-        title: Blocks
-        description: 'Create and edit content blocks.'
+        title: 'Custom block library'
+        description: ''
         weight: 0
         menu_name: admin
-        parent: system.admin_content
+        parent: block.admin_display
         context: '0'
     cache_metadata:
       max-age: -1

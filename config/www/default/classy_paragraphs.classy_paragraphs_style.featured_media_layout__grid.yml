@@ -1,0 +1,7 @@
+uuid: e7990bab-847b-42b3-9654-0fc299dc39e9
+langcode: en
+status: true
+dependencies: {  }
+id: featured_media_layout__grid
+label: Grid
+classes: component-featured-media--layout-grid

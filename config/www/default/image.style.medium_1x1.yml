@@ -1,0 +1,18 @@
+uuid: 317c3906-f47f-4619-ab60-533bc6619186
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: medium_1x1
+label: 'Medium - square (720x720)'
+effects:
+  6f965a53-9d36-4e79-910f-837ffd1d9907:
+    uuid: 6f965a53-9d36-4e79-910f-837ffd1d9907
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 720
+      crop_type: focal_point
+pipeline: smushit

@@ -1,0 +1,19 @@
+uuid: 7e4e5c00-b0d8-45bc-b87b-e47162d3680a
+langcode: en
+status: true
+dependencies: {  }
+id: remote_dev
+label: 'Remote - Dev'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/www/remote_dev
+module:
+  dblog: 0
+  shield: 0
+  stage_file_proxy: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

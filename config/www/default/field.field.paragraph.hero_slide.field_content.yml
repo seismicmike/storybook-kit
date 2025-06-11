@@ -1,0 +1,22 @@
+uuid: ff25a835-a5f2-4b5d-b54f-656c9482593b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.hero_slide
+  module:
+    - text
+id: paragraph.hero_slide.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: hero_slide
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,26 @@
+uuid: ee7fcb04-d23c-4966-9bdd-d165c7ecf91c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video.field_media_video_embed_field
+    - media.type.remote_video
+  module:
+    - video_embed_field
+id: media.remote_video.default
+targetEntityType: media
+bundle: remote_video
+mode: default
+content:
+  field_media_video_embed_field:
+    type: video_embed_field_textfield
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  name: true
+  path: true
+  status: true
+  uid: true

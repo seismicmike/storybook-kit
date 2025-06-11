@@ -1,0 +1,10 @@
+uuid: b80212ca-a881-486d-ac77-aaa04f2a7482
+langcode: en
+status: true
+dependencies: {  }
+id: featured_links
+label: 'Featured: Links'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

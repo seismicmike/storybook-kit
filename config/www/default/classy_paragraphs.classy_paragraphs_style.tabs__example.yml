@@ -1,0 +1,7 @@
+uuid: 6f2836b6-176a-49c5-a152-50c532adc81d
+langcode: en
+status: true
+dependencies: {  }
+id: tabs__example
+label: Example
+classes: component-tabs--example-class

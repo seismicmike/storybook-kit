@@ -2,11 +2,24 @@ uuid: 0fbfe5ac-58c7-4984-af01-0ae22f61614b
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
 id: node
 label: Content
 tags:
   title: '[node:title] | [site:name]'
-  description: '[node:summary]'
   canonical_url: '[node:url]'
+  description: '[node:summary]'
+  image_src: '[node:field_media:entity:field_media_image:large:url]'
+  article_modified_time: '[node:changed:html_datetime]'
+  article_published_time: '[node:created:html_datetime]'
+  og_image: '[node:field_media:entity:field_media_image:large:url]'
+  og_image_url: '[node:field_media:entity:field_media_image:large:url]'
+  og_url: '[current-page:url]'
+  og_description: '[node:summary]'
+  og_site_name: '[site:name]'
+  og_title: '[node:title]'
+  twitter_cards_image: '[node:field_media:entity:field_media_image:large:url]'
+  twitter_cards_page_url: '[current-page:url]'
+  twitter_cards_description: '[node:summary]'
+  twitter_cards_image_alt: '[node:title]'
+  twitter_cards_type: summary_large_image
+  twitter_cards_title: '[node:title]'

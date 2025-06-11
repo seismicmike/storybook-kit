@@ -1,0 +1,7 @@
+uuid: d90a141d-ccec-4e99-a81a-86e718ee5556
+langcode: en
+status: true
+dependencies: {  }
+id: featured_links__example
+label: Example
+classes: component-list-links--example

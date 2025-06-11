@@ -1,0 +1,11 @@
+uuid: 6ef41330-0d08-4a58-a94c-3e45e27bbd4c
+langcode: en
+status: true
+dependencies: {  }
+machine: remote_dev
+description: null
+name: Dev
+weight: null
+url: 'https://my-first-drupal10-app.lndo.site/'
+fg_color: '#333333'
+bg_color: '#ffcc66'

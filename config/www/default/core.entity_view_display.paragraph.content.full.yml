@@ -1,0 +1,93 @@
+uuid: 93182948-f5c7-4a24-9687-7c61229f65d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.content.field_class_custom
+    - field.field.paragraph.content.field_content
+    - field.field.paragraph.content.field_html_anchor
+    - field.field.paragraph.content.field_link
+    - field.field.paragraph.content.field_media_item
+    - field.field.paragraph.content.field_media_layout
+    - field.field.paragraph.content.field_style
+    - field.field.paragraph.content.field_title
+    - image.style.small
+    - paragraphs.paragraphs_type.content
+  module:
+    - blazy
+    - linkit
+    - text
+id: paragraph.content.full
+targetEntityType: paragraph
+bundle: content
+mode: full
+content:
+  field_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: linkit
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+      linkit_profile: default
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_media_item:
+    type: blazy_media
+    label: hidden
+    settings:
+      caption:
+        title: '0'
+        alt: '0'
+      optionset: default
+      layout: ''
+      view_mode: ''
+      cache: 0
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      responsive_image_style: ''
+      box_style: ''
+      image_style: small
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: '0'
+      grid_medium: '0'
+      grid_small: '0'
+      style: ''
+      current_view_mode: full
+      grid_header: ''
+      icon: ''
+      sizes: ''
+      breakpoints: {  }
+      skin: ''
+      iframe_lazy: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_media_layout: true
+  field_style: true

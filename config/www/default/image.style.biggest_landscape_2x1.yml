@@ -1,0 +1,18 @@
+uuid: d367a39d-00ad-4d92-913e-8bdd56c1dc2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: biggest_landscape_2x1
+label: 'Biggest – landscape 2:1 (1620x810)'
+effects:
+  02bd3522-d8a2-45f3-8e82-74a5ac4647d0:
+    uuid: 02bd3522-d8a2-45f3-8e82-74a5ac4647d0
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1620
+      height: 810
+      crop_type: focal_point
+pipeline: smushit

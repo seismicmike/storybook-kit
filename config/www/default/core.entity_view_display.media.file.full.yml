@@ -1,0 +1,27 @@
+uuid: c5fd72e4-0a42-4eff-9c1b-01ff4f61f202
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full
+    - field.field.media.file.field_media_file
+    - media.type.file
+  module:
+    - file
+id: media.file.full
+targetEntityType: media
+bundle: file
+mode: full
+content:
+  field_media_file:
+    type: file_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

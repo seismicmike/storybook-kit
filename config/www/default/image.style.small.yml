@@ -1,0 +1,16 @@
+uuid: fbeee877-6645-44da-907a-d4d3f52bd247
+langcode: en
+status: true
+dependencies: {  }
+name: small
+label: 'Small - scaled (360x360)'
+effects:
+  aa0be629-8506-4f9a-b9ac-64db12a91c56:
+    uuid: aa0be629-8506-4f9a-b9ac-64db12a91c56
+    id: image_scale
+    weight: 1
+    data:
+      width: 360
+      height: 360
+      upscale: false
+pipeline: smushit

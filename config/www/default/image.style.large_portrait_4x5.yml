@@ -1,0 +1,18 @@
+uuid: 88098c5e-ab8d-4fef-a995-1505a44de07a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: large_portrait_4x5
+label: 'Large - portrait 4:5 (1080x1350)'
+effects:
+  bd9b9345-8d1a-468c-a1a0-d3ef8ab8d9c1:
+    uuid: bd9b9345-8d1a-468c-a1a0-d3ef8ab8d9c1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 1350
+      crop_type: focal_point
+pipeline: smushit

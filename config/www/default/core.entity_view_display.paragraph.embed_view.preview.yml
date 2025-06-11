@@ -1,0 +1,72 @@
+uuid: 075388c3-f62b-4819-9857-b1fb3b165bb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.embed_view.field_class_custom
+    - field.field.paragraph.embed_view.field_embed_view
+    - field.field.paragraph.embed_view.field_html_anchor
+    - field.field.paragraph.embed_view.field_style
+    - paragraphs.paragraphs_type.embed_view
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      label: Settings
+      parent_name: ''
+      region: content
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        id: ''
+        open: false
+        required_fields: false
+    group_component:
+      children: {  }
+      label: Component
+      parent_name: ''
+      region: content
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+id: paragraph.embed_view.preview
+targetEntityType: paragraph
+bundle: embed_view
+mode: preview
+content:
+  field_class_custom:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_html_anchor:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_style:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_embed_view: true

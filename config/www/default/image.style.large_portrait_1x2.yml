@@ -1,0 +1,18 @@
+uuid: 15351147-ceb1-4845-91a8-cb3209dbab69
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: large_portrait_1x2
+label: 'Large - portrait 1:2 (1080x2160)'
+effects:
+  3b390a5a-38a0-4638-bfd5-daed08aca70d:
+    uuid: 3b390a5a-38a0-4638-bfd5-daed08aca70d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 2160
+      crop_type: focal_point
+pipeline: smushit

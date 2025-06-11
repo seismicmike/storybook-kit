@@ -8,8 +8,6 @@ dependencies:
     - image
     - media
     - user
-_core:
-  default_config_hash: kOTUk5XWeupgBOJuRRarCiDcFKVZcvaW-FT5MTzrML8
 id: media
 label: Media
 module: views
@@ -449,7 +447,7 @@ display:
             custom_date_format: ''
             timezone: ''
             tooltip:
-              date_format: long
+              date_format: ''
               custom_date_format: ''
             time_diff:
               enabled: false

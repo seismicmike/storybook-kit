@@ -1,0 +1,15 @@
+uuid: 470f9a38-6a33-4f72-bab1-6ac58a4a50e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - imageapi_optimize_resmushit
+name: smushit
+label: Smushit
+processors:
+  5a879de1-0110-4a45-afff-77858687fc0d:
+    id: resmushit
+    data:
+      quality: null
+    weight: 1
+    uuid: 5a879de1-0110-4a45-afff-77858687fc0d

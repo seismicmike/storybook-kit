@@ -1,0 +1,34 @@
+uuid: 9168a106-6f3f-4254-9d16-891d5f1e55b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.embed_view.field_class_custom
+    - field.field.paragraph.embed_view.field_embed_view
+    - field.field.paragraph.embed_view.field_html_anchor
+    - field.field.paragraph.embed_view.field_style
+    - paragraphs.paragraphs_type.embed_view
+  module:
+    - viewsreference
+id: paragraph.embed_view.full
+targetEntityType: paragraph
+bundle: embed_view
+mode: full
+content:
+  field_embed_view:
+    type: viewsreference_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        default: default
+        block: block
+        page: '0'
+        feed: '0'
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_style: true

@@ -1,0 +1,7 @@
+uuid: 1da1ffc3-e778-48bf-9c77-9a8a9b0215a1
+langcode: en
+status: true
+dependencies: {  }
+id: featured_media_layout__slider
+label: Slider
+classes: component-featured-media--layout-slider

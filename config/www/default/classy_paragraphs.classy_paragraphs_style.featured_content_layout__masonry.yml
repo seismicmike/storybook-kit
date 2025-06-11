@@ -1,0 +1,7 @@
+uuid: 59a2bd70-7a33-46e9-9017-4c606ed39d6c
+langcode: en
+status: true
+dependencies: {  }
+id: featured_content_layout__masonry
+label: Masonry
+classes: component-featured-content--layout-masonry

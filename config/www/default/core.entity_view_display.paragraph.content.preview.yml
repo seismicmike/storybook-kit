@@ -1,0 +1,122 @@
+uuid: a3c1e6a1-9b7b-4b66-bf44-7d6575c15fee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content.field_class_custom
+    - field.field.paragraph.content.field_content
+    - field.field.paragraph.content.field_html_anchor
+    - field.field.paragraph.content.field_link
+    - field.field.paragraph.content.field_media_item
+    - field.field.paragraph.content.field_media_layout
+    - field.field.paragraph.content.field_style
+    - field.field.paragraph.content.field_title
+    - paragraphs.paragraphs_type.content
+  module:
+    - field_group
+    - link
+    - smart_trim
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      label: Settings
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: details
+      format_settings:
+        label: Settings
+        classes: ''
+        id: ''
+        open: false
+    group_fields:
+      children:
+        - field_title
+        - field_content
+        - field_link
+      label: Component
+      parent_name: ''
+      region: content
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        label: Component
+        classes: ''
+        id: ''
+        description: ''
+id: paragraph.content.preview
+targetEntityType: paragraph
+bundle: content
+mode: preview
+content:
+  field_class_custom:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_content:
+    type: smart_trim
+    label: above
+    settings:
+      trim_length: 200
+      trim_type: chars
+      trim_suffix: ...
+      wrap_output: false
+      wrap_class: trimmed
+      summary_handler: full
+      trim_options:
+        text: true
+        trim_zero: false
+      more_text: More
+      more_class: more-link
+      more_link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_html_anchor:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_link:
+    type: link_separate
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_style:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_media_item: true
+  field_media_layout: true

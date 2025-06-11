@@ -1,0 +1,72 @@
+uuid: 8f7aa748-7a9b-42f4-a8bd-9e519d325e05
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embed_view.field_class_custom
+    - field.field.paragraph.embed_view.field_embed_view
+    - field.field.paragraph.embed_view.field_html_anchor
+    - field.field.paragraph.embed_view.field_style
+    - paragraphs.paragraphs_type.embed_view
+  module:
+    - field_group
+    - viewsreference
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - status
+        - field_style
+        - field_class_custom
+        - field_html_anchor
+      label: Settings
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+id: paragraph.embed_view.default
+targetEntityType: paragraph
+bundle: embed_view
+mode: default
+content:
+  field_class_custom:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_embed_view:
+    type: viewsreference_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_html_anchor:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Example: find-out-more'
+    third_party_settings: {  }
+  field_style:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

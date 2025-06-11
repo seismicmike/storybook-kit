@@ -1,0 +1,18 @@
+uuid: b55a5201-3dab-4e8d-8b47-cd8e1fe46027
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: medium_landscape_5x4
+label: 'Medium - landscape 5:4 (720x576)'
+effects:
+  80a02dc4-3c02-45b4-a331-89686232ab99:
+    uuid: 80a02dc4-3c02-45b4-a331-89686232ab99
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 576
+      crop_type: focal_point
+pipeline: smushit

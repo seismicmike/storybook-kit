@@ -1,0 +1,18 @@
+uuid: 3d21a058-4d37-4144-8c77-45d40faa1845
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: huge_portrait_3x4
+label: 'Huge - portrait 3:4 (1260x1680)'
+effects:
+  856367d3-90f0-4d21-9594-263809aafc29:
+    uuid: 856367d3-90f0-4d21-9594-263809aafc29
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1260
+      height: 1680
+      crop_type: focal_point
+pipeline: smushit

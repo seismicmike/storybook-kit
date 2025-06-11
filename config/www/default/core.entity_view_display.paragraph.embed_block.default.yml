@@ -1,0 +1,49 @@
+uuid: c122df0a-caf3-471a-9ca5-6976ecfb6d7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.embed_block.field_class_custom
+    - field.field.paragraph.embed_block.field_embed_block
+    - field.field.paragraph.embed_block.field_html_anchor
+    - field.field.paragraph.embed_block.field_style
+    - paragraphs.paragraphs_type.embed_block
+  module:
+    - block_field
+id: paragraph.embed_block.default
+targetEntityType: paragraph
+bundle: embed_block
+mode: default
+content:
+  field_class_custom:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_embed_block:
+    type: block_field
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_html_anchor:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_style:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

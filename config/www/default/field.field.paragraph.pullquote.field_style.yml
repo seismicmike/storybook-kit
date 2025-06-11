@@ -1,0 +1,27 @@
+uuid: 7f10f680-bbac-42dc-abe4-dd99b81859eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.pullquote
+id: paragraph.pullquote.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: pullquote
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: pullquote__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

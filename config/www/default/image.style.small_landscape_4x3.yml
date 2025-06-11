@@ -1,0 +1,18 @@
+uuid: 77b5a1e1-7a29-4c10-8630-e8227f7bbb4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: small_landscape_4x3
+label: 'Small - landscape 4:3 (360x270)'
+effects:
+  83d00f58-1eb8-481d-a6cf-8dbc53e88fac:
+    uuid: 83d00f58-1eb8-481d-a6cf-8dbc53e88fac
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 270
+      crop_type: focal_point
+pipeline: smushit

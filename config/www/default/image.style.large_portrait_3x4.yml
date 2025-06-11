@@ -1,0 +1,18 @@
+uuid: 1d879a4b-294e-4278-8533-89d16bdeff96
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: large_portrait_3x4
+label: 'Large - portrait 3:4 (1080x1440)'
+effects:
+  83e594f8-39e2-4adb-9fa5-ca6b20e1127a:
+    uuid: 83e594f8-39e2-4adb-9fa5-ca6b20e1127a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 1440
+      crop_type: focal_point
+pipeline: smushit

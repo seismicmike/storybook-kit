@@ -1,0 +1,25 @@
+uuid: f6168c98-4dde-4833-ae25-60d93fa1a760
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.full
+    - field.field.paragraph.embed_iframe.field_class_custom
+    - field.field.paragraph.embed_iframe.field_html_anchor
+    - field.field.paragraph.embed_iframe.field_link
+    - field.field.paragraph.embed_iframe.field_style
+    - field.field.paragraph.embed_iframe.field_style_height
+    - field.field.paragraph.embed_iframe.field_style_width
+    - paragraphs.paragraphs_type.embed_iframe
+id: paragraph.embed_iframe.full
+targetEntityType: paragraph
+bundle: embed_iframe
+mode: full
+content: {  }
+hidden:
+  field_class_custom: true
+  field_html_anchor: true
+  field_link: true
+  field_style: true
+  field_style_height: true
+  field_style_width: true

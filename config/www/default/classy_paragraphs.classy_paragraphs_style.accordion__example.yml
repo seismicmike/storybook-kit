@@ -1,0 +1,7 @@
+uuid: d754ba37-8f85-4469-8626-4e51229cde6c
+langcode: en
+status: true
+dependencies: {  }
+id: accordion__example
+label: Example
+classes: component-accordion--example

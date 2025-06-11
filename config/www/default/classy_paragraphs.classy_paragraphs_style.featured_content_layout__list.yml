@@ -1,0 +1,7 @@
+uuid: 7c9f3e3b-29c8-471f-941a-5f8c89a4f168
+langcode: en
+status: true
+dependencies: {  }
+id: featured_content_layout__list
+label: List
+classes: component-featured-content--layout-list

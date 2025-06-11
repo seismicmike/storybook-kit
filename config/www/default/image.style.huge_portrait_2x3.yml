@@ -1,0 +1,18 @@
+uuid: b7daaba8-9f6b-4ef0-906c-783a28afe642
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: huge_portrait_2x3
+label: 'Huge - portrait 2:3 (1260x1890)'
+effects:
+  24ffe697-fba6-4af3-a9b2-a1d446e34f41:
+    uuid: 24ffe697-fba6-4af3-a9b2-a1d446e34f41
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1260
+      height: 1890
+      crop_type: focal_point
+pipeline: smushit

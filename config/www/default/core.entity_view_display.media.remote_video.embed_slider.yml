@@ -1,0 +1,31 @@
+uuid: 917e72f6-4844-45ed-bb93-7994bfdc264a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.embed_slider
+    - field.field.media.remote_video.field_media_video_embed_field
+    - media.type.remote_video
+  module:
+    - video_embed_field
+id: media.remote_video.embed_slider
+targetEntityType: media
+bundle: remote_video
+mode: embed_slider
+content:
+  field_media_video_embed_field:
+    type: video_embed_field_video
+    label: hidden
+    settings:
+      autoplay: false
+      responsive: true
+      width: 854
+      height: 480
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

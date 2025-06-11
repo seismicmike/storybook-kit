@@ -1,0 +1,18 @@
+uuid: 60dfab80-375a-445e-9a62-2f683a69e1f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: large_1x1
+label: 'Large - square (1080x1080)'
+effects:
+  e094fff2-9b64-443e-9cf0-771cca2cd192:
+    uuid: e094fff2-9b64-443e-9cf0-771cca2cd192
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 1080
+      crop_type: focal_point
+pipeline: smushit

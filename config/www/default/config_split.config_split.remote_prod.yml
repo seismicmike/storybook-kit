@@ -1,0 +1,19 @@
+uuid: 18b0f55e-0438-409e-a763-1137343014f1
+langcode: en
+status: true
+dependencies: {  }
+id: remote_prod
+label: 'Remote - Prod'
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: null
+folder: ../config/www/remote_prod
+module:
+  captcha: 0
+  recaptcha: 0
+  syslog: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

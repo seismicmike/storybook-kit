@@ -1,0 +1,7 @@
+uuid: a7ca4ffe-bc31-4fdc-b202-791a2a088956
+langcode: en
+status: true
+dependencies: {  }
+id: featured_media__example
+label: Example
+classes: component-featured-media--example

@@ -1,0 +1,19 @@
+uuid: f552ab3d-633f-4300-9da0-6ecd9361b46f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_class_custom
+    - paragraphs.paragraphs_type.content
+id: paragraph.content.field_class_custom
+field_name: field_class_custom
+entity_type: paragraph
+bundle: content
+label: 'Custom Classes'
+description: 'A list of space-separated HTML classes to use on the component. <strong>Allowed characters: a-z 0-9 _ -</strong>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

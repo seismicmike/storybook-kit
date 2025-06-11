@@ -1,0 +1,18 @@
+uuid: 6e400b64-20be-4c2e-97fb-3fc19518e40f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: biggest_1x1
+label: 'Biggest – square (1620x1620)'
+effects:
+  c200a03d-093b-4339-b24e-4f81dc63b903:
+    uuid: c200a03d-093b-4339-b24e-4f81dc63b903
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1620
+      height: 1620
+      crop_type: focal_point
+pipeline: smushit

@@ -1,0 +1,19 @@
+uuid: 7849a4e4-b8c4-4b71-99bf-aa02477018de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style_width
+    - paragraphs.paragraphs_type.embed_iframe
+id: paragraph.embed_iframe.field_style_width
+field_name: field_style_width
+entity_type: paragraph
+bundle: embed_iframe
+label: Width
+description: "The width of the iframe. Defaults to 100% if empty. \r\nSelected <em>Style</em> can potentially override this value."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

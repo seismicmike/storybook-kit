@@ -1,0 +1,27 @@
+uuid: 49bd0a84-c5ac-46a5-af2c-6bb641dac530
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_style
+    - paragraphs.paragraphs_type.featured_links
+id: paragraph.featured_links.field_style
+field_name: field_style
+entity_type: paragraph
+bundle: featured_links
+label: Style
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: classy_paragraphs
+  handler_settings:
+    filter:
+      type: starts_with
+      starts_with: featured_links__
+    sort:
+      field: label
+      direction: ASC
+field_type: entity_reference

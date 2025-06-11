@@ -1,0 +1,93 @@
+uuid: db3d436b-b34a-4b68-8c37-af60f9514b31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_components
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.embed_block
+    - paragraphs.paragraphs_type.embed_iframe
+    - paragraphs.paragraphs_type.embed_view
+    - paragraphs.paragraphs_type.featured_content
+    - paragraphs.paragraphs_type.featured_links
+    - paragraphs.paragraphs_type.featured_media
+    - paragraphs.paragraphs_type.pullquote
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion_item.field_components
+field_name: field_components
+entity_type: paragraph
+bundle: accordion_item
+label: Components
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      content: content
+      accordion: accordion
+      embed_block: embed_block
+      embed_iframe: embed_iframe
+      embed_view: embed_view
+      featured_content: featured_content
+      featured_links: featured_links
+      featured_media: featured_media
+      pullquote: pullquote
+      section: section
+      tabs: tabs
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -29
+        enabled: true
+      accordion_item:
+        weight: -31
+        enabled: false
+      content:
+        weight: -30
+        enabled: true
+      embed_block:
+        weight: -28
+        enabled: true
+      embed_iframe:
+        weight: -27
+        enabled: true
+      embed_view:
+        weight: -26
+        enabled: true
+      featured_content:
+        weight: -25
+        enabled: true
+      featured_links:
+        weight: -24
+        enabled: true
+      featured_media:
+        weight: -23
+        enabled: true
+      hero:
+        weight: -22
+        enabled: false
+      hero_slide:
+        weight: -21
+        enabled: false
+      pullquote:
+        weight: -20
+        enabled: true
+      section:
+        weight: -19
+        enabled: true
+      tabs:
+        weight: -18
+        enabled: true
+      tabs_tab:
+        weight: -17
+        enabled: false
+field_type: entity_reference_revisions

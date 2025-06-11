@@ -1,0 +1,7 @@
+uuid: 8068ef6f-769e-47ad-a653-27b7b9160873
+langcode: en
+status: true
+dependencies: {  }
+id: content__example
+label: Example
+classes: component-content--example-class

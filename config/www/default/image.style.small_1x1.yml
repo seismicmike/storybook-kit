@@ -1,0 +1,18 @@
+uuid: 07f399e4-c78f-48d5-82c0-380de7bfbbfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: small_1x1
+label: 'Small - square (360x360)'
+effects:
+  2767c99b-ef72-42ee-822d-129ede4e6655:
+    uuid: 2767c99b-ef72-42ee-822d-129ede4e6655
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 360
+      crop_type: focal_point
+pipeline: smushit

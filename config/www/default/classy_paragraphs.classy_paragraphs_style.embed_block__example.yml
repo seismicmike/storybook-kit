@@ -1,0 +1,7 @@
+uuid: f12daa34-9ede-49be-8bbd-945d8c887e53
+langcode: en
+status: true
+dependencies: {  }
+id: embed_block__example
+label: Example
+classes: component-embed-block--example-class

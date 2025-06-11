@@ -1,0 +1,18 @@
+uuid: d1e40787-aa60-43a2-b385-0e7071d95a2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: medium_portrait_3x4
+label: 'Medium - portrait 3:4 (720x960)'
+effects:
+  85262f30-78fe-46e7-bd78-cd8751ec5c3f:
+    uuid: 85262f30-78fe-46e7-bd78-cd8751ec5c3f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 960
+      crop_type: focal_point
+pipeline: smushit

@@ -1,0 +1,73 @@
+uuid: 2c07ea99-790a-470d-a89e-02f6dc374684
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_component_hero
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_component_hero
+field_name: field_component_hero
+entity_type: node
+bundle: landing_page
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hero: hero
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 16
+        enabled: false
+      accordion_item:
+        weight: 17
+        enabled: false
+      content:
+        weight: 18
+        enabled: false
+      embed_block:
+        weight: 19
+        enabled: false
+      embed_iframe:
+        weight: 20
+        enabled: false
+      embed_view:
+        weight: 21
+        enabled: false
+      featured_content:
+        weight: 22
+        enabled: false
+      featured_links:
+        weight: 23
+        enabled: false
+      featured_media:
+        weight: 24
+        enabled: false
+      hero:
+        weight: 25
+        enabled: true
+      hero_slide:
+        weight: 26
+        enabled: false
+      pullquote:
+        weight: 27
+        enabled: false
+      section:
+        weight: 28
+        enabled: false
+      tabs:
+        weight: 29
+        enabled: false
+      tabs_tab:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

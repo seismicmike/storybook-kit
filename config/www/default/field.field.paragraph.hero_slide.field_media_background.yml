@@ -1,0 +1,33 @@
+uuid: 48fa85c5-a9d7-4e34-96b5-de8ea94ca7ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_background
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.hero_slide
+id: paragraph.hero_slide.field_media_background
+field_name: field_media_background
+entity_type: paragraph
+bundle: hero_slide
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

@@ -1,0 +1,100 @@
+uuid: 83340b54-a49c-445e-8c66-08876eb6a519
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.file
+    - media.type.image
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - block
+    - block_class
+    - contextual
+    - environment_indicator
+    - file
+    - filter
+    - media
+    - menu_link_attributes
+    - node
+    - paragraphs
+    - path
+    - redirect
+    - search
+    - system
+    - taxonomy
+    - toolbar
+id: site_administrator
+label: 'Site Administrator'
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access environment indicator'
+  - 'access files overview'
+  - 'access media overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer block classes'
+  - 'administer blocks'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer url aliases'
+  - 'administer users'
+  - 'bypass node access'
+  - 'create audio media'
+  - 'create file media'
+  - 'create image media'
+  - 'create media'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete all revisions'
+  - 'delete any audio media'
+  - 'delete any file media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete media'
+  - 'delete own audio media'
+  - 'delete own file media'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'delete terms in tags'
+  - 'edit any audio media'
+  - 'edit any file media'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit own audio media'
+  - 'edit own file media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'link to any page'
+  - 'revert all revisions'
+  - 'revert page revisions'
+  - 'update any media'
+  - 'update media'
+  - 'use advanced search'
+  - 'use menu link attributes'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view page revisions'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

@@ -1,0 +1,18 @@
+uuid: f3960b9a-9460-45bb-9f62-c4c3c9184a6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: huge_landscape_4x3
+label: 'Huge - landscape 4:3 (1260x945)'
+effects:
+  5f847acc-8170-4a16-b27d-a244e3916184:
+    uuid: 5f847acc-8170-4a16-b27d-a244e3916184
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1260
+      height: 945
+      crop_type: focal_point
+pipeline: smushit
