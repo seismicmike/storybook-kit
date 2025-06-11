@@ -84,4 +84,5 @@ logs
 /source/themes/custom/blackbirdtheme/
 
 /docroot/*/custom/*/components/*/*.css
+/docroot/*/custom/*/dist
 *storybook.log
