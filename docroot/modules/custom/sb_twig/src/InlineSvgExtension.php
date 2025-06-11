@@ -2,16 +2,14 @@
 
 namespace Drupal\sb_twig;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Extension\ExtensionPathResolver;
-use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
 /**
  * Twig extension.
  */
-class InlineSvgExtension extends AbstractExtension implements ContainerInjectionInterface {
+class InlineSvgExtension extends AbstractExtension {
 
   /**
    * Constructor.
@@ -20,13 +18,6 @@ class InlineSvgExtension extends AbstractExtension implements ContainerInjection
    *   The path resolver service.
    */
   public function __construct(protected ExtensionPathResolver $pathResolver) {}
-
-  /**
-   * {@inheritdoc}
-   */
-  public static function create(ContainerInterface $container) {
-    return new static($container->get('extension.path.resolver'));
-  }
 
   /**
    * {@inheritdoc}

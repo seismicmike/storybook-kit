@@ -1,5 +1,7 @@
 services:
   sb_twig.twig_extension:
     class: Drupal\sb_twig\InlineSvgExtension
+    arguments:
+      - '@extension.path.resolver'
     tags:
       - { name: twig.extension }
