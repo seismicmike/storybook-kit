@@ -1,6 +1,6 @@
 _core:
   default_config_hash: zMBMF9Q35kIhZL2P1Dztk-BGFewINdrs8RE9bB5kqyo
-  admin_css: true
+admin_css: true
 one_pixel: true
 blazy:
   loadInvisible: false
