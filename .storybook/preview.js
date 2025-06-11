@@ -27,8 +27,8 @@ addons.getChannel().on("storyRendered", () => {
 });
 
 const fonts = {
-  "poppins":
-    "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  poppins:
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap",
 };
 
 for (const fontKey in fonts) {
@@ -44,6 +44,7 @@ for (const fontKey in fonts) {
 const themeCss = [
   "https://use.fontawesome.com/releases/v6.4.2/css/all.css",
   "docroot/themes/custom/sb_bazo/dist/styles/variables.css",
+  "docroot/themes/custom/sb_bazo/dist/styles/responsive.css",
   "docroot/themes/custom/sb_bazo/dist/styles/base.css",
   "docroot/themes/custom/sb_bazo/dist/styles/utilities.css",
 ];

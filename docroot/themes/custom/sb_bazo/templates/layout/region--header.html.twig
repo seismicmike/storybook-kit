@@ -1,17 +1,21 @@
 {% embed 'sb_bazo:site_header' with {
   contentAttributes: content_attributes
 } %}
-  {% block region_content %}
-    {{content}}
-    {% include 'sb_bazo:contact_detail' with {
-      label: 'Address',
-      value: '123 Thata Way'
+	{% block region_content %}
+		{{content}}
+		{% include 'sb_bazo:contact_detail_group' with {
+      details: [
+        {
+          label: 'Address',
+          value: '123 Thata Way'
+        },
+        {
+          label: 'Call us',
+          value: '1 (855) 688-9669'
+        }
+      ]
     } only %}
-    {% include 'sb_bazo:contact_detail' with {
-      label: 'Call us',
-      value: '123-555-1234'
-    } only %}
-    {% include 'sb_bazo:social_icons' with {
+		{% include 'sb_bazo:social_icons' with {
       size: 'sm',
       icons: [
         {
@@ -32,5 +36,5 @@
         }
       ]
     } only %}
-  {% endblock %}
+	{% endblock %}
 {% endembed %}

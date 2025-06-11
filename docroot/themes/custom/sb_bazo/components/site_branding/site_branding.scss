@@ -1,3 +1,18 @@
-[data-component-id="sb_bazo:site_branding"] {
-  /* @todo Add your styles here. */
+.site-branding {
+  font-size: 1.375em;
+  font-weight: 800;
+  line-height: 1;
+
+  &__link {
+    color: var(--tokens-colors-white);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--tokens-colors-black);
+    }
+  }
+
+  &__period {
+    color: var(--color-orange);
+  }
 }

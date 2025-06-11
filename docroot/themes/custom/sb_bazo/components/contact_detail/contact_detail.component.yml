@@ -12,17 +12,11 @@ props:
       type: string
       title: Label
       description: The label of the detail
-      # @todo Add examples here.
-      examples: []
     value:
       type: string
       title: Value
       description: The value of the contact detail
-      # @todo Add examples here.
-      examples: []
     icon:
       type: string
       title: Icon
       description: The icon to display. The default is the location arrow.
-      # @todo Add examples here.
-      examples: []

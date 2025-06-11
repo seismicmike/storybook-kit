@@ -1,0 +1,31 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Contact Detail Group
+status: stable
+description: A group of contact detail cards
+props:
+  type: object
+  required:
+    - details
+  properties:
+    details:
+      type: array
+      title: Details
+      description: A list of contact details
+      items:
+        type: object
+        required:
+          - label
+          - value
+        properties:
+          label:
+            type: string
+            title: Label
+            description: The label of the detail
+          value:
+            type: string
+            title: Value
+            description: The value of the contact detail
+          icon:
+            type: string
+            title: Icon
+            description: The icon to display. The default is the location arrow.

@@ -1,7 +1,7 @@
 :root {
   // Fonts.
   --font-poppins: "Poppins";
-  --font-sans-serif: var(--font-poppins), Arial, sans-serif;
+  --font-sans-serif: var(--font-poppins), arial, sans-serif;
 
   // Colors.
   --tokens-colors-white: #fff;
@@ -29,6 +29,6 @@
   --font-size-2xl: 2em;
 
   // Layout.
-  --layout-page-gutter: 32px;
-  --layout-site-header-gap: 64px;
+  --layout-page-gutter: 15px;
+  --layout-site-header-gap: 30px;
 }

@@ -1,0 +1,9 @@
+title: "SB Bazo/Contact Detail Group"
+stories:
+  - name: Header
+    args:
+      details:
+        - label: "Address"
+          value: "123 Thata Way"
+        - label: "Call Us"
+          value: "1 (855) 688-9669"

@@ -1,12 +1,21 @@
+@use "../../src/styles/mixins" as mixins;
+
 .site-header {
   background-color: var(--tokens-colors-gray-900);
-  display: flex;
-  gap: var(--layout-site-header-gap);
   align-items: center;
   padding-block: 25px;
   padding-inline: var(--layout-page-gutter);
 
   & > *:first-child {
     margin-right: auto;
+  }
+
+  & > div {
+    padding-block: 8px;
+  }
+
+  @include mixins.tablet {
+    display: flex;
+    gap: var(--layout-site-header-gap);
   }
 }

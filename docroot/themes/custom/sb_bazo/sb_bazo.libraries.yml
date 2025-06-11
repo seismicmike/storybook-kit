@@ -2,13 +2,15 @@
 poppins:
   css:
     base:
-      //fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap:
+      //fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap:
         { type: external }
 
 global:
   css:
     base:
       dist/styles/variables.css: {}
-    theme:
       dist/styles/base.css: {}
+    layout:
+      dist/styles/responsive.css: {}
+    theme:
       dist/styles/utilities.css: {}

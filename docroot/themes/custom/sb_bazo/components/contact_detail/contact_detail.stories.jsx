@@ -37,7 +37,7 @@ export const Phone = {
     },
     args: {
   "label": "Call us",
-  "value": "(+01) 123 456 7890"
+  "value": "1 (855) 688-9669"
 , 'base_path': 'docroot/themes/custom/sb_bazo', 'attributes': createMockAttributes().setAttribute('data-component-id', 'sb_bazo:contact_detail')}
 };
 

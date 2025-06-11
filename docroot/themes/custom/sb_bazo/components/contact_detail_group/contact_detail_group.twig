@@ -1,0 +1,10 @@
+{% set classes = [
+  'contact-detail-group'
+] %}
+<div {{ attributes }}>
+	<div class="{% for class in classes %} {{class}}{% endfor %}">
+		{% for detail in details %}
+			{% include 'sb_bazo:contact_detail' with detail  only %}
+		{% endfor %}
+	</div>
+</div>

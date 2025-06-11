@@ -1,0 +1,37 @@
+@use "mixins" as mixins;
+
+@include mixins.large-phone {
+  :root {
+    --layout-page-gutter: 33px;
+  }
+}
+
+@include mixins.tablet {
+  :root {
+    --layout-page-gutter: 39px;
+  }
+}
+
+@include mixins.large-tablet {
+  :root {
+    --layout-page-gutter: 31px;
+  }
+}
+
+@include mixins.laptop {
+  :root {
+    --layout-page-gutter: 45px;
+  }
+}
+
+@include mixins.desktop {
+  :root {
+    --layout-page-gutter: 60px;
+  }
+}
+
+@include mixins.large-desktop {
+  :root {
+    --layout-page-gutter: 90px;
+  }
+}

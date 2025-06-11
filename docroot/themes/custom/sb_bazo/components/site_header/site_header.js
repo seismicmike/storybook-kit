@@ -1,3 +1,4 @@
+// Just keeping this around as an example.
 /* global Drupal */
 /* global jQuery */
 /* global once */
