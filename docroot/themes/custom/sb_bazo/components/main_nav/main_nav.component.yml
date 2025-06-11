@@ -1,0 +1,36 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Main Nav
+status: stable
+description: Main nav bar
+libraryOverrides:
+  dependencies:
+    - core/once
+    - core/jquery
+props:
+  type: object
+  required:
+    - items
+  properties:
+    items:
+      type: array
+      title: Items
+      description: Nav Items
+      items:
+        type: object
+        required:
+          - label
+        properties:
+          label:
+            type: string
+            title: "Nav item label"
+          url:
+            type: string
+            title: "Nav item url"
+          current:
+            type: boolean
+            title: Current
+            description: Is the nav item the current page?
+slots:
+  search:
+    title: Search form
+    description: The markup for the search form to include on the right

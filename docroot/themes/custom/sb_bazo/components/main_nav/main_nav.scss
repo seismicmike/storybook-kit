@@ -1,0 +1,132 @@
+@use "../../src/styles/mixins" as mixins;
+
+.main-nav-bar {
+  background-color: var(--tokens-colors-black);
+  padding-inline: var(--layout-page-gutter);
+  padding-block: 10px;
+  transition: all 500ms;
+
+  @include mixins.large-tablet {
+    background-color: var(--tokens-colors-white);
+    padding-block: 0;
+  }
+}
+
+.main-nav {
+  display: block;
+
+  @include mixins.large-tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: block;
+
+    @include mixins.large-tablet {
+      display: flex;
+    }
+  }
+
+  &__toggle {
+    font-family: var(--font-sans-serif);
+    font-size: var(--font-size-md);
+    line-height: 1;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    padding-block: 4px;
+    // try to remove this later.
+    margin-block: 15px;
+
+    @include mixins.large-tablet {
+      display: none;
+    }
+  }
+
+  &__items {
+    display: none;
+    list-style-type: none;
+
+    @include mixins.large-tablet {
+      display: flex;
+    }
+  }
+
+  &__item {
+    display: flex;
+    height: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+      padding-block: 14.4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 12px;
+      line-height: 21.6px;
+      font-weight: 500;
+      font-family: var(--font-sans-serif);
+      letter-spacing: 1px;
+
+      @include mixins.large-tablet {
+        color: var(--tokens-colors-black);
+        padding-inline: 16px;
+        background-color: var(--tokens-colors-white);
+        transition: all 500ms;
+
+        &:hover,
+        &:active {
+          color: var(--tokens-colors-white);
+          background-color: var(--tokens-colors-orange-500);
+        }
+      }
+    }
+
+    &--current {
+      a {
+        color: var(--tokens-colors-orange-500);
+
+        @include mixins.large-tablet {
+          color: var(--tokens-colors-white);
+          background-color: var(--tokens-colors-orange-500);
+        }
+      }
+    }
+  }
+
+  &__search {
+    display: none;
+    margin-block: 0;
+
+    @include mixins.large-tablet {
+      display: block;
+      margin-block: 4px;
+    }
+
+    input,
+    button {
+      background-color: rgba(0, 0, 0, 0.05);
+      height: 46px;
+      border: none;
+      box-shadow: none;
+      color: var(--tokens-colors-black);
+      padding-inline: 16px;
+      font-family: var(--font-sans-serif);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+
+      &:focus-visible {
+        outline-color: var(--tokens-colors-orange-500);
+      }
+    }
+  }
+}
