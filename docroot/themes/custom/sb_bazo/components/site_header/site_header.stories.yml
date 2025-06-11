@@ -1,9 +1,0 @@
-title: "SB Bazo/Site Header"
-description: "Site header for the SB Bazo theme"
-stories:
-  - name: "Demo"
-    description: "Demo header"
-    args:
-      contentAttributes: ""
-      region_content: |
-        <div>This is content that will go in the region.</div>

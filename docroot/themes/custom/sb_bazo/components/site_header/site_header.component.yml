@@ -4,8 +4,12 @@ description: Site header
 props:
   type: object
   properties:
-    contentAttributes:
-      type: string
+    classes:
+      type: array
+      title: 'Classes'
+      description: 'Custom classes'
+      items:
+        type: string
 slots:
   region_content:
     title: Region content

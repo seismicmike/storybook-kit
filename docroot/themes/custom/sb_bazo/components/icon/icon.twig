@@ -1,5 +1,3 @@
-
-
 {% set icon = icon|default('house') %}
 {% set size = size|default('md') %}
 
@@ -9,16 +7,18 @@
   "icon--" ~ size
 ] %}
 
-<span {{ attributes }} class="{% for class in classes %} {{class}}{% endfor %}">
-  {% if icon in ['facebook', 'twitter', 'instagram', 'maps'] %}
-    <i class="{% for class in classes %}{{ class }} {% endfor %}">
-      {{ inline_svg('@sb_bazo/icon/svg/' ~ icon ~ '.svg') }}
-    </i>
-  {% else %}
-    {% set classes = classes|merge([
+<span {{ attributes }}>
+	<span class="{% for class in classes %} {{class}}{% endfor %}">
+		{% if icon in ['facebook', 'twitter', 'instagram', 'maps'] %}
+			<i class="{% for class in classes %}{{ class }} {% endfor %}">
+				{{ inline_svg('@sb_bazo/icon/svg/' ~ icon ~ '.svg') }}
+			</i>
+		{% else %}
+			{% set classes = classes|merge([
       "fa-" ~ style|default("solid"),
       "fa-" ~ icon,
     ]) %}
-    <i class="{% for class in classes %}{{ class }} {% endfor %}"></i> 
-  {% endif %}
-</span> 
+			<i class="{% for class in classes %}{{ class }} {% endfor %}"></i>
+		{% endif %}
+	</span>
+</span>

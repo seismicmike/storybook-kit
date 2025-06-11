@@ -1,3 +1,32 @@
 .contact-detail {
   /* @todo Add your styles here. */
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  &__icon {
+    height: 32px;
+    width: 32px;
+    border: 1px solid var(--color-orange);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-orange);
+  }
+
+  &__info {
+    font-size: var(--font-size-xs);
+    line-height: 21.6px;
+  }
+
+  &__label {
+    color: var(--common-text-light);
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+
+  &__value {
+    color: var(--tokens-colors-white);
+  }
 }

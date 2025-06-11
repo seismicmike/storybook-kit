@@ -2,10 +2,12 @@
   'site-branding',
 ] %}
 
-<div {{ attributes }} class="{% for class in classes %} {{class}}{% endfor %}">
-  <div class="site-branding__title">
-    <a href="/">
-      {{ title }}
-    </a>
-  </div>
+<div {{ attributes }}>
+	<div class="{% for class in classes %} {{class}}{% endfor %}">
+		<div class="site-branding__title">
+			<a href="/">
+				{{ title }}
+			</a>
+		</div>
+	</div>
 </div>

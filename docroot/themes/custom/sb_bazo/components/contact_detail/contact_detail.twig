@@ -2,15 +2,17 @@
   "contact-detail",
 ] %}
 
-<div {{ attributes }} class="{% for class in classes %} {{class}}{% endfor %}">
-  <div class="contact-detail__icon">
-    {% include 'sb_bazo:icon' with {
+<div {{ attributes }}>
+	<div class="{% for class in classes %} {{class}}{% endfor %}">
+		<div class="contact-detail__icon">
+			{% include 'sb_bazo:icon' with {
       icon: icon|default('location-arrow'),
-      size: 'md'
+      size: 'xs'
     } only %}
-  </div>
-  <div class="contact-detail__info">
-    <div class="contact-detail__label">{{label}}</div>
-    <div class="contact-detail__value">{{value}}</div>
-  </div>
+		</div>
+		<div class="contact-detail__info">
+			<div class="contact-detail__label">{{label}}</div>
+			<div class="contact-detail__value">{{value}}</div>
+		</div>
+	</div>
 </div>

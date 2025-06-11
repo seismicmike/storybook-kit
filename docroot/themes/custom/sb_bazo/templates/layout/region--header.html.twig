@@ -3,29 +3,16 @@
 } %}
   {% block region_content %}
     {{content}}
-    {% include 'sb_bazo:social_icons' with {
-      size: 'sm',
-      icons: [
-        {
-          icon: 'facebook',
-          url: 'https://www.facebook.com'
-        },
-        {
-          icon: 'twitter',
-          url: 'https://www.twitter.com'
-        },
-        {
-          icon: 'instagram',
-          url: 'https://www.instagram.com'
-        },
-        {
-          icon: 'location-dot',
-          url: 'https://maps.google.com'
-        }
-      ]
+    {% include 'sb_bazo:contact_detail' with {
+      label: 'Address',
+      value: '123 Thata Way'
+    } only %}
+    {% include 'sb_bazo:contact_detail' with {
+      label: 'Call us',
+      value: '123-555-1234'
     } only %}
     {% include 'sb_bazo:social_icons' with {
-      size: 'md',
+      size: 'sm',
       icons: [
         {
           icon: 'facebook',
