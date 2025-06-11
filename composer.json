@@ -58,6 +58,7 @@
         "drupal/field_group": "^4.0",
         "drupal/field_label": "^1.5",
         "drupal/focal_point": "^2.1",
+        "drupal/fontawesome": "^3.0",
         "drupal/gin": "^4.0",
         "drupal/google_tag": "^2.0",
         "drupal/imageapi_optimize": "^4.0",
