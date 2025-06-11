@@ -2,7 +2,7 @@
   'site-branding',
 ] %}
 
-<div {{ attributes.addClass(classes) }}>
+<div {{ attributes }} class="{% for class in classes %} {{class}}{% endfor %}">
   <div class="site-branding__title">
     <a href="/">
       {{ title }}

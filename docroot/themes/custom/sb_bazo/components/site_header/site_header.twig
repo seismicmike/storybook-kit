@@ -2,7 +2,7 @@
   'site-header'
 ] %}
 
-<header {{ attributes.addClass(classes) }}>
+<header {{ attributes }} class="{% for class in classes %} {{class}}{% endfor %}">
   <div{{ content_attributes }}>
     {% block region_content %}
       {% if region_content %}

@@ -9,7 +9,7 @@
   "icon--" ~ size
 ] %}
 
-<span {{ attributes.removeAttribute('class').addClass(classes) }}>
+<span {{ attributes }} class="{% for class in classes %} {{class}}{% endfor %}">
   {% if icon in ['facebook', 'twitter', 'instagram', 'maps'] %}
     <i class="{% for class in classes %}{{ class }} {% endfor %}">
       {{ inline_svg('@sb_bazo/icon/svg/' ~ icon ~ '.svg') }}

@@ -10,7 +10,7 @@
   {% set heading_classes = heading_classes|merge(classes) %}
 {% endif %}
 
-<div {{ attributes }}>
+<div {{ attributes }} class="{% for class in classes %} {{class}}{% endfor %}">
   <h{{level}} 
     class="{% for class in heading_classes %} {{ class }}{% endfor %}">
     {% block heading_markup %}

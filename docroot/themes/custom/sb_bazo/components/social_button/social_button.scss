@@ -1,46 +1,45 @@
-[data-component-id="sb_bazo:social_button"] {
-  &.social-button {
-    &--2xs {
-      font-size: var(--font-size-2xs);
-    }
+.social-button {
+  &--2xs {
+    font-size: var(--font-size-2xs);
+  }
 
-    &--xs {
-      font-size: var(--font-size-xs);
-    }
+  &--xs {
+    font-size: var(--font-size-xs);
+  }
 
-    &--sm {
-      font-size: var(--font-size-sm);
-    }
+  &--sm {
+    font-size: var(--font-size-sm);
+  }
 
-    &--md {
-      font-size: var(--font-size-md);
-    }
+  &--md {
+    font-size: var(--font-size-md);
+  }
 
-    &--lg {
-      font-size: var(--font-size-lg);
-    }
+  &--lg {
+    font-size: var(--font-size-lg);
+  }
 
-    &--xl {
-      font-size: var(--font-size-xl);
-    }
+  &--xl {
+    font-size: var(--font-size-xl);
+  }
 
-    &--2xl {
-      font-size: var(--font-size-2xl);
-    }
+  &--2xl {
+    font-size: var(--font-size-2xl);
+  }
 
-    a {
-      display: inline-flex;
-      background-color: var(--tokens-colors-gray-700);
-      border-radius: 50%;
-      height: 2em;
-      width: 2em;
-      justify-content: center;
-      align-items: center;
-      color: var(--tokens-colors-orange-100);
+  a {
+    display: inline-flex;
+    background-color: var(--tokens-colors-gray-700);
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    justify-content: center;
+    align-items: center;
+    color: var(--tokens-colors-orange-100);
+    text-decoration: none;
 
-      &:hover {
-        background-color: var(--tokens-colors-orange-500);
-      }
+    &:hover {
+      background-color: var(--tokens-colors-orange-500);
     }
   }
 }
