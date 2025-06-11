@@ -1,9 +1,0 @@
-uuid: 0097b7ab-9388-4104-b357-72c99360a5f4
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: lKZaCQnCSY8u6Kotsh6JIxHbbVlmBLB10O8jOgJdpp4
-id: content__example
-label: Example
-classes: component-content--example-class

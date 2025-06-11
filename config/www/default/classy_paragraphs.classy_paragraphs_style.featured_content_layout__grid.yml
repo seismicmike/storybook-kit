@@ -1,9 +1,0 @@
-uuid: 21284cbb-292d-453a-8f1c-07e3833c6181
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: 75EYK6thO6UtJb7QczYJC_usiTxNrTEorAHx4Crgp0Y
-id: featured_content_layout__grid
-label: Grid
-classes: component-featured-content--layout-grid

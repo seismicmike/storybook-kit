@@ -9,5 +9,5 @@ fetch:
   timeout: 30
 notification:
   emails:
-    - admin@localhost.localdomain
+    - admin@example.com
   threshold: all

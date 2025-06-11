@@ -1,9 +1,0 @@
-uuid: d9a48616-c510-440d-bda7-0cd7cea0a931
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: h5in5wLyA53vPjelgdEG-ezXIO2QufD1l7eyoT81EPk
-id: featured_media_layout__masonry
-label: Masonry
-classes: component-featured-media--layout-masonry

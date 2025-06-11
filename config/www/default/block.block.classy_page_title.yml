@@ -1,15 +1,15 @@
-uuid: 3314d08e-b783-4907-b427-5168504a4e0c
+uuid: 10ad19e1-6546-45a3-9b9e-43d59c075342
 langcode: en
 status: true
 dependencies:
   theme:
     - classy
 _core:
-  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
 id: classy_page_title
 theme: classy
-region: sidebar_first
-weight: -5
+region: content
+weight: -30
 provider: null
 plugin: page_title_block
 settings:

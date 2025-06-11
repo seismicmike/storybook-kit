@@ -1,4 +1,4 @@
-uuid: 9c15129b-3a8f-48b2-85e4-b32862acd466
+uuid: a5227d59-af85-478f-94f8-16faf92e8964
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - classy
 _core:
-  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+  default_config_hash: aeqlWs7HwctZeZC7ADcbxfqehJzBRfZKmuZz3DsH3_4
 id: classy_messages
 theme: classy
 region: highlighted
-weight: -5
+weight: 0
 provider: null
 plugin: system_messages_block
 settings:

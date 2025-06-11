@@ -1,9 +1,0 @@
-uuid: 460f90c9-7993-472f-81d9-a8a616cc659c
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: Pa-fb-Zg9NgXyKdmCKw7rGPOHGWKJC9w9KLATWKcZfE
-id: featured_media_layout__full
-label: Full
-classes: component-featured-media--layout-full

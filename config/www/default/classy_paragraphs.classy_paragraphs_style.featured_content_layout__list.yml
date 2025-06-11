@@ -1,9 +1,0 @@
-uuid: 54aa6800-1fbc-4b70-83b8-9cc6ab7e18f8
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: vmi3zetEDejGu78N282EaGi6s1LTFMrgjq5qdFvog5U
-id: featured_content_layout__list
-label: List
-classes: component-featured-content--layout-list

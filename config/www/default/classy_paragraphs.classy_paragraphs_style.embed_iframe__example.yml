@@ -1,9 +1,0 @@
-uuid: d2665545-3307-457c-9d3c-79f845f94126
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: jNsi6nDNURPlcjBbuLN-tmyPayHftdj3qm-SQDAcQIc
-id: embed_iframe__example
-label: Example
-classes: component-embed-iframe--example-class

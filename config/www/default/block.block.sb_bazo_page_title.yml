@@ -1,0 +1,20 @@
+uuid: d65e535f-e4e5-4584-8918-bbb2e1ff2f73
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sb_bazo
+_core:
+  default_config_hash: Oh72CHUkp6cj6dbrXMK2hzCsM05w9cHVoD22rMLQUfk
+id: sb_bazo_page_title
+theme: sb_bazo
+region: content
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }
