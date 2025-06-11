@@ -1,3 +1,16 @@
 [data-component-id="sb_bazo:social_button"] {
-  /* @todo Add your styles here. */
+  a {
+    display: inline-flex;
+    background-color: var(--tokens-colors-gray-700);
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    justify-content: center;
+    align-items: center;
+    color: var(--tokens-colors-orange-100);
+
+    &:hover {
+      background-color: var(--tokens-colors-orange-500);
+    }
+  }
 }

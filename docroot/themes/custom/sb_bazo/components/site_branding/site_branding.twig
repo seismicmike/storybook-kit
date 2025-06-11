@@ -1,0 +1,11 @@
+{% set classes = [
+  'site-branding',
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  <div class="site-branding__title">
+    <a href="/">
+      {{ title }}
+    </a>
+  </div>
+</div>

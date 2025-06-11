@@ -1,0 +1,19 @@
+{% set size = size|default('sm') %}
+{% set classes = [
+  'social-icons',
+  'social-icons--' ~ size
+] %}
+
+<div {{ attributes.removeAttribute('class').addClass(classes) }}>
+  {% if icons %}
+    {% for icon in icons %}
+      <div class="social-icons__icon social-icons__icon--{{icon.icon}}">
+        {% include 'sb_bazo:social_button' with {
+          icon: icon.icon,
+          url: icon.url,
+          size: size
+        } only %}
+      </div>
+    {% endfor %}
+  {% endif %}
+</div>

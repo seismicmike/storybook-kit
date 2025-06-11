@@ -1,0 +1,28 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Contact Detail
+status: stable
+description: A contact detail block for the header
+props:
+  type: object
+  required:
+    - label
+    - value
+  properties:
+    label:
+      type: string
+      title: Label
+      description: The label of the detail
+      # @todo Add examples here.
+      examples: []
+    value:
+      type: string
+      title: Value
+      description: The value of the contact detail
+      # @todo Add examples here.
+      examples: []
+    icon:
+      type: string
+      title: Icon
+      description: The icon to display. The default is the location arrow.
+      # @todo Add examples here.
+      examples: []

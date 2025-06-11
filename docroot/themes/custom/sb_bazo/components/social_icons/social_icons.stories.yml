@@ -1,0 +1,13 @@
+title: "SB Bazo/Social Icons"
+description: "A row of social icons"
+stories:
+  - name: "Header Icons"
+    args:
+      size: "md"
+      icons:
+        - icon: "location-dot"
+          url: "#"
+        - icon: "location-arrow"
+          url: "#"
+        - icon: "house"
+          url: "#"

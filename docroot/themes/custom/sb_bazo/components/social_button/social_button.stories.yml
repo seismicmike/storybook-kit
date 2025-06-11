@@ -6,3 +6,8 @@ stories:
       icon: "location-dot"
       size: "sm"
       url: "https://maps.google.com"
+  - name: "Location Arrow"
+    args:
+      icon: "location-arrow"
+      size: "sm"
+      url: "https://www.google.com"

@@ -1,0 +1,16 @@
+{% set classes = [
+  "contact-detail",
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  <div class="contact-detail__icon">
+    {% include 'sb_bazo:icon' with {
+      icon: icon|default('location-arrow'),
+      size: 'md'
+    } only %}
+  </div>
+  <div class="contact-detail__info">
+    <div class="contact-detail__label">{{label}}</div>
+    <div class="contact-detail__value">{{value}}</div>
+  </div>
+</div>

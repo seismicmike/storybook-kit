@@ -27,3 +27,19 @@ export const Maps = {
 , 'base_path': 'docroot/themes/custom/sb_bazo', 'attributes': createMockAttributes().setAttribute('data-component-id', 'sb_bazo:social_button')}
 };
 
+
+export const LocationArrow = {
+    parameters: {
+      docs: {
+        description: {
+          story: '',
+        }
+      }
+    },
+    args: {
+  "icon": "location-arrow",
+  "size": "sm",
+  "url": "https://www.google.com"
+, 'base_path': 'docroot/themes/custom/sb_bazo', 'attributes': createMockAttributes().setAttribute('data-component-id', 'sb_bazo:social_button')}
+};
+
