@@ -14,24 +14,24 @@
 
 @include mixins.large-tablet {
   :root {
-    --layout-page-gutter: 31px;
+    --layout-page-gutter: 45px;
   }
 }
 
 @include mixins.laptop {
   :root {
-    --layout-page-gutter: 45px;
+    --layout-page-gutter: 80px;
   }
 }
 
 @include mixins.desktop {
   :root {
-    --layout-page-gutter: 60px;
+    --layout-page-gutter: 150px;
   }
 }
 
 @include mixins.large-desktop {
   :root {
-    --layout-page-gutter: 90px;
+    --layout-page-gutter: 220px;
   }
 }

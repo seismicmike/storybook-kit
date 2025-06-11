@@ -4,6 +4,7 @@ import Component from "./site_header.twig";
 import SiteBranding from "../site_branding/site_branding.twig";
 import "../site_branding/site_branding.css";
 import ContactDetailGroup from "../contact_detail_group/contact_detail_group.twig";
+import "../contact_detail/contact_detail.css";
 import "../contact_detail_group/contact_detail_group.css";
 import SocialIcons from "../social_icons/social_icons.twig";
 import "../icon/icon.css";
