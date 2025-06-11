@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
-import path from "path";
+import path, { resolve } from "path";
 import twig from "vite-plugin-twig-drupal";
+import fs from "fs";
 
 export default defineConfig({
   plugins: [

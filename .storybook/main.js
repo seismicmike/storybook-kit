@@ -13,6 +13,6 @@ const config = {
     name: "@storybook/html-vite",
     options: {},
   },
-  staticDirs: ["../docroot/libraries"],
+  staticDirs: ["../docroot"],
 };
 export default config;

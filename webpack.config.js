@@ -7,12 +7,15 @@ const { css } = require("webpack");
 
 module.exports = (env, args) => {
   const isDevelopment = argv.mode === "development";
-  const cssFiles = glob.sync("./docroot/*/custom/**/components/**/*.scss", {
+  const cssFiles = glob.sync("./docroot/*/custom/**/*.scss", {
     nodir: true,
     ignore: ["**/_*", "node_modules/**", "**/node_modules/**"],
   });
   const cssEntryPoints = cssFiles.reduce((acc, file) => {
-    const entryName = path.relative("./docroot", file).replace(/\.[^/.]+$/, "");
+    const entryName = path
+      .relative("./docroot", file)
+      .replace(/\.[^/.]+$/, "")
+      .replace("src/styles", "dist/styles");
     acc[entryName] = path.resolve(__dirname, file);
     return acc;
   }, {});

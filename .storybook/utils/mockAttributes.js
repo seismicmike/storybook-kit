@@ -35,17 +35,20 @@ export const createMockAttributes = () => {
       return this;
     },
     toString: function () {
-      return Object.entries(this.attributes)
-        .map(([key, value]) => {
-          if (key === "class") {
-            return `class="${value.flat().map(String).join(" ")}"`;
-          }
-          if (value === true) {
-            return `${key}`;
-          }
-          return `${key}="${value}"`;
-        })
-        .join(" ");
+      return (
+        " " +
+        Object.entries(this.attributes)
+          .map(([key, value]) => {
+            if (key === "class") {
+              return `class="${value.flat().map(String).join(" ")}"`;
+            }
+            if (value === true) {
+              return `${key}`;
+            }
+            return `${key}="${value}"`;
+          })
+          .join(" ")
+      );
     },
   };
 };

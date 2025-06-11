@@ -19,6 +19,7 @@ for (const ymlPath of files) {
   }
 
   const dir = path.dirname(ymlPath);
+  const base_path = path.dirname(path.dirname(dir));
   const componentName = path.basename(dir);
   const jsxPath = path.join(dir, `${componentName}.stories.jsx`);
   const twigPath = `./${componentName}.twig`;
@@ -45,7 +46,9 @@ for (const ymlPath of files) {
       } else {
         args = "{";
       }
-      args = args + "'attributes': createMockAttributes()}";
+      args =
+        args +
+        `'base_path': '${base_path}', 'attributes': createMockAttributes().setAttribute('data-component-id', '${namespace}:${componentName}')}`;
       const exportName = story.name
         .replace(/[^a-zA-Z0-9_$]/g, "")
         .replace(/^[^a-zA-Z_$]+/, "");
