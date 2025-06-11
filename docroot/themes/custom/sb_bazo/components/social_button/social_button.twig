@@ -1,0 +1,17 @@
+{% set icon = icon|default('envelope') %}
+{% set size = size|default('sm') %}
+
+{% set classes = [
+  'social-button',
+  'social-button--' ~ icon,
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {# Keep the outer div whenever possible it is a nice way to ensure the presence of "attributes" #}
+  <a href={{url}}>
+    {% include 'sb_bazo:icon' with {
+      icon: icon,
+      size: size,
+    } only %}
+  </a>
+</div>

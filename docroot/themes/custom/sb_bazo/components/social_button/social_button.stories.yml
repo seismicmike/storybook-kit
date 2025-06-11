@@ -1,0 +1,8 @@
+title: "SB Bazo/Social Button"
+description: "Social Button for SB Bazo"
+stories:
+  - name: "Maps"
+    args:
+      icon: "location-dot"
+      size: "sm"
+      url: "https://maps.google.com"

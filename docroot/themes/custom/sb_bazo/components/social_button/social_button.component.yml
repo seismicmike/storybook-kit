@@ -1,0 +1,24 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Social button
+status: stable
+props:
+  type: object
+  properties:
+    icon:
+      type: string
+      title: Icon
+      description: The machine name of the icon to display
+      # @todo Add examples here.
+      examples: []
+    url:
+      type: string
+      title: URL
+      description: The URL to link to
+      # @todo Add examples here.
+      examples: []
+    size:
+      type: string
+      title: Size
+      description: The size of the icon
+      # @todo Add examples here.
+      examples: []
