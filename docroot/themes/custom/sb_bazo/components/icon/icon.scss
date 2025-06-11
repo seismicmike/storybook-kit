@@ -16,30 +16,30 @@
   }
 
   &.icon--2xs {
-    font-size: 0.625em;
+    font-size: var(--font-size-2xs);
   }
 
   &.icon--xs {
-    font-size: 0.75em;
+    font-size: var(--font-size-xs);
   }
 
   &.icon--sm {
-    font-size: 0.875em;
+    font-size: var(--font-size-sm);
   }
 
   &.icon--md {
-    font-size: 1em;
+    font-size: var(--font-size-md);
   }
 
   &.icon--lg {
-    font-size: 1.25em;
+    font-size: var(--font-size-lg);
   }
 
   &.icon--xl {
-    font-size: 1.5em;
+    font-size: var(--font-size-xl);
   }
 
   &.icon--2xl {
-    font-size: 2em;
+    font-size: var(--font-size-2xl);
   }
 }
