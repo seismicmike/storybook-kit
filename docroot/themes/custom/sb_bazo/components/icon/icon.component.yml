@@ -1,0 +1,33 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Icon
+description: "Embeds an icon using Font Awesome"
+props:
+  type: object
+  properties:
+    icon:
+      type: string
+      title: "Icon"
+      description: "The icon name. Can be the name of a social icon (supported: facebook, twitter, instagram, maps), or a font awesome icon. Only Free icons are available from FA."
+    style:
+      type: ["string", "null"]
+      title: "Style"
+      description: "Font awesome style. Only relevant to Font Awesome icons, of course. The default is solid. Not all icons are available in all styles. Check the FA website for a full list."
+      enum:
+        - null
+        - "regular"
+        - "solid"
+        - "thin"
+        - "light"
+    size:
+      type: ["string", "null"]
+      title: "Icon Size"
+      description: "Icon Size."
+      enum:
+        - null
+        - "2xs"
+        - "xs"
+        - "sm"
+        - "md"
+        - "lg"
+        - "xl"
+        - "2xl"

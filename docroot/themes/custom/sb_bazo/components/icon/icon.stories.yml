@@ -1,0 +1,109 @@
+title: "SB Bazo/Icon"
+description: "Icon component for SB Bazo"
+stories:
+  - name: "House"
+    args:
+      icon: "house"
+      style: "solid"
+  - name: "Image"
+    args:
+      icon: "image"
+      style: "regular"
+  - name: "Trash Can"
+    args:
+      icon: "trash"
+      style: "solid"
+  - name: "Check mark"
+    args:
+      icon: "check"
+      style: "solid"
+  - name: "Close"
+    args:
+      icon: "xmark"
+      style: "solid"
+  - name: "Location Dot"
+    args:
+      icon: "location-dot"
+      style: "solid"
+  - name: "Location Arrow"
+    args:
+      icon: "location-arrow"
+      style: "solid"
+  - name: "Search"
+    args:
+      icon: "magnifying-glass"
+      style: "solid"
+  - name: "Car Battery"
+    args:
+      icon: "car-battery"
+      style: "solid"
+  - name: "Oil Change"
+    args:
+      icon: "oil-can"
+      style: "solid"
+  - name: "Gears"
+    args:
+      icon: "gears"
+      style: "solid"
+  - name: "Wrench"
+    args:
+      icon: "wrench"
+      style: "solid"
+  - name: "Screwdriver"
+    args:
+      icon: "screwdriver"
+      style: "solid"
+  - name: "Toolbox"
+    args:
+      icon: "toolbox"
+      style: "solid"
+  - name: "Screwdriver Wrench"
+    args:
+      icon: "screwdriver-wrench"
+      style: "solid"
+  - name: "Car Burst"
+    args:
+      icon: "car-burst"
+      style: "solid"
+  - name: "Quote Left"
+    args:
+      icon: "quote-left"
+      style: "solid"
+  - name: "Phone"
+    args:
+      icon: "phone"
+      style: "solid"
+  - name: "Paper Plane"
+    args:
+      icon: "paper-plane"
+      style: "solid"
+  - name: "Globe"
+    args:
+      icon: "earth-americas"
+      style: "solid"
+argTypes:
+  icon:
+    control: text
+    title: "Icon"
+    description: "The icon"
+  style:
+    control: select
+    title: "Icon style"
+    defaultValue: "solid"
+    options:
+      - "regular"
+      - "solid"
+      - "thin"
+      - "light"
+  size:
+    control: select
+    title: "Size"
+    defaultValue: "md"
+    options:
+      - "2xs"
+      - "xs"
+      - "sm"
+      - "md"
+      - "lg"
+      - "xl"
+      - "2xl"

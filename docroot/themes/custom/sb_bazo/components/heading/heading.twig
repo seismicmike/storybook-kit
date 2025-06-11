@@ -1,0 +1,24 @@
+
+{% set level = level|default("1") %}
+
+{% set heading_classes = [
+  'heading',
+  'heading-' ~ level
+] %}
+
+{% if classes %}
+  {% set heading_classes = heading_classes|merge(classes) %}
+{% endif %}
+
+<div {{ attributes }}>
+  <h{{level}} 
+    class="{% for class in heading_classes %} {{ class }}{% endfor %}">
+    {% block heading_markup %}
+      {% if heading_markup %}
+        {{heading_markup}}
+      {% else %}
+        {{heading_text|default("Sample Heading")}}
+      {% endif %}
+    {% endblock %}
+  </h{{level}}>
+</div>

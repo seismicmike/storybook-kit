@@ -1,0 +1,5 @@
+services:
+  sb_twig.twig_extension:
+    class: Drupal\sb_twig\InlineSvgExtension
+    tags:
+      - { name: twig.extension }

@@ -6,6 +6,9 @@ package: Custom
 core_version_requirement: ^10
 dependencies:
   - sdc
+  - sb_twig
+libraries:
+  - sb_bazo/global
 regions:
   header: "Header"
   main_nav: "Navigation"

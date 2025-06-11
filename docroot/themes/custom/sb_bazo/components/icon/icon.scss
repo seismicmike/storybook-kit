@@ -1,0 +1,45 @@
+[data-component-id="sb_bazo:icon"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.1em;
+  width: 1.1em;
+
+  i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      height: 1.1em;
+      width: 1.1em;
+    }
+  }
+
+  &.icon--2xs {
+    font-size: 0.625em;
+  }
+
+  &.icon--xs {
+    font-size: 0.75em;
+  }
+
+  &.icon--sm {
+    font-size: 0.875em;
+  }
+
+  &.icon--md {
+    font-size: 1em;
+  }
+
+  &.icon--lg {
+    font-size: 1.25em;
+  }
+
+  &.icon--xl {
+    font-size: 1.5em;
+  }
+
+  &.icon--2xl {
+    font-size: 2em;
+  }
+}

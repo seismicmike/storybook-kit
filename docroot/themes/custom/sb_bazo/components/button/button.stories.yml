@@ -1,0 +1,47 @@
+title: "SB Bazo/Button"
+stories:
+  - name: "Demo"
+    args:
+      label: "Sample Button"
+      mode: "link"
+      href: "#"
+      disabled: false
+      button_style: default
+argTypes:
+  label:
+    control: text
+    title: "Label"
+    defaultValue: "Sample Button"
+  href:
+    control: text
+    title: "href"
+    defaultValue: "#"
+  mode:
+    control: select
+    title: "Button Mode"
+    defaultValue: "link"
+    options:
+      - "link"
+      - "embed"
+  disabled:
+    control: boolean
+    title: "Disabled?"
+    defaultValue: false
+  icon:
+    control: text
+    title: "Icon"
+    description: "The icon"
+  icon_style:
+    control: select
+    title: "Icon style"
+    options:
+      - "regular"
+      - "solid"
+      - "thin"
+      - "light"
+  icon_position:
+    control: select
+    title: "Icon position"
+    options:
+      - "right"
+      - "left"

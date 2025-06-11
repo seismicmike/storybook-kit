@@ -1,12 +1,12 @@
 
-// AUTO-GENERATED FROM header.stories.yml
+// AUTO-GENERATED FROM site-header.stories.yml
 import { createMockAttributes } from '@storybook-utils/mockAttributes';
-import Component from './header.twig';
-import './header.css';
-import './header.js';
+import Component from './site-header.twig';
+import './site-header.css';
+import './site-header.js';
 
 export default {
-    title: 'SB Bazo/Header',
+    title: 'SB Bazo/Site Header',
     argTypes: {},
     component: Component
 };
@@ -23,6 +23,6 @@ export const Demo = {
     args: {
   "contentAttributes": "",
   "region_content": "<div>This is content that will go in the region.</div>\n"
-, 'attributes': createMockAttributes()}
+, 'base_path': 'docroot/themes/custom/sb_bazo', 'attributes': createMockAttributes().setAttribute('data-component-id', 'sb_bazo:site-header')}
 };
 

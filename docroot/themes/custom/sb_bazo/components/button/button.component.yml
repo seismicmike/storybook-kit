@@ -1,0 +1,57 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Button
+description: "Button component for the SB Bazo theme"
+props:
+  type: object
+  properties:
+    label:
+      type: "string"
+      title: "Button Label"
+      description: "Text to display on the button"
+    href:
+      type: "string"
+      title: "Link target"
+      description: "For buttons that are anchors, this is URI to load when clicked."
+    mode:
+      type: ["string", "null"]
+      title: Button mode
+      description: "This component supports 2 modes for rendering buttons: link mode and embed mode. The default is link mode. If link mode is used, href must be supplied (or it will default to #). Link mode makes the button clickable and loads the link supplied by href. Embed mode is a static button that applies all the same visual styles as the link button, but does not operate when clicked. This is ideal for embedding inside a <button> tag for form elements. This component is agnostic of Drupal form element attributes."
+      enum:
+        - null
+        - "link"
+        - "embed"
+    button_style:
+      type: ["string", "null"]
+      title: "Button Style"
+      description: The style of button. The default button is white with a blue outline. The Primary button is blue with white text. The "highlight" button is orange with white text.
+      enum:
+        - null
+        - "default"
+        - "primary"
+        - "highlight"
+    disabled:
+      type: boolean
+      title: Disabled
+      description: Whether the button should be rendered in disabled mode. For link mode buttons this renders them unclickable.
+    icon:
+      type: ["string", "null"]
+      title: Icon
+      description: "[Optional] The icon to display on the button. Must match the machine name of a free font awesome icon."
+    icon_style:
+      type: ["string", "null"]
+      title: Icon style
+      description: "The style of the icon. Default is regular."
+      enum:
+        - null
+        - "regular"
+        - "solid"
+        - "thin"
+        - "light"
+    icon_position:
+      type: ["string", "null"]
+      title: Icon position
+      description: If icon is provided, icon_position will control whether it renders on the left or the right of the button text. Default is left.
+      enum:
+        - null
+        - "left"
+        - "right"

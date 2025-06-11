@@ -1,0 +1,37 @@
+{% set label = label|default("Button") %}
+{% set href = href|default("#") %}
+{% set mode = mode|default("link") %}
+
+{% if mode == "embed" %}
+  {% set tag = "div" %}
+{% else %}
+  {% set tag = "a" %}
+{% endif %}
+
+{% set button_style = button_style|default("default") %}
+
+{% set classes = [
+  "button",
+  "button--" ~ button_style
+] %}
+
+{% if disabled %}
+  {% set classes = classes|merge(['is-disabled']) %}
+{% endif %}
+
+
+<div{{attributes}}>
+  <{{ tag }}
+    class="{% for class in classes %} {{class}}{% endfor %}"
+    {% if tag == 'a' %}href="{{href}}"{% endif %}
+    {% if disabled %}disabled="disabled"{% endif %}
+  >
+  {% if icon %}
+    <div class="button__icon">
+
+    </div>
+  {% endif %}
+  <div class="button__label">{{ label }}</div>
+
+  </{{ tag }}>
+</div>
