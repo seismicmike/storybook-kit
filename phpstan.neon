@@ -11,6 +11,7 @@ parameters:
         - php
         - module
         - inc
+        - theme
     level: 1
     ignoreErrors:
         # While technically correct, it is used in so many places it would be
