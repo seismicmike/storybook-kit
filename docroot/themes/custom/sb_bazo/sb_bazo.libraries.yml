@@ -14,3 +14,14 @@ global:
       dist/styles/responsive.css: {}
     theme:
       dist/styles/utilities.css: {}
+
+region--pre-content:
+  css:
+    layout:
+      dist/styles/libraries/region/pre-content.css: {}
+
+
+block--system-menu-block--main:
+  css:
+    theme:
+      dist/styles/libraries/block/main-nav.css: {}

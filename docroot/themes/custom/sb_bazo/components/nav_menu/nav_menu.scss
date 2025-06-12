@@ -1,0 +1,85 @@
+@use "../../src/styles/mixins" as mixins;
+
+.nav-menu {
+  background-color: var(--tokens-colors-black);
+  transition: all 500ms;
+
+  display: block;
+
+  @include mixins.large-tablet {
+    display: flex;
+    background-color: var(--tokens-colors-white);
+  }
+
+  &__toggle {
+    font-family: var(--font-sans-serif);
+    font-size: var(--font-size-md);
+    line-height: 1;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    padding-block: 15px;
+
+    @include mixins.large-tablet {
+      display: none;
+    }
+  }
+
+  &__items {
+    display: none;
+    list-style-type: none;
+
+    @include mixins.large-tablet {
+      display: flex;
+    }
+  }
+
+  &__item {
+    display: flex;
+    height: 100%;
+
+    a {
+      display: flex;
+      align-items: center;
+      padding-block: 14.4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 12px;
+      line-height: 21.6px;
+      font-weight: 500;
+      font-family: var(--font-sans-serif);
+      letter-spacing: 1px;
+
+      @include mixins.large-tablet {
+        color: var(--tokens-colors-black);
+        padding-inline: 16px;
+        background-color: var(--tokens-colors-white);
+        transition: all 500ms;
+
+        &:hover,
+        &:active {
+          color: var(--tokens-colors-white);
+          background-color: var(--tokens-colors-orange-500);
+        }
+      }
+    }
+
+    &--current {
+      a {
+        color: var(--tokens-colors-orange-500);
+
+        @include mixins.large-tablet {
+          color: var(--tokens-colors-white);
+          background-color: var(--tokens-colors-orange-500);
+        }
+      }
+    }
+  }
+}

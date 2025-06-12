@@ -6,13 +6,13 @@
 (($, Drupal) => {
   "use strict";
 
-  Drupal.behaviors.MainNav = {
+  Drupal.behaviors.NavMenu = {
     attach(context) {
-      once("main-nav-toggle", ".main-nav__toggle", context).forEach(
+      once("nav-menu-toggle", ".nav-menu__toggle", context).forEach(
         (toggle) => {
           toggle.addEventListener("click", (e) => {
             const items = toggle.nextElementSibling;
-            if (items.classList.contains("main-nav__items")) {
+            if (items.classList.contains("nav-menu__items")) {
               $(items).slideToggle(500);
             }
           });

@@ -1,20 +1,12 @@
 <section class="main-nav-bar">
 	<div class="main-nav">
-		<nav class="main-nav__nav">
-			<button class="main-nav__toggle">
-				<div class="main-nav__toggle-icon">
-					{% include 'sb_bazo:icon' with {icon: 'bars'} only %}
-				</div>
-				<div class="main-nav__toggle-label">Menu</div>
-			</button>
-			<ul class="main-nav__items">
-				{% for item in items %}
-					<li class="main-nav__item {% if item.current %}main-nav__item--current{% endif %}">
-						<a href="{{item.url|default('#')}}">{{item.label}}</a>
-					</li>
-				{% endfor %}
-			</ul>
-		</nav>
+		<div class="main-nav__menu">
+			{% block menu %}
+				{% if menu %}
+					{{menu}}
+				{% endif %}
+			{% endblock %}
+		</div>
 		<div
 			class="main-nav__search">
 			{# Keep the outer div whenever possible it is a nice way to ensure the presence of "attributes" #}
