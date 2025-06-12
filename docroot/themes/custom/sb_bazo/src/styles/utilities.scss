@@ -17,3 +17,8 @@
 .heading-5 {
   font-size: 1.25rem;
 }
+
+.container {
+  max-width: var(--layout-container-max-width);
+  margin-block: auto;
+}

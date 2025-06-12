@@ -4,13 +4,15 @@
 
 <header {{ attributes }}>
 	<div class="{% for class in classes %} {{class}}{% endfor %}">
-		{% block region_content %}
-			{% if region_content %}
-				{{region_content}}
-			{% else %}
-				<div>Region content here.</div>
-			{% endif %}
+		<div class="container">
+			{% block region_content %}
+				{% if region_content %}
+					{{region_content}}
+				{% else %}
+					<div>Region content here.</div>
+				{% endif %}
 
-		{% endblock %}
+			{% endblock %}
+		</div>
 	</div>
 </header>
