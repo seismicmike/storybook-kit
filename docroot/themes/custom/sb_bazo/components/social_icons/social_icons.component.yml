@@ -4,6 +4,15 @@ status: stable
 props:
   type: object
   properties:
+    align:
+      type: ["string", "null"]
+      title: Align
+      description: Which direction to align this button group
+      enum:
+        - null
+        - "left"
+        - "center"
+        - "right"
     size:
       type: string
       title: Size

@@ -1,0 +1,20 @@
+uuid: fe1996ea-577e-4b14-8fa1-63e7d6e8f34d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sb_bazo
+id: sb_bazo_poweredbydrupal
+theme: sb_bazo
+region: footer_legal
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

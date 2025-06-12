@@ -17,4 +17,8 @@ regions:
   pre_content: "Pre-content"
   content: Content
   post_content: "Post-content"
-  footer: "Footer"
+  footer_first: "Footer First"
+  footer_second: "Footer Second"
+  footer_third: "Footer Third"
+  footer_fourth: "Footer Fourth"
+  footer_legal: "Footer Legal"

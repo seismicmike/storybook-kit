@@ -1,0 +1,23 @@
+uuid: 58566a69-af18-484e-8acb-48495929240b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sb_bazo
+id: sb_bazo_sitebranding
+theme: sb_bazo
+region: footer_first
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

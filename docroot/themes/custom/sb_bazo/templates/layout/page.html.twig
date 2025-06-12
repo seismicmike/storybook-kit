@@ -42,32 +42,55 @@
  * @see html.html.twig
  */
 #}
-<div{{ attributes }}>
+<div{{attributes}}>
 
-  {{ page.header }}
-  
-  {{ page.main_nav }}
+	{{ page.header }}
 
-  {{ page.pre_content }}
+	{{ page.main_nav }}
 
-  {{ page.content }}
+	{{ page.pre_content }}
 
-  {{ page.post_content }}
+	{{ page.content }}
 
-  <footer{{ footer_attributes }}>
-    <div{{ footer_content_attributes }}>
+	{{ page.post_content }}
 
-      {% if page.footer_first %}
-        {{ page.footer_first }}
-      {% endif %}
+	{% embed 'sb_bazo:site_footer' %}
+		{% block first_column %}
+			{{page.footer_first}}
 
-      {% if page.footer_second %}
-        {{ page.footer_second }}
-      {% endif %}
+			{% include 'sb_bazo:social_icons' with {
+        size: "sm",
+        icons: [
+          {
+            icon: "facebook",
+            url: "https://www.facebook.com",
+          },
+          {
+            icon: "twitter",
+            url: "https://www.twitter.com",
+          },
+          {
+            icon: "instagram",
+            url: "https://www.instagram.com",
+          },
+        ],
+      } only %}
+		{% endblock %}
+		{% block second_column %}
+			{{page.footer_second}}
+		{% endblock %}
+		{% block third_column %}
+			{{page.footer_third}}
+		{% endblock %}
+		{% block fourth_column %}
+			{{page.footer_fourth}}
+		{% endblock %}
+		{% block legal %}
+			{{page.footer_legal}}
+		{% endblock %}
+	{% endembed %}
 
-    </div>
-  </footer>
+	{{ page.page_bottom }}
 
-  {{ page.page_bottom }}
-
-</div>{# /.layout-container #}
+</div>
+{# /.layout-container #}

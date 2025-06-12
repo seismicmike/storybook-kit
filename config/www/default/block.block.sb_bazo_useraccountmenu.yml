@@ -1,0 +1,25 @@
+uuid: 97ba7a86-b868-4721-9af6-184f337d893f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - sb_bazo
+id: sb_bazo_useraccountmenu
+theme: sb_bazo
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

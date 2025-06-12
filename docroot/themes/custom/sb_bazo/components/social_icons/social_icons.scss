@@ -1,5 +1,16 @@
 .social-icons {
   display: flex;
   gap: 4px;
-  justify-content: flex-end;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
 }

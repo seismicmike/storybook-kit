@@ -1,7 +1,9 @@
 {% set size = size|default('sm') %}
+{% set align = align|default('left') %}
 {% set classes = [
   'social-icons',
-  'social-icons--' ~ size
+  'social-icons--' ~ size,
+	'social-icons--' ~ align,
 ] %}
 
 <div {{ attributes }}>
@@ -10,10 +12,10 @@
 			{% for icon in icons %}
 				<div class="social-icons__icon social-icons__icon--{{icon.icon}}">
 					{% include 'sb_bazo:social_button' with {
-          icon: icon.icon,
-          url: icon.url,
-          size: size
-        } only %}
+						icon: icon.icon,
+						url: icon.url,
+						size: size
+					} only %}
 				</div>
 			{% endfor %}
 		{% endif %}

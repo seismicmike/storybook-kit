@@ -3,6 +3,7 @@
 } %}
 	{% block region_content %}
 		{{content}}
+		{# @todo Create a block type in Drupal to set these dynamically. #}
 		{% include 'sb_bazo:contact_detail_group' with {
       details: [
         {
@@ -15,8 +16,10 @@
         }
       ]
     } only %}
+		{# @todo Create a block type in Drupal to set these dynamically. #}
 		{% include 'sb_bazo:social_icons' with {
       size: 'sm',
+      align: 'right',
       icons: [
         {
           icon: 'facebook',

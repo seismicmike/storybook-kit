@@ -47,6 +47,7 @@ export const Demo = {
       })}
       ${SocialIcons({
         size: "sm",
+        align: "right",
         icons: [
           {
             icon: "facebook",

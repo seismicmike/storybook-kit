@@ -1,0 +1,14 @@
+title: "SB Bazo/Site Footer"
+stories:
+  - name: "Site Footer"
+    args:
+      first_column: |
+        <div style="border: 1px dotted #f00;">Column 1 content</div>
+      second_column: |
+        <div style="border: 1px dotted #f90;">Column 2 content</div>
+      third_column: |
+        <div style="border: 1px dotted #ff0;">Column 3 content</div>
+      fourth_column: |
+        <div style="border: 1px dotted #0f0;">Column 4 content</div>
+      legal: |
+        <div style="border: 1px dotted #00f;">Legal disclaimer blurb</div>

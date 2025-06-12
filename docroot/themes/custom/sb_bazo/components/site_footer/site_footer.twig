@@ -1,0 +1,39 @@
+<footer class="site-footer">
+	<div class="site-footer__columns">
+		<div class="site-footer__column site-footer__column-first">
+			{% block first_column %}
+				{% if first_column %}
+					{{first_column}}
+				{% endif %}
+			{% endblock %}
+		</div>
+		<div class="site-footer__column site-footer__column-second">
+			{% block second_column %}
+				{% if second_column %}
+					{{second_column}}
+				{% endif %}
+			{% endblock %}
+		</div>
+		<div class="site-footer__column site-footer__column-third">
+			{% block third_column %}
+				{% if third_column %}
+					{{third_column}}
+				{% endif %}
+			{% endblock %}
+		</div>
+		<div class="site-footer__column site-footer__column-fourth">
+			{% block fourth_column %}
+				{% if fourth_column %}
+					{{fourth_column}}
+				{% endif %}
+			{% endblock %}
+		</div>
+	</div>
+	<div class="site-footer__legal">
+		{% block legal %}
+			{% if legal %}
+				{{legal}}
+			{% endif %}
+		{% endblock %}
+	</div>
+</footer>
