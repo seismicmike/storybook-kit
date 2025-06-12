@@ -1,37 +1,37 @@
 @use "mixins" as mixins;
 
-@include mixins.large-phone {
+@include mixins.mobile-m {
   :root {
-    --layout-page-gutter: 33px;
+    --layout-container-max-width: 356px;
+  }
+}
+
+@include mixins.mobile-l {
+  :root {
+    --layout-container-max-width: 395px;
   }
 }
 
 @include mixins.tablet {
   :root {
-    --layout-page-gutter: 39px;
-  }
-}
-
-@include mixins.large-tablet {
-  :root {
-    --layout-page-gutter: 45px;
+    --layout-container-max-width: 708px;
   }
 }
 
 @include mixins.laptop {
   :root {
-    --layout-page-gutter: 80px;
+    --layout-container-max-width: 934px;
+  }
+}
+
+@include mixins.laptop-l {
+  :root {
+    --layout-container-max-width: 1280px;
   }
 }
 
 @include mixins.desktop {
   :root {
-    --layout-page-gutter: 150px;
-  }
-}
-
-@include mixins.large-desktop {
-  :root {
-    --layout-page-gutter: 220px;
+    --layout-container-max-width: 1440px;
   }
 }

@@ -1,6 +1,6 @@
 :root {
   // Fonts.
-  --font-poppins: "Poppins";
+  --font-poppins: 'Poppins';
   --font-sans-serif: var(--font-poppins), arial, sans-serif;
 
   // Colors.
@@ -29,6 +29,8 @@
   --font-size-2xl: 2em;
 
   // Layout.
-  --layout-page-gutter: 15px;
+  --layout-page-gutter: 5px;
+  --layout-container-padding-inline: clamp(1rem, 5vw, 2rem);
   --layout-site-header-gap: 30px;
+  --layout-container-max-width: 310px;
 }

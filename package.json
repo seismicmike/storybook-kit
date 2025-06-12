@@ -54,7 +54,7 @@
     "fix:js": "npx eslint \"docroot/**/custom/**/*.js\" --ignore-pattern \"**/node_modules/*\" --fix",
     "compile-stories": "node .storybook/utils/generate-stories.js",
     "prestorybook": "npm run compile-stories",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006 --ci",
     "build-storybook": "storybook build"
   }
 }

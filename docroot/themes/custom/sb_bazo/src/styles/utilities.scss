@@ -1,3 +1,5 @@
+@use "mixins" as mixins;
+
 .heading-1 {
   font-size: 2.5rem;
 }
@@ -16,4 +18,8 @@
 
 .heading-5 {
   font-size: 1.25rem;
+}
+
+.sb-bazo-container {
+  @include mixins.container(var(--layout-container-max-width));
 }

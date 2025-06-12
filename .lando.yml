@@ -3,14 +3,18 @@ recipe: drupal10
 excludes:
   - drush
   - node_modules
-  - themesrc/node_modules
   - docroot/core
-  - docroot/vendor
   - docroot/modules/contrib
+  - docroot/themes/contrib
+  - docroot/profiles/contrib
+  - vendor
 config:
   php: "8.1"
   webroot: docroot
   composer_version: 2
+proxy:
+  node:
+    - storybook.drupal-kit.lndo.site:6006
 services:
   appserver:
     xdebug: true
@@ -39,6 +43,8 @@ services:
       - npm run build:dev
 tooling:
   node:
+    service: node
+  npx:
     service: node
   npm:
     service: node
