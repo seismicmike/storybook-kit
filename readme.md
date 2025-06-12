@@ -20,14 +20,4 @@ All components are fully responsive.
 
 There's a lot more I can do. If I have time and inclination, I can build out the other components. Kit comes with lots of Paragraph bundles pre-defined, so pages can easily be created with rich content. I just haven't themed them yet, so they don't look like much. The site is basically a sandwich of a nice looking header and a decent looking footer with a bunch of slop in between. But this is just a demo project that I'm working on in my spare time.
 
-If you want to browse the components in the storybook interface, you can do that, but you have to have node installed on your bare metal system (or at least in WSL in Windows). Running storybook inside the lando container errors out and I haven't had time to debug it.
-
-So to run storybook:
-
-- Install nvm
-- cd to this directory in your WSL or Mac or Linux terminal
-- Run `nvm install 18`
-- Run `nvm use 18`
-- Run `nvm run storybook`
-
-Sass assets should already have been built when lando started, but if not, run `npm run build` (or _that_ you can do with lando: `lando fe-watch`).
+If you want to browse the components in the storybook interface, you can do that by running `lando storybook`. Once it's up, go to http://storybook.drupal-kit.lndo.site.

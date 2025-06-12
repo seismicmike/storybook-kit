@@ -11,7 +11,6 @@ import "../icon/icon.css";
 import "../social_button/social_button.css";
 import "../social_icons/social_icons.css";
 import "./site_header.css";
-import "./site_header.js";
 
 export default {
   title: "SB Bazo/Site Header",
