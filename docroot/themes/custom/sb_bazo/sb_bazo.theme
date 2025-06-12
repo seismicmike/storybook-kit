@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * SB Bazo theme file.
+ */
+
+/**
+ * Implements template_preprocess_region__main_nav().
+ */
+function sb_bazo_preprocess_region__main_nav(&$variables) {
+  $variables['menu'] = $variables['elements']['sb_bazo_mainnavigation'] ?? '';
+  $variables['search'] = $variables['elements']['sb_bazo_searchform'] ?? '';
+}
+
+/**
+ * Implements template_preprocess_main__menu().
+ */
+function sb_bazo_preprocess_menu__main(&$variables) {
+  $variables['menu_items'] = [];
+
+  foreach ($variables['items'] as $item) {
+    $variables['menu_items'][] = [
+      'current' => $item['in_active_trail'],
+      'label' => $item['title'],
+      'url' => $item['url']->toString(),
+    ];
+  }
+}
