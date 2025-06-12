@@ -1,0 +1,25 @@
+uuid: 4747a733-7afe-4fc9-94c0-ddccfbe1614a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - sb_bazo
+id: sb_bazo_mainnavigation
+theme: sb_bazo
+region: main_nav
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

@@ -1,6 +1,6 @@
 uuid: 86c2ebe9-bbc8-460d-ace7-786fc2fceeeb
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - sb_bazo
