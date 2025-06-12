@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install npm dependencies
         run: npm ci
@@ -36,7 +36,7 @@ jobs:
         run: lando composer install --no-interaction --prefer-dist
 
       - name: Run grumphp
-        run lando grumphp
+        run: lando grumphp
 
       - name: Run JS/CSS tests
         run: lando npm run test
