@@ -23,8 +23,9 @@ jobs:
 
       - name: Install Lando
         run: |
-          curl -fsSL https://files.lando.dev/installer.sh | bash
-          echo "$HOME/.lando/bin" >> $GITHUB_PATH
+          curl -L -o lando.deb https://github.com/lando/lando/releases/latest/download/lando-arm64.deb
+          sudo dpkg -i lando.deb || true
+          sudo apt-get install -f -y
 
       - name: Start Lando
         run: lando start --no-build
