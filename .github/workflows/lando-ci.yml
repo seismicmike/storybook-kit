@@ -23,7 +23,8 @@ jobs:
 
       - name: Install Lando
         run: |
-          curl -L -o lando.deb https://github.com/lando/lando/releases/latest/download/lando-arm64.deb
+          curl -L -o lando.deb https://github.com/lando/lando/releases/latest/download/lando-amd64.deb
+          test $(stat -c%s lando.deb) -gt 10000000
           sudo dpkg -i lando.deb || true
           sudo apt-get install -f -y
 
