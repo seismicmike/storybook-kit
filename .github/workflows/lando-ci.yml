@@ -21,9 +21,6 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
-      - name: Install Docker
-        uses: docker-practice/actions-setup-docker@v1
-
       - name: Install Lando
         run: |
           curl -fsSL https://files.lando.dev/installer.sh | bash
