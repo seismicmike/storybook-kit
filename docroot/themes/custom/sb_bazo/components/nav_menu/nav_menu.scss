@@ -3,7 +3,6 @@
 .nav-menu {
   background-color: var(--tokens-colors-black);
   transition: all 500ms;
-
   display: block;
 
   @include mixins.laptop {

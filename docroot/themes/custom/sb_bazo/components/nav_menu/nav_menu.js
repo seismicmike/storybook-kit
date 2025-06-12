@@ -10,7 +10,7 @@
     attach(context) {
       once("nav-menu-toggle", ".nav-menu__toggle", context).forEach(
         (toggle) => {
-          toggle.addEventListener("click", (e) => {
+          toggle.addEventListener("click", () => {
             const items = toggle.nextElementSibling;
             if (items.classList.contains("nav-menu__items")) {
               $(items).slideToggle(500);
@@ -18,6 +18,6 @@
           });
         }
       );
-    },
+    }
   };
 })(jQuery, Drupal);
