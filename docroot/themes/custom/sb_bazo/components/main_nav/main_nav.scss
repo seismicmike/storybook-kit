@@ -2,11 +2,11 @@
 
 .main-nav-bar {
   background-color: var(--tokens-colors-black);
-  padding-inline: var(--layout-page-gutter);
+  // padding-inline: var(--layout-page-gutter);
   padding-block: 10px;
   transition: all 500ms;
 
-  @include mixins.large-tablet {
+  @include mixins.laptop {
     background-color: var(--tokens-colors-white);
     padding-block: 0;
   }
@@ -15,7 +15,7 @@
 .main-nav {
   display: block;
 
-  @include mixins.large-tablet {
+  @include mixins.laptop {
     display: flex;
     justify-content: space-between;
   }
@@ -28,7 +28,7 @@
     display: none;
     margin-block: 0;
 
-    @include mixins.large-tablet {
+    @include mixins.laptop {
       display: block;
       margin-block: 4px;
     }

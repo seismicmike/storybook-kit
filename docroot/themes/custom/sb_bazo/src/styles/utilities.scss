@@ -1,3 +1,5 @@
+@use "mixins" as mixins;
+
 .heading-1 {
   font-size: 2.5rem;
 }
@@ -18,7 +20,23 @@
   font-size: 1.25rem;
 }
 
-.container {
-  max-width: var(--layout-container-max-width);
-  margin-block: auto;
+.sb-bazo-container {
+  @include mixins.container(var(--layout-container-max-width));
+}
+
+.sb-bazo-container-inset {
+  @include mixins.container(var(--layout-container-max-width));
+}
+
+.sb-bazo-container-left,
+.sb-bazo-container-right {
+  display: flex;
+}
+
+.sb-bazo-container-align-left {
+  justify-content: flex-end;
+}
+
+.sb-bazo-container-align-left {
+  justify-content: flex-start;
 }

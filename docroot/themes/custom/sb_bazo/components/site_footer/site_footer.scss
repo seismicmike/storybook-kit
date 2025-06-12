@@ -2,20 +2,25 @@
 
 .site-footer {
   background-color: var(--tokens-colors-gray-900);
-  padding-inline: var(--layout-page-gutter);
+  // padding-inline: var(--layout-page-gutter);
   padding-block: 84px;
   color: var(--tokens-colors-white);
 
   &__columns {
-    @include mixins.large-tablet {
+    @include mixins.laptop {
       display: flex;
       gap: 16px;
     }
   }
 
   &__column {
-    @include mixins.large-tablet {
+    @include mixins.laptop {
       flex: 1 0;
     }
+  }
+
+  &__legal {
+    display: flex;
+    justify-content: center;
   }
 }
