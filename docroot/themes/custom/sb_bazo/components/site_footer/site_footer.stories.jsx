@@ -26,7 +26,7 @@ export const SiteFooter = {
     },
   },
   args: {
-    first_column: `<div style="border: 1px dotted #f00;">${SiteBranding({
+    first_column: `${SiteBranding({
       title: "Mike's Garage",
     })}
       <div>
@@ -48,9 +48,8 @@ export const SiteFooter = {
             url: "https://www.instagram.com",
           },
         ],
-      })}
-    </div>`,
-    second_column: `<div style="border: 1px dotted #f90;">
+      })}`,
+    second_column: `
         ${Heading({ heading_text: "Services", level: "2" })}
         <ul>
           <li>Oil Change</li>
@@ -58,15 +57,14 @@ export const SiteFooter = {
           <li>Tow Truck</li>
           <li>Tire Change</li>
           <li>Engine Repair</li>
-        </ul>
-      </div>`,
-    third_column: `<div style="border: 1px dotted #ff0;">
+        </ul>`,
+    third_column: `
           ${Heading({ heading_text: "Contact Information", level: "2" })}
           <div class="contact-card"><div class="contact-card__icon">location-dot</div><div class="contact-card__text">203 Fake St. Mountain View, San Francisco, California, USA</div></div>
           <div class="contact-card"><div class="contact-card__icon">phone</div><div class="contact-card__text">+2 392 3929 210</div></div>
           <div class="contact-card"><div class="contact-card__icon">paper-plane</div><div class="contact-card__text">info@yourdomain.com</div></div>
-        </div>`,
-    fourth_column: `<div style="border: 1px dotted #0f0;">
+        `,
+    fourth_column: `
           ${Heading({ heading_text: "Business Hours", level: "2" })}
           <div>
             <div>Opening Days</div>
@@ -76,10 +74,9 @@ export const SiteFooter = {
           <div>
             <div>Vacations</div>
             <p>All Sunday Days All Official Holidays</p>
-          </div>
-        </div>`,
+          </div>`,
     legal:
-      '<div style="border: 1px dotted #00f;">This was developed solely for demonstration purposes. It is not intended for use by anyone at any time.</div>\n',
+      "This was developed solely for demonstration purposes. It is not intended for use by anyone at any time.",
     base_path: "docroot/themes/custom/sb_bazo",
     attributes: createMockAttributes().setAttribute(
       "data-component-id",

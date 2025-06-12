@@ -1,12 +1,12 @@
 name: Drupal-Kit
 recipe: drupal10
 excludes:
-  # - drush
-  # - node_modules
-  # - themesrc/node_modules
-  # - docroot/core
-  # - docroot/vendor
-  # - docroot/modules/contrib
+  - drush
+  - node_modules
+  - themesrc/node_modules
+  - docroot/core
+  - docroot/vendor
+  - docroot/modules/contrib
 config:
   php: "8.1"
   webroot: docroot
@@ -33,7 +33,7 @@ services:
       password: user
       database: www
   node:
-    type: node
+    type: node:18
     build:
       - npm install
       - npm run build:dev
@@ -68,3 +68,6 @@ tooling:
   grumphp:
     service: appserver
     cmd: php /app/vendor/bin/grumphp run
+  storybook:
+    service: node
+    cmd: npm run storybook
