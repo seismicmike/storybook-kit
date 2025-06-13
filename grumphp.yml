@@ -32,17 +32,6 @@ grumphp:
       triggered_by: ["php", "module", "inc", "theme"]
       memory_limit: "-1"
       use_grumphp_paths: true
-    phpunit:
-      config_file: /app/phpunit.xml
-      testsuite: "Custom Module Code"
-      group: []
-      exclude_group: []
-      always_execute: true
-      order: null
-      coverage-clover: null
-      coverage-html: null
-      coverage-php: null
-      coverage-xml: null
   parallel:
     enabled: true
     max_workers: 32

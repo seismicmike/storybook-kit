@@ -37,5 +37,5 @@ jobs:
       - name: Run JS/CSS tests
         run: npm run test
 
-      # - name: Run unit tests
-      #   run: php /app/vendor/bin/phpunit --configuration /app/phpunit.xml
+      - name: Run unit tests
+        run: php ./vendor/bin/phpunit --configuration ./phpunit.xml
