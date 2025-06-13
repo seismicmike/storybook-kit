@@ -1,0 +1,45 @@
+name: PR Test
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Install Lando
+        run: |
+          /bin/bash -c "$(curl -fsSL https://get.lando.dev/setup-lando.sh)"
+
+      - name: Start Lando
+        run: lando start --no-build
+
+      - name: Install Composer Packages
+        run: lando composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Run PHP Code Quality
+        run: lando grumphp
+
+      - name: Run JS/CSS tests
+        run: lando npm run test
+
+      - name: Run PHPUnit
+        run: lando phpunit
+
+      - name: Stop Lando
+        if: always()
+        run: lando stop

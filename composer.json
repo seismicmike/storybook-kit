@@ -103,7 +103,8 @@
   },
   "require-dev": {
     "drupal/core-dev": "^10.4",
-    "nascom/grumphp-drupal": "^1.1"
+    "nascom/grumphp-drupal": "^1.1",
+    "phpunit/phpunit": "^9.6"
   },
   "conflict": {
     "drupal/drupal": "*"

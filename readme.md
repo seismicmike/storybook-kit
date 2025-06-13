@@ -20,4 +20,12 @@ All components are fully responsive.
 
 There's a lot more I can do. If I have time and inclination, I can build out the other components. Kit comes with lots of Paragraph bundles pre-defined, so pages can easily be created with rich content. I just haven't themed them yet, so they don't look like much. The site is basically a sandwich of a nice looking header and a decent looking footer with a bunch of slop in between. But this is just a demo project that I'm working on in my spare time.
 
-If you want to browse the components in the storybook interface, you can do that by running `lando storybook`. Once it's up, go to http://storybook.drupal-kit.lndo.site.
+If you want to browse the components in the storybook interface. To use that you'll need to create a `.local.lando.yml` file in the root of the project directory and put the following proxy definition into it:
+
+```
+proxy:
+  node:
+    - storybook.drupal-kit.lndo.site:6006
+```
+
+Once that's created, run `lando rebuild -y` to create the storybook proxy. Then run `lando storybook` to start the storbook app inside the node service. Once it's up, go to http://storybook.drupal-kit.lndo.site to browse the components.

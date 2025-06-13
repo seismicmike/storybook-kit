@@ -4,12 +4,19 @@ namespace Drupal\sb_twig;
 
 use Drupal\Core\Extension\ExtensionPathResolver;
 use Twig\Extension\AbstractExtension;
+use Twig\AbstractTwigCallable;
 use Twig\TwigFunction;
 
 /**
  * Twig extension.
  */
 class InlineSvgExtension extends AbstractExtension {
+  /**
+   * Path resolver service.
+   *
+   * @var \Drupal\Core\Extension\ExtensionPathResolver
+   */
+  protected ExtensionPathResolver $pathResolver;
 
   /**
    * Constructor.
@@ -17,14 +24,35 @@ class InlineSvgExtension extends AbstractExtension {
    * @param \Drupal\Core\Extension\ExtensionPathResolver $pathResolver
    *   The path resolver service.
    */
-  public function __construct(protected ExtensionPathResolver $pathResolver) {}
+  public function __construct(ExtensionPathResolver $pathResolver) {
+    $this->pathResolver = $pathResolver;
+  }
+
+  /**
+   * Build a twig function.
+   *
+   * @param mixed $functionName
+   *   The function name.
+   * @param mixed $callable
+   *   The callable callback.
+   * @param mixed $options
+   *   Options for the funciton.
+   *
+   * @return \Twig\AbstractTwigCallable
+   *   The new twig function.
+   *
+   * @codeCoverageIgnore
+   */
+  protected function buildTwigFunction($functionName, $callable = NULL, $options = []): AbstractTwigCallable {
+    return new TwigFunction($functionName, $callable, $options);
+  }
 
   /**
    * {@inheritdoc}
    */
   public function getFunctions(): array {
     return [
-      new TwigFunction('inline_svg', [$this, 'inlineSvg'], ['is_safe' => ['html']]),
+      $this->buildTwigFunction('inline_svg', [$this, 'inlineSvg'], ['is_safe' => ['html']]),
     ];
   }
 
@@ -58,22 +86,65 @@ class InlineSvgExtension extends AbstractExtension {
       }
       finally {
         $relative = substr($filename, strlen("@{$project_name}/"));
-        $filepath = DRUPAL_ROOT . "/{$project_type}s/custom/{$project_name}/{$relative}";
+        $filepath = $this->getDrupalRoot() . "/{$project_type}s/custom/{$project_name}/{$relative}";
 
-        if (file_exists($filepath)) {
-          return file_get_contents($filepath);
+        if ($this->checkForFileExists($filepath)) {
+          return $this->getFileContents($filepath);
         }
 
-        $filepath = DRUPAL_ROOT . "/{$project_type}s/custom/{$project_name}/components/{$relative}";
+        $filepath = $this->getDrupalRoot() . "/{$project_type}s/custom/{$project_name}/components/{$relative}";
 
-        if (file_exists($filepath)) {
-          return file_get_contents($filepath);
+        if ($this->checkForFileExists($filepath)) {
+          return $this->getFileContents($filepath);
         }
       }
     }
 
-    $path = DRUPAL_ROOT . '/' . $filename;
-    return file_exists($path) ? file_get_contents($path) : '';
+    $path = $this->getDrupalRoot() . '/' . $filename;
+    return $this->checkForFileExists($path) ? $this->getFileContents($path) : '';
+  }
+
+  /**
+   * Checks if a file exists.
+   *
+   * @param mixed $filename
+   *   The file name (including path) to check.
+   *
+   * @return bool
+   *   Whether the file exists.
+   *
+   * @codeCoverageIgnore
+   */
+  protected function checkForFileExists($filename): bool {
+    return file_exists($filename);
+  }
+
+  /**
+   * Get the contents of a file.
+   *
+   * @param mixed $filename
+   *   The file name (including path).
+   *
+   * @return string
+   *   The content of the file.
+   *
+   * @codeCoverageIgnore
+   */
+  protected function getFileContents($filename): string {
+    return file_get_contents($filename) ?? "";
+
+  }
+
+  /**
+   * Get the drupal root path.
+   *
+   * @return string
+   *   The drupal root path.
+   *
+   * @codeCoverageIgnore
+   */
+  protected function getDrupalRoot(): string {
+    return DRUPAL_ROOT;
   }
 
 }
