@@ -25,7 +25,7 @@ If you want to browse the components in the storybook interface. To use that you
 ```
 proxy:
   node:
-    - storybook.drupal-kit.lndo.site:6006
+    - storybook.storybook-kit.lndo.site:6006
 ```
 
-Once that's created, run `lando rebuild -y` to create the storybook proxy. Then run `lando storybook` to start the storbook app inside the node service. Once it's up, go to http://storybook.drupal-kit.lndo.site to browse the components.
+Once that's created, run `lando rebuild -y` to create the storybook proxy. Then run `lando storybook` to start the storbook app inside the node service. Once it's up, go to http://storybook.storybook-kit.lndo.site to browse the components.
