@@ -5,6 +5,7 @@ namespace Drupal\Tests\sb_twig\Unit;
 use Drupal\Core\Extension\ExtensionPathResolver;
 use Drupal\sb_twig\InlineSvgExtension;
 use Drupal\Tests\UnitTestCase;
+use Twig\AbstractTwigCallable;
 
 /**
  * @covers \Drupal\sb_twig\InlineSvgExtension
@@ -81,5 +82,20 @@ class InlineSvgExtensionTest extends UnitTestCase {
     $extension->method('getFileContents')->with($expectedPath)->willReturn($mockSvgContent);
 
     $this->assertSame($mockSvgContent, $extension->inlineSvg($svgPath));
+  }
+
+  public function testGetFunction() {
+    $extension = $this->getMockBuilder(InlineSvgExtension::class)
+      ->setConstructorArgs([$this->pathResolverProphecy->reveal()])
+      ->onlyMethods(['buildTwigFunction'])
+      ->getMock();
+
+    $mockTwigFunction = $this->createMock(AbstractTwigCallable::class);
+      
+    $extension
+      ->method('buildTwigFunction')
+      ->with('inline_svg', [$extension, 'inlineSvg'], ['is_safe' => ['html']])
+      ->willReturn($mockTwigFunction);
+    $this->assertSame([$mockTwigFunction], $extension->getFunctions());
   }
 }

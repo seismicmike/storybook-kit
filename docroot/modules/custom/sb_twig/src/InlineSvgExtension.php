@@ -4,7 +4,7 @@ namespace Drupal\sb_twig;
 
 use Drupal\Core\Extension\ExtensionPathResolver;
 use Twig\Extension\AbstractExtension;
-use Twig\TwigFunction;
+use Twig\AbstractTwigCallable;
 
 /**
  * Twig extension.
@@ -37,12 +37,12 @@ class InlineSvgExtension extends AbstractExtension {
    * @param mixed $options
    *   Options for the funciton.
    *
-   * @return \Twig\TwigFunction
+   * @return \Twig\AbstractTwigCallable
    *   The new twig function.
    *
    * @codeCoverageIgnore
    */
-  protected function buildTwigFunction($functionName, $callable = NULL, $options = []): TwigFunction {
+  protected function buildTwigFunction($functionName, $callable = NULL, $options = []): AbstractTwigCallable {
     return new TwigFunction($functionName, $callable, $options);
   }
 
