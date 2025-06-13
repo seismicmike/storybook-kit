@@ -89,8 +89,7 @@ class InlineSvgExtensionTest extends UnitTestCase {
 
     $extension->method('checkForFileExists')->with($expectedPath)->willReturn(TRUE);
     $mockSvgContent = uniqid("<svg>");
-    $extension->method('getFileContents')->with($expectedPath)->willReturn('fhqwhgads');
-    // $extension->method('getFileContents')->with($expectedPath)->willReturn($mockSvgContent);
+    $extension->method('getFileContents')->with($expectedPath)->willReturn($mockSvgContent);
     $this->assertSame($mockSvgContent, $extension->inlineSvg($svgPath));
   }
 
