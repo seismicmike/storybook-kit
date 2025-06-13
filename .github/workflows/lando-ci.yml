@@ -31,11 +31,11 @@ jobs:
       - name: Install Composer Packages
         run: composer install --no-interaction --prefer-dist --no-progress
 
-      - name: Run grumphp
+      - name: Run PHP Tests
         run: php ./vendor/bin/grumphp run
 
       - name: Run JS/CSS tests
         run: npm run test
 
-      - name: Run unit tests
-        run: php /app/vendor/bin/phpunit --configuration /app/phpunit.xml
+      # - name: Run unit tests
+      #   run: php /app/vendor/bin/phpunit --configuration /app/phpunit.xml

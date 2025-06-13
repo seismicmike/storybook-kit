@@ -5,6 +5,7 @@ namespace Drupal\sb_twig;
 use Drupal\Core\Extension\ExtensionPathResolver;
 use Twig\Extension\AbstractExtension;
 use Twig\AbstractTwigCallable;
+use Twig\TwigFunction;
 
 /**
  * Twig extension.

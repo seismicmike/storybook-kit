@@ -14,6 +14,8 @@ use Twig\AbstractTwigCallable;
 class InlineSvgExtensionTest extends UnitTestCase {
 
   /**
+   * Prophesy for the path resolver service.
+   *
    * @var \Prophecy\Prophecy\ObjectProphecy
    */
   protected $pathResolverProphecy;
@@ -28,6 +30,9 @@ class InlineSvgExtensionTest extends UnitTestCase {
     $this->pathResolverProphecy = $this->prophesize(ExtensionPathResolver::class);
   }
 
+  /**
+   * @covers \Drupal\sb_twig\InlineSvgExtension::inlineSvg()
+   */
   public function testReturnsEmptyIfPathResolverThrows() {
     // Configure the path resolver to throw exceptions.
     $this->pathResolverProphecy->getPath('theme', 'fail')->willThrow(new \Exception('Theme not found'));
@@ -42,6 +47,9 @@ class InlineSvgExtensionTest extends UnitTestCase {
     $this->assertSame('', $result);
   }
 
+  /**
+   * @covers \Drupal\sb_twig\InlineSvgExtension::inlineSvg()
+   */
   public function testReturnsInlineSvgFromThemePath() {
     $mockTheme = 'themes/custom/sb_twig';
     $this->pathResolverProphecy->getPath('theme', 'sb_twig')->willReturn($mockTheme);
@@ -57,14 +65,16 @@ class InlineSvgExtensionTest extends UnitTestCase {
     $svgPath = "@sb_twig/icons/icon.svg";
     $pathWithoutNamespace = "icons/icon.svg";
     $expectedPath = "{$mockDrupalRoot}/$mockTheme/$pathWithoutNamespace";
-    $extension->method('checkForFileExists')->with($expectedPath)->willReturn(true);
+    $extension->method('checkForFileExists')->with($expectedPath)->willReturn(TRUE);
     $mockSvgContent = uniqid("<svg>");
-    // $extension->method('getFileContents')->with($expectedPath)->willReturn('fhqwhdags');
     $extension->method('getFileContents')->with($expectedPath)->willReturn($mockSvgContent);
 
     $this->assertSame($mockSvgContent, $extension->inlineSvg($svgPath));
   }
 
+  /**
+   * @covers \Drupal\sb_twig\InlineSvgExtension::inlineSvg()
+   */
   public function testReturnsRelativePathSvg() {
     $extension = $this->getMockBuilder(InlineSvgExtension::class)
       ->setConstructorArgs([$this->pathResolverProphecy->reveal()])
@@ -73,29 +83,33 @@ class InlineSvgExtensionTest extends UnitTestCase {
 
     $mockDrupalRoot = '/app/docroot';
     $extension->method('getDrupalRoot')->willReturn($mockDrupalRoot);
-    
+
     $svgPath = "icons/icon.svg";
     $expectedPath = "$mockDrupalRoot/$svgPath";
 
-    $extension->method('checkForFileExists')->with($expectedPath)->willReturn(true);
+    $extension->method('checkForFileExists')->with($expectedPath)->willReturn(TRUE);
     $mockSvgContent = uniqid("<svg>");
-    $extension->method('getFileContents')->with($expectedPath)->willReturn($mockSvgContent);
-
+    $extension->method('getFileContents')->with($expectedPath)->willReturn('fhqwhgads');
+    // $extension->method('getFileContents')->with($expectedPath)->willReturn($mockSvgContent);
     $this->assertSame($mockSvgContent, $extension->inlineSvg($svgPath));
   }
 
-  public function testGetFunction() {
+  /**
+   * @covers \Drupal\sb_twig\InlineSvgExtension::getFunctions()
+   */
+  public function testGetFunctions() {
     $extension = $this->getMockBuilder(InlineSvgExtension::class)
       ->setConstructorArgs([$this->pathResolverProphecy->reveal()])
       ->onlyMethods(['buildTwigFunction'])
       ->getMock();
 
     $mockTwigFunction = $this->createMock(AbstractTwigCallable::class);
-      
+
     $extension
       ->method('buildTwigFunction')
       ->with('inline_svg', [$extension, 'inlineSvg'], ['is_safe' => ['html']])
       ->willReturn($mockTwigFunction);
     $this->assertSame([$mockTwigFunction], $extension->getFunctions());
   }
+
 }
