@@ -49,6 +49,9 @@ tooling:
   npm:
     service: node
     dir: /app
+  php:
+    service: appserver
+    dir: /app
   fe-build:
     service: node
     dir: /app
@@ -77,3 +80,9 @@ tooling:
   storybook:
     service: node
     cmd: npm run storybook
+  phpunit:
+    service: appserver
+    cmd: php /app/vendor/bin/phpunit --configuration /app/phpunit.xml
+  test-coverage:
+    service: appserver
+    cmd: php /app/vendor/bin/phpunit --configuration /app/phpunit.xml --coverage-html=/app/reports/coverage
