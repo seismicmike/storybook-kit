@@ -1,4 +1,4 @@
-name: Drupal-Kit
+name: storybook-kit
 recipe: drupal10
 excludes:
   - drush
@@ -83,3 +83,6 @@ tooling:
   test-coverage:
     service: appserver
     cmd: php /app/vendor/bin/phpunit --configuration /app/phpunit.xml --coverage-html=/app/reports/coverage
+  login:
+    service: appserver
+    cmd: /app/vendor/bin/drush uli -l "https://${LANDO_APP_NAME}.${LANDO_DOMAIN}"
