@@ -90,3 +90,6 @@ logs
 
 # Coverage reports
 reports
+
+# local configs
+.lando.local.yml
