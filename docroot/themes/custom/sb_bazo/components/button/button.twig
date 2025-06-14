@@ -11,27 +11,25 @@
 {% set button_style = button_style|default("default") %}
 
 {% set classes = [
-  "button",
-  "button--" ~ button_style
+  "btn",
+  "btn--" ~ button_style
 ] %}
 
 {% if disabled %}
   {% set classes = classes|merge(['is-disabled']) %}
 {% endif %}
 
+<{{ tag }}
+  data-component-id="sb_bazo:button"
+  class="{% for class in classes %} {{class}}{% endfor %}"
+  {% if tag == 'a' %}href="{{href}}"{% endif %}
+  {% if disabled %}disabled="disabled"{% endif %}
+>
+{% if icon %}
+  <div class="btn__icon">
 
-<div{{attributes}}>
-  <{{ tag }}
-    class="{% for class in classes %} {{class}}{% endfor %}"
-    {% if tag == 'a' %}href="{{href}}"{% endif %}
-    {% if disabled %}disabled="disabled"{% endif %}
-  >
-  {% if icon %}
-    <div class="button__icon">
+  </div>
+{% endif %}
+<div class="btn__label">{{ label }}</div>
 
-    </div>
-  {% endif %}
-  <div class="button__label">{{ label }}</div>
-
-  </{{ tag }}>
-</div>
+</{{ tag }}>

@@ -77,7 +77,6 @@ export const SiteFooter = {
           </div>`,
     legal:
       "This was developed solely for demonstration purposes. It is not intended for use by anyone at any time.",
-    base_path: "docroot/themes/custom/sb_bazo",
     attributes: createMockAttributes().setAttribute(
       "data-component-id",
       "sb_bazo:site_footer"

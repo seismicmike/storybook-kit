@@ -1,0 +1,7 @@
+uuid: 02db1adc-ba6d-4ec5-ae8a-3492ba7bc9b8
+langcode: en
+status: true
+dependencies: {  }
+id: hero_slide__cta
+label: 'Hero CTA'
+classes: hero--cta

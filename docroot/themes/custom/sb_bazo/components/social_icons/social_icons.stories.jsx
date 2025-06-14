@@ -35,7 +35,7 @@ export const HeaderIcons = {
         url: "#",
       },
     ],
-    base_path: "docroot/themes/custom/sb_bazo",
+
     attributes: createMockAttributes().setAttribute(
       "data-component-id",
       "sb_bazo:social_icons"
@@ -67,7 +67,7 @@ export const FooterIcons = {
         url: "#",
       },
     ],
-    base_path: "docroot/themes/custom/sb_bazo",
+
     attributes: createMockAttributes().setAttribute(
       "data-component-id",
       "sb_bazo:social_icons"

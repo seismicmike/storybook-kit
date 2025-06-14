@@ -1,8 +1,0 @@
-title: "SB Bazo/Main Nav"
-stories:
-  - name: "Main Nav"
-    args:
-      menu: |
-        <nav><ul><li>Home</li><li>About</li></ul></nav>
-      search: |
-        <form><input type="text" placeholder="Search"><button><i class="fa-magnifying-glass fa-lg fa-solid"></i></button></form>

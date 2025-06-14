@@ -1,0 +1,42 @@
+<div {{ attributes }} >
+  {% embed 'sb_bazo:hero' with {
+    style: hero_style,
+    image: image,
+    content: content,
+  } %}
+    {% block heading %}
+      {% embed 'sb_bazo:heading' with {
+        level: '1',
+        content: content
+      } only %}
+        {% block heading_content %}
+          {{ content.field_title}}
+        {% endblock %}
+      {% endembed %}
+    {% endblock %}
+
+    {% block subheading %}
+      {% if content.field_content %}
+        {% embed 'sb_bazo:heading' with {
+          level: '2',
+          classes: ['subheading'],
+          content: content
+        } only %}
+          {% block heading_content %}
+            {{ content.field_content }}
+          {% endblock %}
+        {% endembed %}
+      {% endif %}
+    {% endblock %}
+
+    {% block cta %}
+      {% if content.field_link %}{{ content.field_link }}{% endif %}
+    {% endblock %}
+
+    {% block breadcrumbs %}
+      {% if bc_links %}
+        {{ bc_links }}
+      {% endif %}
+    {% endblock %}
+  {% endembed %}
+</div>

@@ -1,0 +1,27 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Breadcrumbs
+status: stable
+props:
+  type: object
+  properties:
+    current_page:
+      type: string
+      title: Current Page
+      description: Title of the current page
+      # @todo Add examples here.
+      examples: []
+    breadcrumbs:
+      type: array
+      title: Breadcrumbs
+      description: The breadcrumbs
+      items:
+        type: object
+        properties:
+          title:
+            type: string
+            title: Title
+            description: The page title
+          url:
+            type: string
+            title: URL
+            description: URL

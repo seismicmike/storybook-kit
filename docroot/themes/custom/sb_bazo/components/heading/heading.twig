@@ -6,19 +6,18 @@
 ] %}
 
 {% if classes %}
-	{% set heading_classes = heading_classes|merge(classes) %}
+  {% set heading_classes = heading_classes|merge(classes) %}
 {% endif %}
 
-<div {{ attributes }}>
-	<div class="{% for class in classes %} {{class}}{% endfor %}">
-		<h{{level}} class="{% for class in heading_classes %} {{ class }}{% endfor %}">
-			{% block heading_markup %}
-				{% if heading_markup %}
-					{{heading_markup}}
-				{% else %}
-					{{heading_text|default("Sample Heading")}}
-				{% endif %}
-			{% endblock %}
-		</h{{level}}>
-	</div>
+<div 
+  data-component-id="sb_bazo:heading">
+  <h{{level}} class="{% for class in heading_classes %} {{ class }}{% endfor %}">
+    {% block heading_content %}
+      {% if heading_content %}
+        {{heading_content}}
+      {% else %}
+        {{heading_text|default("Sample Heading")}}
+      {% endif %}
+    {% endblock %}
+  </h{{level}}>
 </div>

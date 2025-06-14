@@ -1,0 +1,6 @@
+<div data-component-id="sb_bazo:breadcrumbs" class="breadcrumbs">
+  {% for breadcrumb in breadcrumbs %}
+    <div class="breadcrumbs__breadcrumb"><a href="{{breadcrumb.url}}">{{breadcrumb.title}}</a> {% include 'sb_bazo:icon' with {icon: 'chevron-right', size: 'sm'} %}</div>
+  {% endfor %}
+  <div class="breadcrumbs__breadcrumb breadcrumbs__breadcrumb--current">{{ current_page }}</div>
+</div>

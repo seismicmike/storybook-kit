@@ -67,7 +67,6 @@ export const Demo = {
         ],
       })}
     `,
-    base_path: "docroot/themes/custom/sb_bazo",
     attributes: createMockAttributes().setAttribute(
       "data-component-id",
       "sb_bazo:site_header"

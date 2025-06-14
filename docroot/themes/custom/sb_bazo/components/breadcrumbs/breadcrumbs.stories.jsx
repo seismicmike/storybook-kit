@@ -1,15 +1,14 @@
-// AUTO-GENERATED FROM section.stories.yml
 import { createMockAttributes } from "@storybook-utils/mockAttributes";
-import Component from "./section.twig";
-import "./section.css";
+import Component from "./breadcrumbs.twig";
+import "./breadcrumbs.css";
 
 export default {
-  title: "SB Bazo/Section",
+  title: "SB Bazo/Breadcrumbs",
   argTypes: {},
   component: Component,
 };
 
-export const Section = {
+export const Demo = {
   parameters: {
     docs: {
       description: {
@@ -18,9 +17,16 @@ export const Section = {
     },
   },
   args: {
+    current_page: "About Us",
+    breadcrumbs: [
+      {
+        title: "Home",
+        url: "#",
+      },
+    ],
     attributes: createMockAttributes().setAttribute(
       "data-component-id",
-      "namespace:section"
+      "sb_bazo:heading"
     ),
   },
 };

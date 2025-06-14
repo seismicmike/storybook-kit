@@ -5,6 +5,11 @@
  * SB Bazo theme file.
  */
 
+use Drupal\classy_paragraphs\ClassyParagraphsStyleInterface;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\media\MediaInterface;
+use Drupal\paragraphs\ParagraphInterface;
+
 /**
  * Implements template_preprocess_region__main_nav().
  */
@@ -32,8 +37,141 @@ function sb_bazo_preprocess_menu__main(&$variables) {
  * Implements template_preprocess_paragraph().
  */
 function sb_bazo_preprocess_paragraph(&$variables) {
-  if ($variables['elements']['#paragraph']->bundle() !== 'section') {
+  if (!in_array($variables['elements']['#paragraph']->bundle(), ['section', 'hero', 'hero_slide'])) {
     $variables['test'] = 'Hello';
     $variables['attributes']['class'][] = 'sb-bazo-container';
+  }
+}
+
+/**
+ * Get the classy paragraphs style entity attached to a paragraph.
+ *
+ * @param \Drupal\paragraphs\ParagraphInterface $paragraph
+ *   The paragraph to load the classy paragraph from.
+ * @param string $field_name
+ *   The name of the field the classy paragraph should be attached to the
+ *   paragraph through. Defaults to 'field_style'.
+ *
+ * @return \Drupal\classy_paragraphs\ClassyParagraphsStyleInterface|null
+ *   If a classy paragraph style is attached to the paragraph via the field name
+ *   it will be returned as an entity object. If not, then NULL will be
+ *   returned.
+ */
+function _sb_bazo_get_classy_style_from_paragraph(ParagraphInterface $paragraph, $field_name = 'field_style'): ClassyParagraphsStyleInterface|NULL {
+  if (!$paragraph->hasField($field_name)) {
+    return NULL;
+  }
+
+  $classy_styles = $paragraph->get($field_name)->referencedEntities();
+  if (empty($classy_styles)) {
+    return NULL;
+  }
+
+  $classy_style = reset($classy_styles);
+  if (!($classy_style instanceof ClassyParagraphsStyleInterface)) {
+    return NULL;
+  }
+
+  return $classy_style;
+}
+
+/**
+ * Load the current route breadcrumb links.
+ *
+ * @return mixed
+ *   The breadcrumb links.
+ */
+function _sb_bazo_get_breadcrumb_links() {
+  $route_match = \Drupal::routeMatch();
+  $breadcrumb_manager = \Drupal::service('breadcrumb');
+  $breadcrumb = $breadcrumb_manager->build($route_match);
+  return $breadcrumb->getLinks();
+}
+
+/**
+ * Get the current page title.
+ *
+ * @return string
+ *   The page title.
+ */
+function _sb_bazo_get_current_page_title(): string {
+  $title_resolver = Drupal::service('title_resolver');
+
+  $request = Drupal::request();
+  $route = $request->attributes->get('_route_object');
+  $controller = $request->attributes->get('_controller');
+
+  return $title_resolver->getTitle($request, $route, $controller) ?? '';
+}
+
+/**
+ * Get the url of an image attached to a media entity.
+ *
+ * @param \Drupal\media\MediaInterface $media
+ *   The media entity.
+ * @param string $image_style
+ *   The image style to use. Defaults to thumbnail.
+ *
+ * @return string
+ *   The URL of the image. Will be empty if no image is present or if the image
+ *   style could not be generated.
+ */
+function _sb_bazo_get_media_image_style_url(MediaInterface $media, $image_style = 'thumbnail'): string {
+  if ($media->bundle() !== 'image' || !$media->hasField('field_media_image') || $media->get('field_media_image')->isEmpty()) {
+    return '';
+  }
+
+  $file = $media->get('field_media_image')->entity;
+  $uri = $file->getFileUri();
+
+  $image_style = ImageStyle::load($image_style);
+
+  if (!$image_style) {
+    return '';
+  }
+
+  return $image_style->buildUrl($uri);
+}
+
+/**
+ * Implements template_preprocess_paragraph__hero_slide__full().
+ */
+function sb_bazo_preprocess_paragraph__hero_slide__full(&$variables) {
+  // Set the background image url.
+  $media = $variables['paragraph']->get('field_media_background')->entity;
+  if ($media instanceof MediaInterface) {
+    $variables['image'] = _sb_bazo_get_media_image_style_url($media, 'biggest_landscape_2x1');
+  }
+
+  // Set the hero style based on the selection made in the "style" field.
+  $variables['hero_style'] = 'heading';
+  $classy_style = _sb_bazo_get_classy_style_from_paragraph($variables['paragraph']);
+
+  if ($classy_style instanceof ClassyParagraphsStyleInterface) {
+    $classy_style_id = $classy_style->id();
+    if ($classy_style_id === 'hero_slide__cta') {
+      $variables['hero_style'] = 'cta';
+    }
+  }
+
+  // If this is a heading style CTA, load the breadcrumbs and add them to the
+  // build.
+  if ($variables['hero_style'] === 'heading') {
+    $links = _sb_bazo_get_breadcrumb_links();
+    $variables['bc_links'] = [
+      '#type' => 'component',
+      '#component' => 'sb_bazo:breadcrumbs',
+      '#props' => [
+        'current_page' => _sb_bazo_get_current_page_title(),
+        'breadcrumbs' => [],
+      ],
+    ];
+
+    foreach ($links as $link) {
+      $variables['bc_links']['#props']['breadcrumbs'][] = [
+        'title' => $link->getText(),
+        'url' => $link->getUrl()->toString(),
+      ];
+    }
   }
 }

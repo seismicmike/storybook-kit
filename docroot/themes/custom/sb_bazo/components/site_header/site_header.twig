@@ -2,17 +2,17 @@
   'site-header'
 ]) %}
 
-<header {{ attributes }}>
-	<div class="{% for class in classes %} {{class}}{% endfor %}">
-		<div class="site-header__container sb-bazo-container">
-			{% block region_content %}
-				{% if region_content %}
-					{{region_content}}
-				{% else %}
-					<div>Region content here.</div>
-				{% endif %}
+<header data-component-id="sb_bazo:site_header">
+  <div class="{% for class in classes %} {{class}}{% endfor %}">
+    <div class="site-header__container sb-bazo-container">
+      {% block region_content %}
+        {% if region_content %}
+          {{region_content}}
+        {% else %}
+          <div>Region content here.</div>
+        {% endif %}
 
-			{% endblock %}
-		</div>
-	</div>
+      {% endblock %}
+    </div>
+  </div>
 </header>

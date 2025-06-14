@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.hero_slide.field_class_custom
     - field.field.paragraph.hero_slide.field_content
+    - field.field.paragraph.hero_slide.field_link
     - field.field.paragraph.hero_slide.field_media_background
     - field.field.paragraph.hero_slide.field_style
     - field.field.paragraph.hero_slide.field_title
@@ -13,6 +14,7 @@ dependencies:
     - paragraphs.paragraphs_type.hero_slide
   module:
     - field_group
+    - link
     - media
     - smart_trim
 third_party_settings:
@@ -72,6 +74,18 @@ content:
       more_text: More
       more_class: more-link
       more_link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_link:
+    type: link_separate
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
     weight: 2
     region: content

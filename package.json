@@ -45,9 +45,9 @@
   "scripts": {
     "test": "npm run lint:sass && npm run lint:js",
     "fix": "npm run fix:sass && npm run fix:js",
-    "build": "npx webpack --config webpack.config.js --mode='production'",
-    "build:dev": "npx webpack --config webpack.config.js --mode='development'",
-    "watch": "npx webpack --config webpack.config.js --mode='development' --watch",
+    "build": "npx webpack --config webpack.config.js --mode=production",
+    "build:dev": "npx webpack --config webpack.config.js --mode=development",
+    "watch": "npx webpack --config webpack.config.js --mode=development --watch",
     "lint:sass": "npx stylelint \"docroot/*/custom/**/*.scss\"",
     "fix:sass": "npx stylelint \"docroot/*/custom/**/*.scss\" --fix",
     "lint:js": "npx eslint \"docroot/**/custom/**/*.js\" --ignore-pattern \"**/node_modules/*\"",

@@ -1,0 +1,35 @@
+{% set style = style|default("heading") %}
+{% set classes = [
+  "hero",
+  "hero--" ~ style
+] %}
+<div data-component-id="sb_bazo:hero" class="{% for class in classes %} {{class}}{% endfor %}" style="background-image: url({{image}});">
+  <div class="sb-bazo-container hero__container">
+    <div class="hero__subheading">
+      {% block subheading %}
+        {% if subheading %}
+          {{ subheading }}
+        {% endif %}
+      {% endblock %}
+    </div>
+    <div class="hero__breadcrumbs">
+      {% block breadcrumbs %}
+        {% if breadcrumbs %}
+          {{breadcrumbs}}
+        {% endif %}
+      {% endblock %}
+    </div>
+    <div class="hero__heading">
+      {% block heading %}
+        {% if heading %}
+          {{ heading }}
+        {% endif %}
+      {% endblock %}
+    </div>
+    <div class="hero__cta">
+      {% block cta %}
+        {% if cta %}{{cta}}{% endif %}
+      {% endblock %}
+    </div>
+  </div>
+</div>
