@@ -8,14 +8,14 @@
 ] %}
 
 <span data-component-id="sb_bazo:social_button">
-	<div
-		class="{% for class in classes %} {{class}}{% endfor %}">
-		{# Keep the outer div whenever possible it is a nice way to ensure the presence of "attributes" #}
-		<a href={{url}}>
-			{% include 'sb_bazo:icon' with {
+  <div
+    class="{% for class in classes %} {{class}}{% endfor %}">
+    {# Keep the outer div whenever possible it is a nice way to ensure the presence of "attributes" #}
+    <a href={{url}}>
+      {% include 'sb_bazo:icon' with {
       icon: icon,
       size: size,
     } only %}
-		</a>
-	</div>
+    </a>
+  </div>
 </span>

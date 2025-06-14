@@ -8,15 +8,15 @@
 ] %}
 
 <span data-component-id="sb_bazo:icon" class="{% for class in classes %} {{class}}{% endfor %}">
-	{% if icon in ['facebook', 'twitter', 'instagram', 'maps'] %}
-		<i class="{% for class in classes %}{{ class }} {% endfor %}">
-			{{ inline_svg('@sb_bazo/icon/svg/' ~ icon ~ '.svg') }}
-		</i>
-	{% else %}
-		{% set classes = classes|merge([
+  {% if icon in ['facebook', 'twitter', 'instagram', 'maps'] %}
+    <i class="{% for class in classes %}{{ class }} {% endfor %}">
+      {{ inline_svg('@sb_bazo/icon/svg/' ~ icon ~ '.svg') }}
+    </i>
+  {% else %}
+    {% set classes = classes|merge([
       "fa-" ~ style|default("solid"),
       "fa-" ~ icon,
     ]) %}
-		<i class="{% for class in classes %}{{ class }} {% endfor %}"></i>
-	{% endif %}
+    <i class="{% for class in classes %}{{ class }} {% endfor %}"></i>
+  {% endif %}
 </span>

@@ -1,15 +1,15 @@
 <nav data-component-id="sb_bazo:nav_menu" class="nav-menu">
-	<button class="nav-menu__toggle">
-		<div class="nav-menu__toggle-icon">
-			{% include 'sb_bazo:icon' with {icon: 'bars'} only %}
-		</div>
-		<div class="nav-menu__toggle-label">Menu</div>
-	</button>
-	<ul class="nav-menu__items">
-		{% for item in items %}
-			<li class="nav-menu__item {% if item.current %}nav-menu__item--current{% endif %}">
-				<a href="{{item.url|default('#')}}">{{item.label}}</a>
-			</li>
-		{% endfor %}
-	</ul>
+  <button class="nav-menu__toggle">
+    <div class="nav-menu__toggle-icon">
+      {% include 'sb_bazo:icon' with {icon: 'bars'} only %}
+    </div>
+    <div class="nav-menu__toggle-label">Menu</div>
+  </button>
+  <ul class="nav-menu__items">
+    {% for item in items %}
+      <li class="nav-menu__item {% if item.current %}nav-menu__item--current{% endif %}">
+        <a href="{{item.url|default('#')}}">{{item.label}}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
