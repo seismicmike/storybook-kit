@@ -1,0 +1,7 @@
+uuid: 7d79473e-c26a-42a1-8a52-611365b91d93
+langcode: en
+status: true
+dependencies: {  }
+id: hero_slide__page_header
+label: 'Hero Page Header'
+classes: hero--page-header

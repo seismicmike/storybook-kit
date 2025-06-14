@@ -1,9 +1,7 @@
 uuid: d65e535f-e4e5-4584-8918-bbb2e1ff2f73
 langcode: en
-status: true
+status: false
 dependencies:
-  module:
-    - node
   theme:
     - sb_bazo
 _core:
@@ -19,11 +17,4 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      page: page
+visibility: {  }
