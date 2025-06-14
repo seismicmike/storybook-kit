@@ -11,7 +11,7 @@ props:
       enum:
         - null
         - "cta"
-        - "header"
+        - "heading"
     image:
       type: string
       title: Image

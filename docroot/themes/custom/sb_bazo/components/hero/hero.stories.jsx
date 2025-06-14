@@ -24,7 +24,7 @@ export const PageHeading = {
     },
   },
   args: {
-    style: "header",
+    style: "heading",
     heading: `${Heading({
       level: "1",
       heading_text: "About Us",
