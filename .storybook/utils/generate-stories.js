@@ -48,7 +48,7 @@ for (const ymlPath of files) {
       }
       args =
         args +
-        `'base_path': '${base_path}', 'attributes': createMockAttributes().setAttribute('data-component-id', '${namespace}:${componentName}')}`;
+        `'attributes': createMockAttributes().setAttribute('data-component-id', '${namespace}:${componentName}')}`;
       const exportName = story.name
         .replace(/[^a-zA-Z0-9_$]/g, "")
         .replace(/^[^a-zA-Z_$]+/, "");

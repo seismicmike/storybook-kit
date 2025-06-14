@@ -1,0 +1,35 @@
+"$schema": "https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json"
+name: Hero
+status: stable
+props:
+  type: object
+  properties:
+    style:
+      type: ["string", "null"]
+      title: Style
+      description: The style of hero
+      enum:
+        - null
+        - "cta"
+        - "header"
+    heading:
+      type: string
+      title: Heading
+      description: The primary heading
+    image:
+      type: string
+      title: Image
+      description: Background image url
+    subheading:
+      type: string
+      title: Sub-Heading
+    cta_label:
+      type: string
+      title: CTA Label
+    cta_url:
+      type: string
+      title: CTA URL
+slots:
+  breadcrumbs:
+    title: Breadcrumbs
+    description: Site breadcrumbs to display.

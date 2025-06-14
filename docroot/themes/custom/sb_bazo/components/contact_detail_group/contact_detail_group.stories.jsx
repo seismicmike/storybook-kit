@@ -31,6 +31,6 @@ export const Header = {
       "value": "1 (855) 688-9669"
     }
   ]
-, 'base_path': 'docroot/themes/custom/sb_bazo', 'attributes': createMockAttributes().setAttribute('data-component-id', 'sb_bazo:contact_detail_group')}
+, 'base_path': 'docroot\themes\custom\sb_bazo', 'attributes': createMockAttributes().setAttribute('data-component-id', 'namespace:contact_detail_group')}
 };
 

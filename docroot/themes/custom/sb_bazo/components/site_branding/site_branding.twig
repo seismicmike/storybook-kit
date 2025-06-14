@@ -2,12 +2,10 @@
   'site-branding',
 ] %}
 
-<div {{ attributes }}>
-	<div class="{% for class in classes %} {{class}}{% endfor %}">
-		<div class="site-branding__title">
-			<a class="site-branding__link" href="/">
-				{{ title }}<span class="site-branding__period">.</span>
-			</a>
-		</div>
+<div data-component-id="sb_bazo:site_branding" class="{% for class in classes %} {{class}}{% endfor %}">
+	<div class="site-branding__title">
+		<a class="site-branding__link" href="/">
+			{{ title }}<span class="site-branding__period">.</span>
+		</a>
 	</div>
 </div>

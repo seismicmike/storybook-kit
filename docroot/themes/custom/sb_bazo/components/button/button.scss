@@ -1,3 +1,24 @@
-.button {
-  // No-op.
+.btn {
+  display: inline-flex;
+  padding-block: 12px;
+  text-decoration: none;
+  padding-inline: 16px;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 200ms;
+
+  &--primary {
+    color: var(--tokens-colors-white);
+    background-color: var(--tokens-colors-orange-500);
+    border: 1px solid var(--tokens-colors-orange-500);
+
+    &:hover {
+      background: transparent;
+      color: var(--tokens-colors-orange-500);
+    }
+  }
 }

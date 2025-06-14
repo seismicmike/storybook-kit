@@ -32,7 +32,7 @@ function sb_bazo_preprocess_menu__main(&$variables) {
  * Implements template_preprocess_paragraph().
  */
 function sb_bazo_preprocess_paragraph(&$variables) {
-  if ($variables['elements']['#paragraph']->bundle() !== 'section') {
+  if (!in_array($variables['elements']['#paragraph']->bundle(), ['section', 'hero', 'hero_slide'])) {
     $variables['test'] = 'Hello';
     $variables['attributes']['class'][] = 'sb-bazo-container';
   }

@@ -7,7 +7,7 @@
   "icon--" ~ size
 ] %}
 
-<span class="{% for class in classes %} {{class}}{% endfor %}">
+<span data-component-id="sb_bazo:icon" class="{% for class in classes %} {{class}}{% endfor %}">
 	{% if icon in ['facebook', 'twitter', 'instagram', 'maps'] %}
 		<i class="{% for class in classes %}{{ class }} {% endfor %}">
 			{{ inline_svg('@sb_bazo/icon/svg/' ~ icon ~ '.svg') }}

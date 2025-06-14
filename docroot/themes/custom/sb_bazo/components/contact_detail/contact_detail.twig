@@ -2,7 +2,8 @@
   "contact-detail",
 ] %}
 
-<div {{ attributes }}>
+<div 
+  data-component-id="sb_bazo:contact_detail">
 	<div class="{% for class in classes %} {{class}}{% endfor %}">
 		<div class="contact-detail__icon">
 			{% include 'sb_bazo:icon' with {

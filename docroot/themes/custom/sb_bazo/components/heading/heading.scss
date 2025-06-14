@@ -1,3 +1,8 @@
-.heading {
-  // @todo write css.
+[data-component-id="sb_bazo:heading"] {
+  .subheading {
+    color: var(--tokens-colors-orange-500);
+    text-transform: uppercase;
+    font-weight: 600px;
+    letter-spacing: 2px;
+  }
 }
