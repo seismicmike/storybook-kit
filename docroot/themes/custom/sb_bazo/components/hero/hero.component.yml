@@ -12,24 +12,20 @@ props:
         - null
         - "cta"
         - "header"
-    heading:
-      type: string
-      title: Heading
-      description: The primary heading
     image:
       type: string
       title: Image
       description: Background image url
-    subheading:
-      type: string
-      title: Sub-Heading
-    cta_label:
-      type: string
-      title: CTA Label
-    cta_url:
-      type: string
-      title: CTA URL
 slots:
+  heading:
+    title: The heading
+    description: Site heading
   breadcrumbs:
     title: Breadcrumbs
     description: Site breadcrumbs to display.
+  cta:
+    title: CTA
+    description: CTA Button
+  subheading:
+    type: string
+    title: Sub-Heading

@@ -37,3 +37,8 @@ function sb_bazo_preprocess_paragraph(&$variables) {
     $variables['attributes']['class'][] = 'sb-bazo-container';
   }
 }
+
+function sb_bazo_preprocess_paragraph__hero_slide__full(&$variables) {
+  kint($variables);
+  $a = 1;
+}

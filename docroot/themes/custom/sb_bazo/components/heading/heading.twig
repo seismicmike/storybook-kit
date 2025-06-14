@@ -12,9 +12,9 @@
 <div 
   data-component-id="sb_bazo:heading">
 	<h{{level}} class="{% for class in heading_classes %} {{ class }}{% endfor %}">
-		{% block heading_markup %}
-			{% if heading_markup %}
-				{{heading_markup}}
+		{% block heading_content %}
+			{% if heading_content %}
+				{{heading_content}}
 			{% else %}
 				{{heading_text|default("Sample Heading")}}
 			{% endif %}

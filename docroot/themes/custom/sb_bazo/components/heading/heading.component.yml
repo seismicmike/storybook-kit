@@ -7,7 +7,7 @@ libraryOverrides:
 props:
   type: object
   properties:
-    header_text:
+    heading_text:
       type: string
       title: Header text
       description: Simple text to display in the header. Use the header_content slot for markup.
@@ -29,6 +29,6 @@ props:
       items:
         type: string
 slots:
-  header_content:
-    title: Header content
+  heading_content:
+    title: Heading content
     description: Optional Markup/Content to render inside the header instead of text.

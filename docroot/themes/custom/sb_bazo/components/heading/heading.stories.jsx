@@ -29,7 +29,7 @@ export const Demo = {
   },
   args: {
     level: "1",
-    heading_text: "Sample Heading",
+    heading_text: "This is my heading",
     classes: ["sample_class", "another_class"],
     attributes: createMockAttributes().setAttribute(
       "data-component-id",
@@ -48,7 +48,7 @@ export const WithHTML = {
   },
   args: {
     level: "2",
-    heading_markup: '<div>Sample Heading <a href="#">with a link</a></div>\n',
+    heading_content: '<div>Sample Heading <a href="#">with a link</a></div>\n',
     attributes: createMockAttributes().setAttribute(
       "data-component-id",
       "sb_bazo:heading"

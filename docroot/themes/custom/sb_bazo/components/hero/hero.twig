@@ -5,30 +5,31 @@
 ] %}
 <div data-component-id="sb_bazo:hero" class="{% for class in classes %} {{class}}{% endfor %}" style="background-image: url({{image}});">
   <div class="sb-bazo-container hero__container">
-    {% if subheading %}
-      <div class="hero__subheading">
-        {% include 'sb_bazo:heading' with {
-          level: '2',
-          title: subheading,
-          classes: ['subheading']
-        } only %}
-      </div>
-    {% endif %}
-    {% block breadcrumbs %}{% if breadcrumbs %}<div class="hero__breadcrumbs">{{breadcrumbs}}</div>{% endif %}{% endblock %}
-    <div class="hero__heading">
-      {% include 'sb_bazo:heading' with {
-        level: '1',
-        title: header_text
-      } only %}
+    <div class="hero__subheading">
+      {% block subheading %}
+        {% if subheading %}
+          {{ subheading }}
+        {% endif %}
+      {% endblock %}
     </div>
-    {% if cta_label %}
-      <div class="hero__cta">
-        {% include 'sb_bazo:button' with {
-          button_style: 'primary',
-          label: cta_label,
-          href: cta_url|default('#')
-        } only %}
-      </div>
-    {% endif %}
+    <div class="hero__breadcrumbs">
+      {% block breadcrumbs %}
+        {% if breadcrumbs %}
+          {{breadcrumbs}}
+        {% endif %}
+      {% endblock %}
+    </div>
+    <div class="hero__heading">
+      {% block heading %}
+        {% if heading %}
+          {{ heading }}
+        {% endif %}
+      {% endblock %}
+    </div>
+    <div class="hero__cta">
+      {% block cta %}
+        {% if cta %}{{cta}}{% endif %}
+      {% endblock %}
+    </div>
   </div>
 </div>
